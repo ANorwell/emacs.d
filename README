@@ -1,0 +1,9 @@
+Emacs file, roughly following http://crypt.codemancers.com/posts/2013-09-26-setting-up-emacs-as-development-environment-on-osx/:
+
+1. brew install emacs --HEAD --use-git-head --cocoa
+
+2. Link this dir to ~/.emacs.d: ln -s `pwd` ~/.emacs.d
+
+3. Install cask: https://github.com/cask/cask
+
+4. run `cask install` from the emacs.d dir
