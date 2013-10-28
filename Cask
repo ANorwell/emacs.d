@@ -2,8 +2,7 @@
 (source "marmalade" "http://marmalade-repo.org/packages/")
 (source "gnu" "http://elpa.gnu.org/packages/")
 
-(depends-on "pallet")
-
+(depends-on "[cl-struct-package-desc ace-jump-mode (20130720 1153) a quick cursor location minor mode for emacs [github] nil single melpa nil nil nil]")
 (depends-on "[cl-struct-package-desc ag (20130924 1453) A front-end for ag ('the silver searcher'), the C ack replacement. [github] nil single melpa nil nil nil]")
 (depends-on "[cl-struct-package-desc auto-complete (20130724 1750) Auto Completion for GNU Emacs [github] ((popup (0 5 0))) tar melpa nil nil nil]")
 (depends-on "[cl-struct-package-desc cask (20131021 840) Cask: Emacs dependency management made easy [github] ((s (1 8 0)) (dash (2 2 0)) (f (0 10 0)) (epl (0 0 1))) tar melpa nil nil nil]")
@@ -13,6 +12,9 @@
 (depends-on "[cl-struct-package-desc git-gutter (20131002 1856) Port of Sublime Text plugin GitGutter [github] nil single melpa nil nil nil]")
 (depends-on "[cl-struct-package-desc git-rebase-mode (20131005 1730) Major mode for editing git rebase files [github] nil single melpa nil nil nil]")
 (depends-on "[cl-struct-package-desc go-mode (20131022 1235) Major mode for the Go programming language [hg] nil tar melpa nil nil nil]")
+(depends-on "[cl-struct-package-desc grizzl (20130810 1902) Fuzzy Search Library & Completing Read [github] ((cl-lib (0 1))) tar melpa nil nil nil]")
+(depends-on "[cl-struct-package-desc ido-better-flex (0 0 2) A better flex (fuzzy) algorithm for Ido. nil single marmalade nil nil nil]")
+(depends-on "[cl-struct-package-desc key-chord (20080915 2156) map pairs of simultaneously pressed keys to commands [wiki] nil single melpa nil nil nil]")
 (depends-on "[cl-struct-package-desc magit (20131026 1235) control Git from Emacs [github] ((cl-lib (0 3)) (git-commit-mode (0 14 0)) (git-rebase-mode (0 14 0))) tar melpa nil nil nil]")
 (depends-on "[cl-struct-package-desc mmm-mode (20131028 139) Allow Multiple Major Modes in a buffer [github] nil tar melpa nil nil nil]")
 (depends-on "[cl-struct-package-desc multi-web-mode (20130824 54) multiple major mode support for web editing [github] nil tar melpa nil nil nil]")
@@ -23,7 +25,9 @@
 (depends-on "[cl-struct-package-desc psgml (1 4 1) Lennart Staflin's Psgml package, with Elisp syntax and sgml-validate fixed for Emacsen >=24. nil tar marmalade nil nil nil]")
 (depends-on "[cl-struct-package-desc scala-mode2 (20131023 1455) Major mode for editing Scala >= 2.9 [github] nil tar melpa nil nil nil]")
 (depends-on "[cl-struct-package-desc smex (20130707 1255) M-x interface with Ido-style fuzzy matching. [github] nil single melpa nil nil nil]")
+(depends-on "[cl-struct-package-desc undo-tree (20130812 1224) Treat undo history as a tree [git] nil single melpa nil nil nil]")
 (depends-on "[cl-struct-package-desc wgrep (20130723 2134) Writable grep buffer and apply the changes to files [github] nil single melpa nil nil nil]")
+(depends-on "[cl-struct-package-desc zenburn-theme (20131014 1537) A low contrast color theme for Emacs. [github] nil single melpa nil nil nil]")
 (depends-on "ag")
 (depends-on "auto-complete")
 (depends-on "cask")
@@ -40,7 +44,7 @@
 (depends-on "magit")
 (depends-on "mmm-mode")
 (depends-on "multi-web-mode")
-
+(depends-on "pallet")
 (depends-on "php-mode")
 (depends-on "pkg-info")
 (depends-on "popup")

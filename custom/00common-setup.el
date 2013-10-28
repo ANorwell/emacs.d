@@ -9,10 +9,6 @@
 (column-number-mode t)
 (scroll-bar-mode -1)
 
-
-;;ensime-mode for scala
-(add-to-list 'load-path "~/misc/ensime/elisp/")
-(require 'ensime)
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
 
