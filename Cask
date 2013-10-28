@@ -2,6 +2,8 @@
 (source "marmalade" "http://marmalade-repo.org/packages/")
 (source "gnu" "http://elpa.gnu.org/packages/")
 
+(depends-on "pallet")
+
 (depends-on "[cl-struct-package-desc ag (20130924 1453) A front-end for ag ('the silver searcher'), the C ack replacement. [github] nil single melpa nil nil nil]")
 (depends-on "[cl-struct-package-desc auto-complete (20130724 1750) Auto Completion for GNU Emacs [github] ((popup (0 5 0))) tar melpa nil nil nil]")
 (depends-on "[cl-struct-package-desc cask (20131021 840) Cask: Emacs dependency management made easy [github] ((s (1 8 0)) (dash (2 2 0)) (f (0 10 0)) (epl (0 0 1))) tar melpa nil nil nil]")
@@ -38,7 +40,7 @@
 (depends-on "magit")
 (depends-on "mmm-mode")
 (depends-on "multi-web-mode")
-(depends-on "pallet")
+
 (depends-on "php-mode")
 (depends-on "pkg-info")
 (depends-on "popup")
