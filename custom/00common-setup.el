@@ -87,7 +87,8 @@
 (add-hook 'scala-mode-hook
           '(lambda ()
              (outline-minor-mode)
-             (setq outline-regexp "[\s\r\t]*\\(class\\|def\\|package\\|import\\|case class\\|object\\|trait\\|abstract\\|mixin\\|protected def\\|sealed\\|override\\|private def\\|describe\\|it(\\)")))
+             (setq outline-regexp "[\s\r\t]*\\(class\\|def\\|package\\|import\\|case class\\|object\\|trait\\|abstract\\|mixin\\|protected def\\|sealed\\|override\\|private def\\|describe\\|it(\\)")
+             (local-set-key (kbd "C-,") 'spec-buffer-switch)))
 
 (add-hook 'php-mode-hook
           '(lambda ()
@@ -111,8 +112,10 @@
           '(lambda ()
              (outline-minor-mode)
              (setq outline-regexp " *\\(def \\|clas\\|require\\|describe\\|public\\|private\\)")
-             (hide-sublevels 1)))
+             (local-set-key (kbd "C-,") 'rails-test-buffer-switch)))
 
+
+;;Scala mode- switch between test and main projects
 (defun spec-buffer-switch ()
   "Switch to/from the Spec file in the test folder of a scala/maven
 project"
@@ -129,6 +132,17 @@ project"
   "Spec.scala")))))
 
 (global-set-key (kbd "C-,") 'spec-buffer-switch)
+
+
+(defun rails-test-buffer-switch ()
+  "Switch to/from the test file in the test folder of a rails project
+project"
+  (interactive)
+  (switch-to-buffer (find-file-noselect
+   (if (string-match "_test.rb$" (buffer-file-name))
+       (replace-regexp-in-string "test\\(.*\\)_test.rb" "app\\1.rb" (buffer-file-name))
+     (replace-regexp-in-string "app\\(.*\\).rb" "test\\1_test.rb" (buffer-file-name))))))
+
 
 (defun reb-query-replace-this-regxp (replace)
   "Uses the regexp built with re-builder to query the target buffer.
@@ -212,3 +226,5 @@ isn't there and triggers an error"
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; end ediff binary file stuff
 
 
+(require 'no-easy-keys)
+(no-easy-keys 1)
