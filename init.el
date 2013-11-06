@@ -15,6 +15,8 @@
 
 (load "03key-chord.el")
 
+(load "04webmode.el")
+
 ;;ensime-mode for scala
 (add-to-list 'load-path "~/misc/ensime/elisp/")
 ;;(add-to-list 'load-path "~/.emacs.d/ensime/")
