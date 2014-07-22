@@ -347,8 +347,13 @@ isn't there and triggers an error"
 (setq company-begin-commands '(self-insert-command))
 (global-set-key (kbd "M-/") 'company-complete)
 
+(global-set-key (kbd "s-j") 'imenu-anywhere)
+
 
 ;; robe mode
 
 (add-hook 'enh-ruby-mode-hook 'robe-mode)
 ;;(push 'company-robe company-backends)
+
+
+(global-set-key (kbd "C-c C-u u") 'undo-tree-visualize)

@@ -19,4 +19,8 @@
         end-of-buffer
         find-tag
         kill-region
+        query-replace
+        show-entry
+        spin-push-current-buffer-file
+        toggle-should
         ))

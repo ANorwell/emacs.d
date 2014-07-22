@@ -52,6 +52,7 @@
     ("8bb1e9a22e9e9d405ca9bdf20b91301eba12c0b9778413ba7600e48d2d3ad1fb" default)))
  '(ediff-window-setup-function (quote ediff-setup-windows-plain))
  '(enh-ruby-bounce-deep-indent (quote true))
+ '(helm-buffers-fuzzy-matching t)
  '(js2-basic-offset 2)
  '(js2-bounce-indent-p t)
  '(max-lisp-eval-depth 600)
