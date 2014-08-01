@@ -13,11 +13,11 @@
 (global-set-key (kbd "s-f") 'projectile-find-file)
 (global-set-key (kbd "s-s") 'helm-occur)
 
-(key-chord-define-global "pf" 'projectile-find-file)
-(key-chord-define-global "pg" 'projectile-ag)
-(key-chord-define-global "pb" 'projectile-switch-to-buffer)
-(key-chord-define-global "pj" 'projectile-recentf)
-(key-chord-define-global "pk" 'projectile-multi-occur)
+;(key-chord-define-global "pf" 'projectile-find-file)
+;(key-chord-define-global "pg" 'projectile-ag)
+;(key-chord-define-global "pb" 'projectile-switch-to-buffer)
+;(key-chord-define-global "pj" 'projectile-recentf)
+;(key-chord-define-global "pk" 'projectile-multi-occur)
 
 (require 'recentf)
 (recentf-mode 1)

@@ -82,4 +82,5 @@
 (depends-on "web-mode")
 (depends-on "wgrep")
 (depends-on "yaml-mode")
+(depends-on "yasnippet")
 (depends-on "zenburn-theme")

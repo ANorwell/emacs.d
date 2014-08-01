@@ -19,6 +19,9 @@
 
 (load "05rinari.el")
 
+(load "csv-mode.el")
+(load "06csv-mode.el")
+
 ;;ensime-mode for scala
 ;;(add-to-list 'load-path "~/misc/ensime/elisp/")
 ;;(add-to-list 'load-path "~/.emacs.d/ensime/")
