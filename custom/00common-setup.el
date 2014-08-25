@@ -174,6 +174,24 @@ project"
   (shell-command (format "%s %s" "spin push" buffer-file-name)))
 (global-set-key (kbd "s-r") 'spin-push-current-buffer-file)
 
+;;push the current file to test in m.
+(defun m-test-current-buffer-file ()
+  "Run this file in m"
+  (interactive)
+  (kill-buffer "<m-test>")
+  (start-process-shell-command "m-test" "<m-test>" (format "%s %s" "bundle exec m" buffer-file-name))
+  (view-buffer-other-window "<m-test>"))
+(global-set-key (kbd "s-m") 'm-test-current-buffer-file)
+
+;;push the current file and line number to test in m.
+(defun m-test-current-buffer-file-and-line ()
+  "Run this file in m"
+  (interactive)
+  (kill-buffer "<m-test>")
+  (start-process-shell-command "m-test" "<m-test>" (format "%s %s:%s" "bundle exec m" buffer-file-name (line-number-at-pos)))
+  (view-buffer-other-window "<m-test>"))
+(global-set-key (kbd "s-M") 'm-test-current-buffer-file-and-line)
+
 
 (defun rails-test-buffer-switch ()
   "Switch to/from the test file in the test folder of a rails project
@@ -355,5 +373,8 @@ isn't there and triggers an error"
 (add-hook 'enh-ruby-mode-hook 'robe-mode)
 ;;(push 'company-robe company-backends)
 
+;;yasnippet
+(require 'yasnippet)
+(yas-global-mode 1)
 
 (global-set-key (kbd "C-c C-u u") 'undo-tree-visualize)

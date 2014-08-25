@@ -42,14 +42,14 @@
  ;; If there is more than one, they won't work right.
  '(company-backends
    (quote
-    (company-bbdb company-nxml company-css company-eclim company-semantic company-clang company-xcode company-ropemacs company-etags company-capf
-                  (company-dabbrev-code company-gtags company-etags company-keywords)
+    (company-bbdb company-nxml company-css company-eclim company-semantic company-clang company-xcode company-ropemacs company-capf
+                  (company-dabbrev-code company-keywords)
                   company-oddmuse company-files company-dabbrev)))
  '(company-begin-commands nil)
  '(company-dabbrev-code-modes
    (quote
     (asm-mode batch-file-mode c++-mode c-mode cperl-mode csharp-mode css-mode emacs-lisp-mode erlang-mode f90-mode fortran-mode haskell-mode java-mode javascript-mode jde-mode js2-mode lisp-mode lua-mode objc-mode perl-mode php-mode prog-mode python-mode ruby-mode scheme-mode shell-script-mode enh-ruby-mode)))
- '(company-etags-use-main-table-list t)
+; '(company-etags-use-main-table-list t)
  '(custom-safe-themes
    (quote
     ("8bb1e9a22e9e9d405ca9bdf20b91301eba12c0b9778413ba7600e48d2d3ad1fb" default)))
