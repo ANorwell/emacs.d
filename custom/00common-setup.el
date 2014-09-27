@@ -10,6 +10,10 @@
 (scroll-bar-mode -1)
 (setq create-lockfiles nil)
 
+(setenv "ESHELL" (expand-file-name "~/bin/eshell"))
+(setenv "TERM" "eterm-color")
+(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
 (setq org-src-fontify-natively t)
@@ -178,16 +182,17 @@ project"
 (defun m-test-current-buffer-file ()
   "Run this file in m"
   (interactive)
-  (kill-buffer "<m-test>")
-  (start-process-shell-command "m-test" "<m-test>" (format "%s %s" "bundle exec m" buffer-file-name))
-  (view-buffer-other-window "<m-test>"))
+  ;(if (get-buffer "<m-test>") (kill-buffer "<m-test>"))
+  ;(start-process-shell-command "m-test" "<m-test>" (format "%s %s" "bundle exec m" buffer-file-name))
+  (async-shell-command (format "%s %s" "bundle exec m" buffer-file-name)))
+  ;(view-buffer-other-window "<m-test>"))
 (global-set-key (kbd "s-m") 'm-test-current-buffer-file)
 
 ;;push the current file and line number to test in m.
 (defun m-test-current-buffer-file-and-line ()
   "Run this file in m"
   (interactive)
-  (kill-buffer "<m-test>")
+  (if (get-buffer "<m-test>") (kill-buffer "<m-test>"))
   (start-process-shell-command "m-test" "<m-test>" (format "%s %s:%s" "bundle exec m" buffer-file-name (line-number-at-pos)))
   (view-buffer-other-window "<m-test>"))
 (global-set-key (kbd "s-M") 'm-test-current-buffer-file-and-line)
@@ -356,8 +361,6 @@ isn't there and triggers an error"
 					(when (> (length prefix) (/ (window-width) 2))
 						(setq prefix tab-as-spaces))
 					(put-text-property line-start line-end 'wrap-prefix prefix))))))
-
-(global-set-key (kbd "s-m") 'magit-status)
 
 (global-set-key (kbd "C-c C-a") 'ag-kill-other-buffers)
 
