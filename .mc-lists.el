@@ -5,9 +5,11 @@
       '(
         indent-for-tab-command
         org-beginning-of-line
+        org-delete-char
         org-end-of-line
         org-kill-line
         org-self-insert-command
+        org-yank
         sp--self-insert-command
         sp-remove-active-pair-overlay
         ))
@@ -16,6 +18,7 @@
       '(
         ace-jump-done
         ace-jump-word-mode
+        compilation-next-error
         end-of-buffer
         find-tag
         kill-region
@@ -23,4 +26,5 @@
         show-entry
         spin-push-current-buffer-file
         toggle-should
+        undefined
         ))

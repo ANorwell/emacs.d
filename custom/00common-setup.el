@@ -26,17 +26,27 @@
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+(defadvice yes-or-no-p (around prevent-dialog activate)
+  "Prevent yes-or-no-p from activating a dialog"
+  (let ((use-dialog-box nil))
+    ad-do-it))
+(defadvice y-or-n-p (around prevent-dialog-yorn activate)
+  "Prevent y-or-n-p from activating a dialog"
+  (let ((use-dialog-box nil))
+    ad-do-it))
+
 ;;before-save hook for scala
 (add-hook 'scala-mode-hook
-     (lambda()
-        (add-hook 'local-write-file-hooks
-              '(lambda()
-                 (save-excursion
-                   (delete-trailing-whitespace q))))))
+          (lambda()
+            (add-hook 'local-write-file-hooks
+                      '(lambda()
+                         (save-excursion
+                           (delete-trailing-whitespace))))))
 
 ;;markdown mode
 (autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
 (setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
+(add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
 
 ;;newline and indent for various modes
 (mapcar (lambda (hooksym)
@@ -47,7 +57,7 @@
         '(
           emacs-lisp-mode-hook
           java-mode-hook
-          js2-mode-hook
+          js-mode-hook
           lisp-interaction-mode-hook
           lisp-mode-hook
           makefile-mode-hook
@@ -137,19 +147,15 @@
              (local-set-key (kbd "C-,") 'rails-test-buffer-switch)))
 
 
-(add-hook 'js2-mode-hook
+(add-hook 'js-mode-hook
           '(lambda ()
              (outline-minor-mode)
              (setq outline-regexp " *\\(function\\|describe(\\|it(\\)")))
 
-
-;;js2-mode
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-(custom-set-variables
- '(js2-basic-offset 2)
- '(js2-bounce-indent-p t)
-)
-
+(add-hook 'js2-mode-hook
+          '(lambda ()
+             (outline-minor-mode)
+             (setq outline-regexp " *\\(.*function\\|describe(\\|it(\\|.*: *{\\|.*= *{\\)")))
 
 
 ;;Scala mode- switch between test and main projects
@@ -178,13 +184,17 @@ project"
   (shell-command (format "%s %s" "spin push" buffer-file-name)))
 (global-set-key (kbd "s-r") 'spin-push-current-buffer-file)
 
+;;helper to get a project dir, assuming the path is /Users/work/anorwell/name/sdfsdf/sdfs
+(defun project-dir (path)
+  (mapconcat 'identity (subseq (split-string path "/") 0  5) "/"))
+
 ;;push the current file to test in m.
 (defun m-test-current-buffer-file ()
   "Run this file in m"
   (interactive)
   ;(if (get-buffer "<m-test>") (kill-buffer "<m-test>"))
   ;(start-process-shell-command "m-test" "<m-test>" (format "%s %s" "bundle exec m" buffer-file-name))
-  (async-shell-command (format "%s %s" "bundle exec m" buffer-file-name)))
+  (async-shell-command (format "cd %s && bundle exec m %s" (project-dir buffer-file-name) buffer-file-name)))
   ;(view-buffer-other-window "<m-test>"))
 (global-set-key (kbd "s-m") 'm-test-current-buffer-file)
 
@@ -193,7 +203,7 @@ project"
   "Run this file in m"
   (interactive)
   (if (get-buffer "<m-test>") (kill-buffer "<m-test>"))
-  (start-process-shell-command "m-test" "<m-test>" (format "%s %s:%s" "bundle exec m" buffer-file-name (line-number-at-pos)))
+  (start-process-shell-command "m-test" "<m-test>" (format "cd %s && bundle exec m %s:%s" (project-dir buffer-file-name)  buffer-file-name (line-number-at-pos)))
   (view-buffer-other-window "<m-test>"))
 (global-set-key (kbd "s-M") 'm-test-current-buffer-file-and-line)
 
@@ -377,7 +387,47 @@ isn't there and triggers an error"
 ;;(push 'company-robe company-backends)
 
 ;;yasnippet
-(require 'yasnippet)
-(yas-global-mode 1)
+;;(require 'yasnippet)
+;;(yas-global-mode 1)
+
+(setq ruby-insert-encoding-magic-comment nil)
+(setq enh-ruby-use-encoding-map nil)
+
+
+(defun disable-enh-ruby-encoding ()
+  (interactive)
+  (defun enh-ruby-mode-set-encoding () ))
+;(add-hook 'enh-ruby-mode-hook 'disable-enh-ruby-encoding)
+
+(setq system-uses-terminfo nil)
+
+(winner-mode 1)
+
+(defun term-mode-no-whitespace ()
+  "disable trailing whitespace highlighting"
+  (interactive)
+  (setq show-trailing-whitespace nil))
+
+(add-hook 'term-mode-hook 'term-mode-no-whitespace)
+
+(when (fboundp 'winner-mode)
+      (winner-mode 1))
+
+(defun start-terminal ()
+  "start backupify terminal"
+  (interactive)
+  (cd "~/work/backupify")
+  (term "zsh"))
 
 (global-set-key (kbd "C-c C-u u") 'undo-tree-visualize)
+
+
+(defun s-slice-at (regexp s)
+  "Slices S up at every index matching REGEXP."
+  (save-match-data
+    (let (i)
+      (setq i (string-match regexp s 1))
+      (if i
+          (cons (substring s 0 i)
+                (s-slice-at regexp (substring s i)))
+        (list s)))))

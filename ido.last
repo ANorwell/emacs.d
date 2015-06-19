@@ -2,6 +2,173 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/anorwell/work/backupify/app/models/api/billing/" . "v0/")
+ ("/Users/anorwell/work/backupify/app/models/api/" . "billing/")
+ ("/Users/anorwell/work/backupify/lib/data_interface/office365/common/" . "thrift/")
+ ("/Users/anorwell/work/datto_ui_library/app/assets/templates/datto_ui_library/components/" . "status_tile/")
+ ("/Users/anorwell/work/datto_ui_library/app/assets/templates/datto_ui_library/" . "components/")
+ ("/Users/anorwell/work/datto_ui_library/app/assets/templates/" . "datto_ui_library/")
+ ("/Users/anorwell/work/pyper/lib/pyper/" . "pipes/")
+ ("/Users/anorwell/work/pyper/test/fixtures/" . "test_datastore/")
+ ("/Users/anorwell/work/pyper/test/unit/pyper/" . "read_pipes/")
+ ("/Users/anorwell/work/pyper/test/unit/" . "pyper/")
+ ("/Users/anorwell/work/pyper/test/" . "unit/")
+ ("/Users/anorwell/work/pyper/" . "test/")
+ ("/Users/anorwell/work/pyper/lib/" . "pyper/")
+ ("/Users/anorwell/work/backupify/lib/data_interface/office365/cql/" . "mail/")
+ ("/Users/anorwell/work/storage_pipeline/test/unit/" . "storage_pipeline/")
+ ("/Users/anorwell/work/storage_pipeline/test/" . "unit/")
+ ("/Users/anorwell/Downloads/practical-mauro-braunstein/" . "lib/")
+ ("/Users/anorwell/work/backupify/test/unit/concerns/" . "s3_datum/")
+ ("/Users/anorwell/work/backupify/cass_schema/" . "office365_metadata/")
+ ("/Users/anorwell/work/backupify/lib/data_interface/common/cql/" . "pipes/")
+ ("/Users/anorwell/work/storage_strategy/lib/" . "storage_strategy/")
+ ("/Users/anorwell/work/storage_strategy/" . "lib/")
+ ("/Users/anorwell/work/storage_strategy/lib/storage_strategy/" . "destinations/")
+ ("/Users/anorwell/work/storage_pipeline/test/fixtures/" . "test_datastore/")
+ ("/Users/anorwell/work/storage_pipeline/test/unit/storage_pipeline/" . "read_pipes/")
+ ("/Users/anorwell/work/storage_pipeline/lib/storage_pipeline/pipes/" . "read/")
+ ("/Users/anorwell/work/storage_pipeline/lib/storage_pipeline/" . "read_pipes/")
+ ("/Users/anorwell/work/storage_pipeline/lib/" . "storage_pipeline/")
+ ("/Users/anorwell/work/storage_pipeline/" . "lib/")
+ ("/Users/anorwell/work/datto_ui_library/app/assets/javascripts/datto_ui_library/" . "directives/")
+ ("/Users/anorwell/work/datto_ui_library/app/assets/javascripts/" . "datto_ui_library/")
+ ("/Users/anorwell/work/datto_ui_library/app/assets/" . "templates/")
+ ("/Users/anorwell/work/datto_ui_library/app/controllers/" . "datto_ui_library/")
+ ("/Users/anorwell/work/datto_ui_library/app/" . "assets/")
+ ("/Users/anorwell/work/datto_ui_library/" . "app/")
+ ("/Users/anorwell/work/user_sso/db/" . "seeds/")
+ ("/Users/anorwell/work/user_sso/" . "db/")
+ ("/Users/anorwell/work/backupify/lib/storage/" . "adapters/")
+ ("/Users/anorwell/Downloads/datt/app/controllers/" . "concerns/")
+ ("/Users/anorwell/Downloads/datt/app/models/" . "concerns/")
+ ("/Users/anorwell/Downloads/datt/app/" . "helpers/")
+ ("/Users/anorwell/Downloads/datt/" . "app/")
+ ("/Users/anorwell/work/datto_ui_library/test/datto_ui_library/javascripts/unit/" . "directives/")
+ ("/Users/anorwell/work/backupify/app/assets/javascripts/resources/" . "office365/")
+ ("/Users/anorwell/work/backupify/script/" . "qless/")
+ ("/Users/anorwell/work/backupify/app/assets/templates/" . "vendor/")
+ ("/Users/anorwell/work/backupify/app/assets/javascripts/states/" . "vendor/")
+ ("/Users/anorwell/work/backupify/app/assets/javascripts/controllers/" . "office365/")
+ ("/Users/anorwell/work/backupify/lib/jobs/office365/writers/mail/" . "writers/")
+ ("/Users/anorwell/work/backupify/lib/jobs/office365/writers/" . "mail/")
+ ("/Users/anorwell/work/backupify/test/unit/jobs/office365/writers/" . "mail/")
+ ("/Users/anorwell/work/backupify/lib/jobs/office365/filters/" . "mail/")
+ ("/Users/anorwell/work/backupify/lib/jobs/office365/" . "mail/")
+ ("/Users/anorwell/work/backupify/test/fixtures/vcr/office365/service_connection/mail/" . "folder_restore_test/")
+ ("/Users/anorwell/work/backupify/test/fixtures/vcr/office365/service_connection/" . "mail/")
+ ("/Users/anorwell/work/backupify/test/fixtures/vcr/office365/" . "service_connection/")
+ ("/Users/anorwell/work/backupify/test/unit/data_interface/office365/" . "cql/")
+ ("/Users/anorwell/work/backupify/test/unit/jobs/office365/" . "writers/")
+ ("/Users/anorwell/work/backupify/lib/backupify/auth/office365/" . "o_auth2/")
+ ("/Users/anorwell/work/backupify/test/unit/office365/service_connection/" . "mail/")
+ ("/Users/anorwell/work/backupify/test/unit/office365/api/" . "ews/")
+ ("/Users/anorwell/work/backupify/test/fixtures/office365/mail/ews/" . "blob/")
+ ("/Users/anorwell/work/backupify/test/fixtures/office365/mail/" . "ews/")
+ ("/Users/anorwell/work/backupify/test/fixtures/office365/" . "mail/")
+ ("/Users/anorwell/work/backupify/lib/backupify/auth/office365/o_auth2/" . "client_credential_flow/")
+ ("/Users/anorwell/work/backupify/test/functional/office365/" . "mail/")
+ ("/Users/anorwell/work/backupify/lib/office365/service_connection/" . "mail/")
+ ("/Users/anorwell/work/backupify/test/lib/data_models/" . "office365/")
+ ("/Users/anorwell/work/backupify/app/controllers/office365/" . "accounts/")
+ ("/Users/anorwell/work/cass_schema/test/fixtures/" . "test_datastore/")
+ ("/Users/anorwell/work/cass_schema/test/" . "fixtures/")
+ ("/Users/anorwell/work/cass_schema/lib/cass_schema/" . "tasks/")
+ ("/Users/anorwell/work/cass_schema/lib/" . "cass_schema/")
+ ("/Users/anorwell/work/cass_schema/" . "lib/")
+ ("/Users/anorwell/work/backupify/test/unit/data_interface/common/" . "thrift/")
+ ("/Users/anorwell/work/backupify/test/unit/data_interface/" . "office365/")
+ ("/Users/anorwell/work/backupify/lib/data_interface/common/" . "cql/")
+ ("/Users/anorwell/work/backupify/lib/data_interface/office365/" . "cql/")
+ ("/Users/anorwell/work/cass_migrations/test/" . "fixtures/")
+ ("/Users/anorwell/work/cass_migrations/" . "test/")
+ ("/Users/anorwell/work/cass_migrations/lib/" . "cass_schema/")
+ ("/Users/anorwell/work/backupify/lib/data_models/mail/" . "office365/")
+ ("/Users/anorwell/work/backupify/lib/data_models/" . "mail/")
+ ("/Users/anorwell/work/backupify/lib/data_interface/thrift/" . "office365_mail/")
+ ("/Users/anorwell/work/backupify/lib/data_interface/" . "office365/")
+ ("/Users/anorwell/work/cassava/test/" . "cassava/")
+ ("/Users/anorwell/work/cequel/lib/cequel/" . "metal/")
+ ("/Users/anorwell/work/cequel/lib/" . "cequel/")
+ ("/Users/anorwell/work/cassava/lib/" . "cassava/")
+ ("/Users/anorwell/work/cassava/" . "lib/")
+ ("/Users/anorwell/work/paginatable/test/dummy/" . "config/")
+ ("/Users/anorwell/work/paginatable/lib/paginatable/" . "plugins/")
+ ("/Users/anorwell/work/paginatable/test/" . "dummy/")
+ ("/Users/anorwell/work/paginatable/" . "lib/")
+ ("/Users/anorwell/work/paginatable/lib/" . "paginatable/")
+ ("/Users/anorwell/work/gem_logger/lib/" . "gem_logger/")
+ ("/Users/anorwell/work/gem_logger/" . "lib/")
+ ("/Users/anorwell/work/google-api-ruby-client/lib/google/" . "api_client/")
+ ("/Users/anorwell/work/google-api-ruby-client/lib/" . "google/")
+ ("/Users/anorwell/work/google-api-ruby-client/" . "lib/")
+ ("/Users/anorwell/work/backupify/test/test_constants/" . "googleapps/")
+ ("/Users/anorwell/work/backupify/test/unit/office365/" . "data_interface/")
+ ("/Users/anorwell/work/backupify/lib/office365/models/" . "mail/")
+ ("/Users/anorwell/work/backupify/lib/office365/adapters/" . "common/")
+ ("/Users/anorwell/work/backupify/lib/office365/data_views/" . "mail/")
+ ("/Users/anorwell/work/backupify/lib/office365/mail/" . "adapters/")
+ ("/Users/anorwell/work/backupify/lib/office365/" . "service_connection/")
+ ("/Users/anorwell/work/backupify/lib/office365/serialization/" . "mail/")
+ ("/Users/anorwell/work/cequel/spec/" . "examples/")
+ ("/Users/anorwell/work/cequel/" . "spec/")
+ ("/Users/anorwell/.rbenv/versions/2.1.2/gemsets/backupify/bundler/gems/twitter_cassandra-b736507a5cc2/vendor/1.2/" . "gen-rb/")
+ ("/Users/anorwell/.rbenv/versions/2.1.2/gemsets/backupify/bundler/gems/twitter_cassandra-b736507a5cc2/" . "vendor/")
+ ("/Users/anorwell/.rbenv/versions/2.1.2/gemsets/backupify/gems/bundler-1.6.3/lib/" . "bundler/")
+ ("/Users/anorwell/work/cassandra/lib/" . "twitter_cassandra/")
+ ("/Users/anorwell/work/cassandra/" . "lib/")
+ ("/Users/anorwell/work/backupify_cassandra/test/" . "model/")
+ ("/Users/anorwell/work/backupify_cassandra/lib/backupify_cassandra/" . "model/")
+ ("/Users/anorwell/work/backupify_cassandra/" . "lib/")
+ ("/Users/anorwell/work/backupify_cassandra/lib/" . "backupify_cassandra/")
+ ("/Users/anorwell/work/authify/test/backupify/" . "auth/")
+ ("/Users/anorwell/work/pegasus_service/db/" . "seeds/")
+ ("/Users/anorwell/work/backupify/lib/jobs/domains/" . "add_users/")
+ ("/Users/anorwell/work/active_backup/lib/" . "active_run/")
+ ("/Users/anorwell/work/active_backup/" . "lib/")
+ ("/Users/anorwell/work/active_runs/lib/active_run/" . "model/")
+ ("/Users/anorwell/work/active_runs/lib/" . "active_run/")
+ ("/Users/anorwell/work/active_runs/" . "lib/")
+ ("/Users/anorwell/work/async_backup/lib/" . "active_run/")
+ ("/Users/anorwell/work/async_backup/" . "lib/")
+ ("/Users/anorwell/work/backupify/test/unit/helpers/" . "data_collectors/")
+ ("/Users/anorwell/work/active_attr_extensions/spec/unit/" . "active_attr_extensions/")
+ ("/Users/anorwell/work/active_attr_extensions/spec/" . "unit/")
+ ("/Users/anorwell/work/active_attr_extensions/" . "spec/")
+ ("/Users/anorwell/work/active_attr_extensions/lib/active_attr_extensions/" . "typecasting/")
+ ("/Users/anorwell/work/active_attr/lib/active_attr/" . "typecasting/")
+ ("/Users/anorwell/work/active_attr/lib/" . "active_attr/")
+ ("/Users/anorwell/work/active_attr/" . "lib/")
+ ("/Users/anorwell/work/backupify/app/views/data/metadata/" . "office365/")
+ ("/Users/anorwell/work/backupify/app/helpers/" . "data_presenters/")
+ ("/Users/anorwell/work/backupify/app/views/data/" . "office365/")
+ ("/Users/anorwell/work/backupify/test/unit/active_run/google/mail/" . "imap/")
+ ("/Users/anorwell/work/backupify/app/models/active_run/google/" . "mail/")
+ ("/Users/anorwell/work/backupify/app/models/active_run/" . "google/")
+ ("/Users/anorwell/work/backupify/lib/jobs/google_sites/" . "backup/")
+ ("/Users/anorwell/work/backupify/lib/jobs/google_mail/backup/" . "rest/")
+ ("/Users/anorwell/work/backupify/app/models/active_run/google/mail/" . "common/")
+ ("/Users/anorwell/work/backupify/app/models/concerns/" . "s3_datum/")
+ ("/Users/anorwell/work/backupify/test/unit/service_connection/" . "google_mail/")
+ ("/Users/anorwell/work/backupify/test/unit/jobs/google_calendar/" . "backup/")
+ ("/Users/anorwell/work/backupify/test/unit/jobs/google_mail/backup/" . "rest/")
+ ("/Users/anorwell/work/backupify/test/unit/jobs/google_mail/" . "backup/")
+ ("/Users/anorwell/work/backupify/lib/jobs/google_mail/" . "backup/")
+ ("/Users/anorwell/work/backupify/lib/backupify/google/calendar/v3/content_parsers/" . "v2/")
+ ("/Users/anorwell/work/backupify/lib/backupify/google/calendar/v3/" . "content_parsers/")
+ ("/Users/anorwell/work/backupify/test/unit/views/" . "users/")
+ ("/Users/anorwell/work/permissions_client/test/permissions/" . "scopes/")
+ ("/Users/anorwell/work/backupify/app/models/ability/" . "core_roles/")
+ ("/Users/anorwell/work/permissions_service/config/" . "initializers/")
+ ("/Users/anorwell/work/permissions_service/" . "test/")
+ ("/Users/anorwell/work/permissions_service/app/controllers/api/" . "v1/")
+ ("/Users/anorwell/work/permissions_service/app/controllers/" . "api/")
+ ("/Users/anorwell/work/permissions_service/app/" . "serializers/")
+ ("/Users/anorwell/work/authify/lib/backupify/auth/" . "token_pool/")
+ ("/Users/anorwell/work/m/" . "test/")
+ ("/Users/anorwell/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/m-1.3.2/lib/" . "m/")
+ ("/Users/anorwell/work/optionnil/lib/" . "optionnil/")
+ ("/Users/anorwell/work/optionnil/" . "lib/")
  ("/Users/anorwell/work/pegasus_service/config/" . "initializers/")
  ("/Users/anorwell/work/permissions_client/test/" . "permissions/")
  ("/Users/anorwell/work/authify/test/" . "backupify/")
@@ -24,7 +191,7 @@
  ("/Users/anorwell/work/authify/lib/backupify/" . "auth/")
  ("/Users/anorwell/work/authify/lib/" . "backupify/")
  ("/Users/anorwell/work/authify/" . "lib/")
- ("/Users/anorwell/work/backupify/lib/backupify/auth/" . "google/")
+ ("/Users/anorwell/work/backupify/lib/backupify/auth/" . "office365/")
  ("/Users/anorwell/work/backupify/lib/jobs/post_backup/" . "google/")
  ("/Users/anorwell/work/backupify/test/unit/jobs/backup_scheduler/" . "v2/")
  ("/Users/anorwell/work/faraday/lib/faraday/" . "adapter/")
@@ -33,7 +200,7 @@
  ("/Users/anorwell/work/rake-backupify/test/unit/backupify/" . "google/")
  ("/Users/anorwell/work/rake-backupify/lib/backupify/google/drive/" . "v2/")
  ("/Users/anorwell/work/rake-backupify/lib/backupify/google/" . "drive/")
- ("/Users/anorwell/work/rake-backupify/lib/backupify/" . "google/")
+ ("/Users/anorwell/work/rake-backupify/lib/backupify/" . "permissions/")
  ("/Users/anorwell/work/rake-backupify/test/integration/backupify/google/drive/" . "v2/")
  ("/Users/anorwell/work/rake-backupify/test/integration/backupify/google/" . "drive/")
  ("/Users/anorwell/work/rake-backupify/test/integration/backupify/" . "google/")
@@ -41,7 +208,7 @@
  ("/Users/anorwell/work/rake-backupify/test/unit/" . "backupify/")
  ("/Users/anorwell/work/rake-backupify/lib/service_connection/" . "google_drive/")
  ("/Users/anorwell/work/backupify/app/models/backupify/" . "active_run/")
- ("/Users/anorwell/work/backupify/app/models/" . "domain/")
+ ("/Users/anorwell/work/backupify/app/models/" . "api/")
  ("/Users/anorwell/work/rake-backupify/lib/jobs/generic/" . "backup/")
  ("/Users/anorwell/work/rake-backupify/lib/jobs/" . "generic/")
  ("/Users/anorwell/work/rake-backupify/lib/" . "backupify/")
@@ -60,37 +227,37 @@
  ("/Users/anorwell/work/qmore/lib/qmore/" . "server/")
  ("/Users/anorwell/work/qmore/lib/" . "qmore/")
  ("/Users/anorwell/work/qmore/" . "lib/")
- ("/Users/anorwell/work/async_job/lib/async_job/" . "middleware/")
+ ("/Users/anorwell/work/async_job/lib/async_job/" . "sharding/")
  ("/Users/anorwell/work/async_job/lib/" . "async_job/")
  ("/Users/anorwell/work/async_job/" . "lib/")
- ("/Users/anorwell/work/backupify/lib/backupify_cassandra/" . "model/")
- ("/Users/anorwell/work/backupify/config/rubber/role/" . "redis/")
+ ("/Users/anorwell/work/backupify/lib/backupify_cassandra/" . "config/")
+ ("/Users/anorwell/work/backupify/config/rubber/role/" . "cassandra/")
  ("/Users/anorwell/work/backupify/lib/backupify/google/drive/" . "v2/")
- ("/Users/anorwell/work/backupify/config/rubber/" . "role/")
- ("/Users/anorwell/work/backupify/lib/service_connection/" . "google_drive/")
+ ("/Users/anorwell/work/backupify/config/rubber/" . "common/")
+ ("/Users/anorwell/work/backupify/lib/service_connection/" . "google_mail/")
  ("/Users/anorwell/work/backupify/lib/backupify/google/contacts/" . "v3/")
  ("/Users/anorwell/work/backupify/lib/plugins/authlogic_openid/" . "authlogic_openid/")
  ("/Users/anorwell/work/backupify/lib/plugins/" . "authlogic_openid/")
  ("/Users/anorwell/work/backupify/test/unit/services/" . "user_session/")
  ("/Users/anorwell/work/backupify/lib/services/" . "user_session/")
- ("/Users/anorwell/work/backupify/config/" . "environments/")
- ("/Users/anorwell/work/backupify/lib/jobs/generic/" . "backup/")
+ ("/Users/anorwell/work/backupify/config/" . "initializers/")
+ ("/Users/anorwell/work/backupify/lib/jobs/generic/" . "restores/")
  ("/Users/anorwell/work/backupify/test/unit/jobs/generic/" . "backup/")
- ("/Users/anorwell/work/backupify/test/unit/jobs/" . "generic/")
+ ("/Users/anorwell/work/backupify/test/unit/jobs/" . "domains/")
  ("/Users/anorwell/work/backupify/app/views/admin/" . "system_statuses/")
  ("/Users/anorwell/work/backupify/app/assets/stylesheets/" . "pages/")
- ("/Users/anorwell/work/backupify/test/fixtures/vcr/" . "flickr/")
- ("/Users/anorwell/work/backupify/test/unit/backupify/" . "google/")
+ ("/Users/anorwell/work/backupify/test/fixtures/vcr/" . "office365/")
+ ("/Users/anorwell/work/backupify/test/unit/backupify/" . "permissions/")
  ("/Users/anorwell/work/pegasus_service/" . "config/")
  ("/Users/anorwell/work/backupify/app/views/api/v1/" . "users/")
  ("/Users/anorwell/work/backupify/app/views/api/" . "v1/")
- ("/Users/anorwell/work/backupify/test/lib/" . "api/")
+ ("/Users/anorwell/work/backupify/test/lib/" . "data_models/")
  ("/Users/anorwell/work/backupify/lib/backupify/google/directory/" . "v1/")
- ("/Users/anorwell/work/backupify/lib/backupify/google/" . "basic_client/")
+ ("/Users/anorwell/work/backupify/lib/backupify/google/" . "api/")
  ("/Users/anorwell/work/backupify/lib/backupify/" . "google/")
  ("/Users/anorwell/work/backupify/test/functional/api/" . "v1/")
  ("/" . "Users/")
- ("/Users/anorwell/work/backupify/test/functional/" . "settings/")
+ ("/Users/anorwell/work/backupify/test/functional/" . "office365/")
  ("/Users/anorwell/work/backupify/app/controllers/api/" . "v1/")
  ("/Users/anorwell/work/backupify/app/controllers/" . "domains/")
  ("/Users/anorwell/work/rake-backupify/app/views/admin/" . "system_statuses/")
@@ -99,293 +266,293 @@
  ("/Users/anorwell/work/rake-backupify/" . "test/")
  ("/Users/" . "anorwell/")
  ("/Users/anorwell/work/backupify/app/assets/javascripts/angular/" . "controllers/")
- ("/Users/anorwell/work/backupify/app/assets/javascripts/" . "angular/")
+ ("/Users/anorwell/work/backupify/app/assets/javascripts/" . "resources/")
  ("/Users/anorwell/work/backupify/app/assets/" . "javascripts/")
- ("/Users/anorwell/work/backupify/test/unit/" . "jobs/")
+ ("/Users/anorwell/work/backupify/test/unit/" . "data_interface/")
  ("/Users/anorwell/work/backupify/lib/jobs/backup_scheduler/" . "v2/")
- ("/Users/anorwell/work/backupify/lib/jobs/" . "domains/")
- ("/Users/anorwell/work/backupify/app/views/" . "batch_restore_mailer/")
- ("/Users/anorwell/work/backupify/app/" . "assets/")
- ("/Users/anorwell/work/backupify/test/fixtures/" . "google_docs/")
+ ("/Users/anorwell/work/backupify/lib/jobs/" . "office365/")
+ ("/Users/anorwell/work/backupify/app/views/" . "service_export_mailer/")
+ ("/Users/anorwell/work/backupify/app/" . "models/")
+ ("/Users/anorwell/work/backupify/test/fixtures/" . "vcr/")
  ("/Users/anorwell/work/backupify/test/integration/backupify/" . "google/")
- ("/Users/anorwell/work/backupify/test/integration/" . "backupify/")
+ ("/Users/anorwell/work/backupify/test/integration/" . "jobs/")
  ("/Users/anorwell/.emacs.d/" . "custom/")
- ("/Users/anorwell/work/backupify/lib/" . "tasks/")
- ("/Users/anorwell/work/backupify/test/" . "unit/")
- ("/Users/anorwell/work/backupify/" . "test/")
- ("/Users/anorwell/work/" . "permissions_client/")
- ("/Users/anorwell/" . ".ec2_backupifydev/")
+ ("/Users/anorwell/work/backupify/lib/" . "domain_connection/")
+ ("/Users/anorwell/work/backupify/test/" . "concerns/")
+ ("/Users/anorwell/work/backupify/" . "app/")
+ ("/Users/anorwell/work/" . "pyper/")
+ ("/Users/anorwell/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/anorwell/work/permissions_client/lib/permissions/"
- "/Users/anorwell/.ec2_backupifydev/"
- "/Users/anorwell/.ec2_backupify/"
- "/Users/anorwell/Documents/"
- "/Users/anorwell/work/permissions_client/"
- "/Users/anorwell/"
  "/Users/anorwell/.emacs.d/custom/"
- "/Users/anorwell/work/lumber/spec/"
- "/Users/anorwell/work/authify/"
- "/Users/anorwell/work/lumber/"
- "/Users/anorwell/work/pegasus_service/config/initializers/"
- "/Users/anorwell/work/pegasus_service/config/"
- "/Users/anorwell/work/permissions_client/lib/"
- "/Users/anorwell/work/permissions_client/lib/permissions/scopes/"
- "/Users/anorwell/work/authify/lib/backupify/"
- "/Users/anorwell/work/authify/lib/"
- "/Users/anorwell/work/backupify/lib/jobs/"
- "/Users/anorwell/work/backupify/lib/jobs/post_backup/"
- "/Users/anorwell/work/backupify/test/unit/jobs/generic/backup/"
- "/Users/anorwell/work/permissions_client/test/"
- "/Users/anorwell/work/authify/test/"
- "/Users/anorwell/work/permissions_client/lib/permissions/client/"
- "/Users/anorwell/work/permissions_client/mock_server/"
- "/Users/anorwell/work/backupify/"
- "/Users/anorwell/work/backupify/app/views/settings/domains/"
- "/Users/anorwell/work/async_job/lib/async_job/"
- "/Users/anorwell/work/backupify/test/unit/jobs/domains/"
- "/Users/anorwell/work/backupify/lib/jobs/domains/"
- "/Users/anorwell/work/backupify/app/models/domain/"
- "/Users/anorwell/work/backupify/test/unit/domain/"
- "/Users/anorwell/work/backupify/config/environments/"
- "/Users/anorwell/work/backupify/app/views/reauth_mailer/"
- "/Users/anorwell/work/backupify/app/assets/javascripts/angular/controllers/"
- "/Users/anorwell/work/backupify/app/assets/javascripts/pages/"
- "/Users/anorwell/work/backupify/app/assets/javascripts/pages/settings/"
- "/Users/anorwell/work/backupify/lib/jobs/generic/backup/error_handling/"
- "/Users/anorwell/work/backupify/test/unit/jobs/google_mail/backup/"
- "/Users/anorwell/work/backupify/lib/jobs/google_mail/backup/"
- "/Users/anorwell/work/backupify/lib/jobs/generic/backup/"
- "/Users/anorwell/work/backupify/app/models/service_concerns/"
- "/Users/anorwell/work/backupify/config/rubber/"
- "/Users/anorwell/.emacs.d/.cask/24.3.50.1/elpa/yasnippet-20140729.1240/snippets/ruby-mode/"
- "/Users/anorwell/work/emacs.d/custom/"
- "/Users/anorwell/work/backupify/lib/"
- "/Users/anorwell/work/backupify/lib/backupify/auth/google/o_auth1/"
+ "/Users/anorwell/work/emacs.d/"
+ "/Users/anorwell/work/backupify/app/assets/templates/vendor/"
+ "/Users/anorwell/Documents/"
+ "/Users/anorwell/work/backupify/script/"
+ "/Users/anorwell/work/pyper/lib/pyper/pipes/"
+ "/Users/anorwell/work/pyper/lib/pyper/read_pipes/"
+ "/Users/anorwell/.ec2_backupify/"
+ "/Users/anorwell/work/backupify/lib/data_models/calendar/"
+ "/Users/anorwell/.ec2_backupifydev/"
+ "/Users/anorwell/work/backupify/app/models/api/billing/v0/"
+ "/Users/anorwell/work/cass_schema/lib/cass_schema/"
+ "/Users/anorwell/work/backupify/config/"
  "/Users/anorwell/work/backupify/lib/domain_connection/"
- "/Users/anorwell/work/backupify/lib/domain_connection/google_user_list/"
- "/Users/anorwell/work/backupify/db/migrate/"
+ "/Users/anorwell/work/chef-repo/solo/nodes/"
+ "/Users/anorwell/work/backupify/app/models/ability/"
+ "/Users/anorwell/work/backupify/app/assets/javascripts/states/vendor/"
+ "/Users/anorwell/work/backupify/app/assets/javascripts/controllers/office365/"
+ "/Users/anorwell/work/backupify/app/models/"
+ "/Users/anorwell/work/backupify/test/concerns/"
+ "/Users/anorwell/work/backupify/app/decorators/office365/mail/"
+ "/Users/anorwell/work/ruby-driver/lib/cassandra/address_resolution/policies/"
  "/Users/anorwell/work/backupify/test/"
- "/Users/anorwell/.emacs.d/"
+ "/Users/anorwell/work/backupify/lib/backupify_cassandra/"
+ "/Users/anorwell/work/backupify/config/rubber/common/"
+ "/Users/anorwell/work/backupify/app/decorators/office365/"
+ "/Users/anorwell/work/backupify/app/controllers/office365/accounts/"
+ "/Users/anorwell/work/datto_ui_library/test/dummy/config/"
+ "/Users/anorwell/work/backupify/lib/data_interface/office365/cql/mail/"
+ "/Users/anorwell/work/backupify/cass_schema/office365_metadata/"
+ "/Users/anorwell/work/backupify/cass_schema/office365_indexes/"
+ "/Users/anorwell/work/backupify/lib/data_models/mail/"
+ "/Users/anorwell/work/backupify/config/rubber/role/stunnel_outbound/"
+ "/Users/anorwell/work/backupify/app/views/data/office365/"
+ "/Users/anorwell/work/backupify/lib/data_interface/office365/common/thrift/"
+ "/Users/anorwell/work/backupify/lib/data_interface/office365/mail_thrift/"
+ "/Users/anorwell/work/backupify/lib/data_interface/activity_feed/"
+ "/Users/anorwell/work/backupify/app/assets/javascripts/resources/office365/"
+ "/Users/anorwell/work/datto_ui_library/app/assets/templates/datto_ui_library/components/status_tile/"
+ "/Users/anorwell/work/backupify/app/assets/templates/office365/"
+ "/Users/anorwell/work/backupify/test/functional/office365/mail/"
+ "/Users/anorwell/work/backupify/test/functional/office365/accounts/"
+ "/Users/anorwell/work/backupify/lib/data_interface/google/"
+ "/Users/anorwell/work/backupify/lib/data_models/mail/office365/"
+ "/Users/anorwell/work/backupify/lib/data_models/"
+ "/Users/anorwell/work/backupify/app/views/service_export_mailer/"
+ "/Users/anorwell/work/backupify/app/views/full_domain_export_mailer/"
+ "/Users/anorwell/work/datto_ui_library/app/assets/javascripts/datto_ui_library/directives/"
+ "/Users/anorwell/work/pyper/lib/pyper/write_pipes/"
+ "/Users/anorwell/work/backupify/lib/data_interface/common/content/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "client.rb"
- "rubber-secret.yml"
+ "js2-mode.el"
+ "init.el"
+ "vendor-account-dashboard.html"
  "notes"
- "requires.rb"
- "raw_client.rb"
- "permissions_client.gemspec"
- ".pryrc"
- "00common-setup.el"
- "01projectile.el"
- ".z"
+ "reset_cass.sh"
+ "pry.rb"
+ "cassandra_items.rb"
+ "rubber-secret.yml"
+ "event_metadata.rb"
+ "partner.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/anorwell/work/permissions_client/lib/permissions/" (21537 62532 0 0) "scopes/" "scope.rb" "role.rb" "raw_client.rb" "error.rb" "connection.rb" "config.rb" "client.rb" "../" "./")
+ ("/Users/anorwell/.emacs.d/" (21860 41384 0 0) "url/" "snippets/" "recentf" "README" "projectile.cache" "projectile-bookmarks.eld" "persp-confs/" "init.el" "ido.last" "eshell/" "ensime/" "elpa/" "custom/" "Cask" "auto-save-list/" ".mc-lists.el" ".gitignore" ".git/" ".cask/" "../" "./")
 
- ("/Users/anorwell/" (21538 58646 0 0) "work/" "Public/" "Pictures/" "nohup.out" "Music/" "Movies/" "misc/" "Library/" "laura.csv" "ec2_backupifydev_keys.zip" "ec2_backupify_keys.zip" "Downloads/" "Documents/" "Desktop/" "dead.letter" "bin/" "Applications/" ".zshrc~" ".zshrc" ".zsh-histfile" ".zcompdump" ".z" ".viminfo" ".Trash/" ".subversion/" ".ssh/" ".rnd" ".rediscli_history" ".rbenv/" ".psql_history" ".pryrc" ".pry_history" ".passenger/" ".openvpn-connect.json" ".npm/" ".node-gyp/" ".lesshst" ".htoprc" ".hgignore_global" ".gitk" ".gitignore" ".gitconfig" ".gem/" ".emacs.d/" ".emacs-backup/" ".ec2_backupifydev-new/" ".ec2_backupifydev/" ".ec2_backupify_ouath2.yml" ".ec2_backupify_bak/" ".ec2_backupify/" ".DS_Store" ".distlib/" ".cups/" ".cqlsh_history" ".CFUserTextEncoding" ".cassandra.history" ".cassandra/" ".cask/" ".bash_profile~" ".bash_profile" ".bash_history" ".atom/" ".antigen.zsh" ".antigen/" ".agignore" "#!Users!anorwell!work!rake-backupify!test!unit!backupify!google!error_logging_decorator_test.rb#" "#!Users!anorwell!work!rake-backupify!lib!jobs!google_mail!helper.rb#" "#!Users!anorwell!work!rake-backupify!lib!domain_connection!google_user_list!directory.rb#" "#!Users!anorwell!work!rake-backupify!lib!backupify!google!directory!v1!directory_api.rb#" "#!Users!anorwell!work!qless!lib!qless!worker!serial.rb#" "#!Users!anorwell!work!permissions_client!README.md#" "#!Users!anorwell!work!permissions_client!mock_server!test_server.rb#" "#!Users!anorwell!work!permissions_client!lib!permissions!scope.rb#" "#!Users!anorwell!work!permissions_client!lib!permissions!client!client.rb#" "#!Users!anorwell!work!lumber!spec!inheritance_registry_spec.rb#" "#!Users!anorwell!work!emacs.d!.cask!24.3.50.1!elpa!helm-projectile-0.10.0!helm-projectile.el#" "#!Users!anorwell!work!backupify!test.rb#" "#!Users!anorwell!work!backupify!test!unit!vcr.rb#" "#!Users!anorwell!work!backupify!test!unit!service_connection!google_drive!api_rate_limit!service_limiter_test.rb#" "#!Users!anorwell!work!backupify!test!unit!salesforce_active_backup_run_test.rb#" "#!Users!anorwell!work!backupify!test!unit!logger_support_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!picasa!master_backup_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!google_sites!site_master_backup_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!google_sites!master_backup_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!google_mail!label_hierarchy_backup_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!google_mail!exports!writer_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!google_contacts!service_export_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!google_contacts!exports!writer_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!generic!active_run_base_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!domains!remove_notifications_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!domains!add_users_test.rb#" "#!Users!anorwell!work!backupify!test!unit!google_administration_test.rb#" "#!Users!anorwell!work!backupify!test!unit!domain!account_adder_test.rb#" "#!Users!anorwell!work!backupify!test!unit!backupify!google!redirect_decorator_test.rb#" "#!Users!anorwell!work!backupify!test!unit!backupify!google!drive!v2!download_in_memory_decorator_test.rb#" "#!Users!anorwell!work!backupify!test!unit!backupify!google!base_api_test.rb#" "#!Users!anorwell!work!backupify!test!unit!active_run!backup_test.rb#" "#!Users!anorwell!work!backupify!test!integration!suspended_user_test.rb#" "#!Users!anorwell!work!backupify!test!integration!backupify!google!drive!v2!files_api_test.rb#" "#!Users!anorwell!work!backupify!test!integration!backupify!google!base_api_test.rb#" "#!Users!anorwell!work!backupify!test!functional!concerns!trial_expiration_test.rb#" "#!Users!anorwell!work!backupify!test!fixtures!vcr!google_docs!fetch_content.yml#" "#!Users!anorwell!work!backupify!test!fixtures!vcr!domain.yml#" "#!Users!anorwell!work!backupify!spec!javascripts!unit!views!gmail!gmail_table_view_spec.js#" "#!Users!anorwell!work!backupify!spec!javascripts!helpers!rosie.js#" "#!Users!anorwell!work!backupify!script!stop_resque.sh#" "#!Users!anorwell!work!backupify!script!start_trident.sh#" "#!Users!anorwell!work!backupify!oauth2-test.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!twitter_connection.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!service_connection_interface.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!google_sites_connection.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!google_drive_connection.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!google_drive!api_rate_limit!service_limiter.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!google_docs_update.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!google_docs_connection.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!google_contacts_connection.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!base_google_connection.rb#" "#!Users!anorwell!work!backupify!lib!jobs!utils!log_long_running_active_jobs.rb#" "#!Users!anorwell!work!backupify!lib!jobs!utils!clean_duplicates.rb#" "#!Users!anorwell!work!backupify!lib!jobs!update_s3_region.rb#" "#!Users!anorwell!work!backupify!lib!jobs!segment_backup_common.rb#" "#!Users!anorwell!work!backupify!lib!jobs!marketo!bulk_data_load.rb#" "#!Users!anorwell!work!backupify!lib!jobs!log_context!resque.rb#" "#!Users!anorwell!work!backupify!lib!jobs!log_context!process.rb#" "#!Users!anorwell!work!backupify!lib!jobs!google_mail!chunk_restore.rb#" "#!Users!anorwell!work!backupify!lib!jobs!google_docs!exports!util.rb#" "#!Users!anorwell!work!backupify!lib!jobs!google_calendar!master_restore.rb#" "#!Users!anorwell!work!backupify!lib!jobs!google_apps_account!backup!master.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!restores!batch_restore_filter_wrapper.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!master_backup.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!exports!util.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!batch_restore_job.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!backup!master.rb#" "#!Users!anorwell!work!backupify!lib!jobs!domains!auto_add_users.rb#" "#!Users!anorwell!work!backupify!lib!jobs!domains!add_users_from_organization_units.rb#" "#!Users!anorwell!work!backupify!lib!jobs!domains!add_users!common.rb#" "#!Users!anorwell!work!backupify!lib!jobs!backup_notifications!backup_summary_scheduler_job.rb#" "#!Users!anorwell!work!backupify!lib!jobs!async_job_status.rb#" "#!Users!anorwell!work!backupify!lib!jobs!add_new_google_domain_users_scheduler.rb#" "#!Users!anorwell!work!backupify!lib!google_user_list!common.rb#" "#!Users!anorwell!work!backupify!lib!domain_connection!google_user_list!legacy.rb#" "#!Users!anorwell!work!backupify!lib!domain_connection!connection_checker.rb#" "#!Users!anorwell!work!backupify!lib!backupify!restore_users.rb#" "#!Users!anorwell!work!backupify!lib!backupify!redis!base.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!streaming_decorators!retry.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!streaming_decorators!error_classifier.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!google_client_error_classifier.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!google_auth!o_uath_2.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!google_auth!o_auth2_consumer.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!google_auth!o_auth2.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!google_auth!o_auth1.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!drive!v2!rate_limiter_decorator.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!basic_client!redirects_decorator.rb#" "#!Users!anorwell!work!backupify!lib!backupify!auth!google!scopes.rb#" "#!Users!anorwell!work!backupify!lib!backupify!auth!google!o_auth2!scopes.rb#" "#!Users!anorwell!work!backupify!lib!auth!two_legged_google_client.rb#" "#!Users!anorwell!work!backupify!lib!auth!scopes.rb#" "#!Users!anorwell!work!backupify!lib!auth!google_scopes.rb#" "#!Users!anorwell!work!backupify!lib!auth!google_client_factory.rb#" "#!Users!anorwell!work!backupify!lib!auth!consumer_helper.rb#" "#!Users!anorwell!work!backupify!lib!auth!bandwidth_tracking_client_decorator.rb#" "#!Users!anorwell!work!backupify!Gemfile#" "#!Users!anorwell!work!backupify!features!step_definitions!oauth_steps.rb#" "#!Users!anorwell!work!backupify!db!schema.rb#" "#!Users!anorwell!work!backupify!db!migrate!201407281234567_add_administrator_to_domain.rb#" "#!Users!anorwell!work!backupify!db!migrate!20131022121010_remove_unused_columns_from_subscription.rb#" "#!Users!anorwell!work!backupify!config!rubber!role!qless_worker!trident.yml#" "#!Users!anorwell!work!backupify!config!redis.yml#" "#!Users!anorwell!work!backupify!app!views!user_sessions!new.html.erb#" "#!Users!anorwell!work!backupify!app!views!settings!domains!accounts_ajax.html.erb#" "#!Users!anorwell!work!backupify!app!views!services!show.json.rabl#" "#!Users!anorwell!work!backupify!app!views!services!new.html.erb#" "#!Users!anorwell!work!backupify!app!views!notifications!_google_apps_account.html.erb#" "#!Users!anorwell!work!backupify!app!views!admin!users!_user.html.erb#" "#!Users!anorwell!work!backupify!app!services!user_session!user_session_creator.rb#" "#!Users!anorwell!work!backupify!app!models!user_session.rb#" "#!Users!anorwell!work!backupify!app!models!user.rb#" "#!Users!anorwell!work!backupify!app!models!google_sites_active_backup_run.rb#" "#!Users!anorwell!work!backupify!app!models!google_mail_active_backup_run.rb#" "#!Users!anorwell!work!backupify!app!models!google_customer!permission.rb#" "#!Users!anorwell!work!backupify!app!models!google_apps_permissions.rb#" "#!Users!anorwell!work!backupify!app!models!google_administration!roles.rb#" "#!Users!anorwell!work!backupify!app!models!google_account.rb#" "#!Users!anorwell!work!backupify!app!models!failed_data.rb#" "#!Users!anorwell!work!backupify!app!models!domain_concerns!connect.rb#" "#!Users!anorwell!work!backupify!app!models!domain!account_adder.rb#" "#!Users!anorwell!work!backupify!app!models!customer.rb#" "#!Users!anorwell!work!backupify!app!models!base_datum.rb#" "#!Users!anorwell!work!backupify!app!models!backupify!active_run.rb#" "#!Users!anorwell!work!backupify!app!models!backupify!active_run!state_machine.rb#" "#!Users!anorwell!work!backupify!app!models!backup_slot.rb#" "#!Users!anorwell!work!backupify!app!models!backup_run.rb#" "#!Users!anorwell!work!backupify!app!models!activation_observer.rb#" "#!Users!anorwell!work!backupify!app!models!ability.rb#" "#!Users!anorwell!work!backupify!app!mailers!restore_mailer.rb#" "#!Users!anorwell!work!backupify!app!mailers!reauth_mailer.rb#" "#!Users!anorwell!work!backupify!app!controllers!settings!domains_controller.rb#" "#!Users!anorwell!work!backupify!app!controllers!services_controller.rb#" "#!Users!anorwell!work!backupify!app!controllers!restores_controller.rb#" "#!Users!anorwell!work!backupify!app!controllers!api!v1!base_controller.rb#" "#!Users!anorwell!work!backupify!app!assets!stylesheets!redesign!_user_sessions.scss#" "#!Users!anorwell!work!backupify!app!assets!javascripts!angular!controllers!add_services.js#" "#!Users!anorwell!work!authify!test!backupify!o_auth1_consumer_test.rb#" "#!Users!anorwell!work!authify!lib!backupify!auth!token_pool!pool.rb#" "#!Users!anorwell!work!authify!lib!backupify!auth!auth_object.rb#" "#!Users!anorwell!work!authify!authify.gemspec#" "#!Users!anorwell!work!async_job!test!test_helper.rb#" "#!Users!anorwell!work!async_job!test!async_job!middleware!retry_exceptions_test.rb#" "#!Users!anorwell!work!async_job!lib!async_job!worker.rb#" "#!Users!anorwell!work!async_job!lib!async_job!pausable_job_reserver.rb#" "#!Users!anorwell!work!async_job!lib!async_job!middleware!uniqueness.rb#" "#!Users!anorwell!work!async_job!lib!async_job!middleware!sharding.rb#" "#!Users!anorwell!work!async_job!lib!async_job!middleware!automatic_heartbeat.rb#" "#!Users!anorwell!work!async_job!lib!async_job!job_reserver.rb#" "#!Users!anorwell!work!async_job!lib!async_job!job_callbacks.rb#" "#!Users!anorwell!work!async_job!lib!async_job!dummy_job.rb#" "#!Users!anorwell!work!async_job!lib!async_job!callbacks.rb#" "#!Users!anorwell!work!async_job!Gemfile#" "#!Users!anorwell!misc!test.sdf#" "#!Users!anorwell!misc!test#" "#!Users!anorwell!misc!splunk-query#" "#!Users!anorwell!misc!domain!domain_details.csv#" "#!Users!anorwell!misc!benchmark.rb#" "#!Users!anorwell!misc!2.tmp#" "#!Users!anorwell!Downloads!testdata.csv#" "#!Users!anorwell!Downloads!PeopleQuery!src!main!PeopleQuery.java#" "#!Users!anorwell!Downloads!BackupifyLoadSortCSV_RyanFleisher!RedisDataStore.java#" "#!Users!anorwell!Documents!scratch.rb#" "#!Users!anorwell!.zshrc#" "#!Users!anorwell!.rbenv!versions!1.9.3-p385!lib!ruby!gems!1.9.1!gems!qmore-0.5.3!lib!qmore!job_reserver.rb#" "#!Users!anorwell!.rbenv!version#" "#!etc!hosts#" "../" "./")
+ ("/Users/" (21646 21037 0 0) "Shared/" "Guest/" "anorwell/" ".localized" "../" "./")
 
- ("/Users/anorwell/work/" (21538 58240 0 0) "zshrc-file/" "user_sso/" "trident/" "storage_strategy/" "rake-backupify/" "qmore/" "qless-core/" "qless/" "permissions_service/" "permissions_client/" "permissions/" "pegasus_service/" "pegasus_deploy/" "lumber/" "interviews/" "google_auth/" "google-api-ruby-client/" "gem_logger/" "faraday/" "emacs.d/" "chef-repo/" "cassandra_datum/" "cassandra/" "beautify-with-words/" "backupify_logger_support/" "backupify/" "authify/" "async_job/" "active_tenant/" "../" "./")
+ ("/Users/anorwell/" (21860 41332 0 0) "work/" "Public/" "Pictures/" "nohup.out" "Music/" "Movies/" "misc/" "Library/" "laura.csv" "ec2_backupifydev_keys.zip" "ec2_backupify_keys.zip" "Downloads/" "Documents/" "Desktop/" "dead.letter" "csudama.cv.2014.pdf" "Brother_ScannerDrivers_1_6_6_0.dmg" "bin/" "backupify/" "Applications/" ".zshrc~" ".zshrc" ".zsh_history" ".zsh-histfile" ".zcompdump.anorwell-local.54477" ".zcompdump.anorwell-local.19387" ".zcompdump" ".z" ".viminfo" ".Trash/" ".terminfo/" ".subversion/" ".ssh/" ".scala_history" ".sbt/" ".rnd" ".rediscli_history" ".rbenv/" ".psql_history" ".pryrc" ".pry_history" ".passenger/" ".openvpn-connect.json" ".npm/" ".node-gyp/" ".mono/" ".lesshst" ".ivy2/" ".htoprc" ".hgignore_global" ".gitk" ".gitignore" ".gitconfig" ".gem/" ".emacs.d/" ".emacs-backup/" ".ec2_backupifydev-new/" ".ec2_backupifydev/" ".ec2_backupify_ouath2.yml" ".ec2_backupify_bak/" ".ec2_backupify/" ".DS_Store" ".distlib/" ".cups/" ".cpan/" ".CFUserTextEncoding" ".cassandra/" ".cask/" ".bundle/" ".bash_profile~" ".bash_profile" ".bash_history" ".atom/" ".antigen.zsh" ".antigen/" ".agignore" "#!Users!anorwell!work!user_sso!README.md#" "#!Users!anorwell!work!storage_pipeline!test!unit!storage_pipeline!read_pipes!cassandra_items_test.rb#" "#!Users!anorwell!work!storage_pipeline!lib!storage_pipeline.rb#" "#!Users!anorwell!work!search-scala!src!main!scala!test.scala#" "#!Users!anorwell!work!search-scala!build.sbt#" "#!Users!anorwell!work!ruby-driver!lib!cassandra!address_resolution!policies!test.rb#" "#!Users!anorwell!work!rake-backupify!test!unit!backupify!google!error_logging_decorator_test.rb#" "#!Users!anorwell!work!rake-backupify!lib!jobs!google_mail!helper.rb#" "#!Users!anorwell!work!rake-backupify!lib!domain_connection!google_user_list!directory.rb#" "#!Users!anorwell!work!rake-backupify!lib!backupify!permissions!scope_parser.rb#" "#!Users!anorwell!work!rake-backupify!lib!backupify!permissions!nested_scope.rb#" "#!Users!anorwell!work!rake-backupify!lib!backupify!google!directory!v1!directory_api.rb#" "#!Users!anorwell!work!qless!lib!qless!worker!serial.rb#" "#!Users!anorwell!work!permissions_client!test!permissions!raw_client_test.rb#" "#!Users!anorwell!work!permissions_client!README.md#" "#!Users!anorwell!work!permissions_client!mock_server!test_server.rb#" "#!Users!anorwell!work!permissions_client!lib!permissions!client!client.rb#" "#!Users!anorwell!work!lumber!spec!inheritance_registry_spec.rb#" "#!Users!anorwell!work!emacs.d!.cask!24.3.50.1!elpa!helm-projectile-0.10.0!helm-projectile.el#" "#!Users!anorwell!work!datto_ui_library!app!assets!templates!datto_ui_library!components!status_tile!status-tile.html#" "#!Users!anorwell!work!datto_ui_library!app!assets!javascripts!datto_ui_library!directives!bkItemListTable.js#" "#!Users!anorwell!work!cass_schema!lib!cass_schema.rb#" "#!Users!anorwell!work!backupify!test.rb#" "#!Users!anorwell!work!backupify!test!unit!vcr.rb#" "#!Users!anorwell!work!backupify!test!unit!service_connection!google_drive!api_rate_limit!service_limiter_test.rb#" "#!Users!anorwell!work!backupify!test!unit!salesforce_active_backup_run_test.rb#" "#!Users!anorwell!work!backupify!test!unit!office365!seat_test.rb#" "#!Users!anorwell!work!backupify!test!unit!office365!dashboard_stats_by_account_id_test.rb#" "#!Users!anorwell!work!backupify!test!unit!logger_support_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!track_failed_data!master_helper_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!picasa!master_backup_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!office365!writers!mail!folder_restore_writer_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!google_sites!site_master_backup_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!google_sites!master_backup_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!google_mail!label_hierarchy_backup_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!google_mail!backup!rest!message_backup_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!google_mail!backup!rest!label_backup_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!google_docs!backup!segment_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!google_contacts!service_export_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!google_contacts!exports!writer_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!generic!restores!full_restore_filter_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!generic!active_run_base_test.rb#" "#!Users!anorwell!work!backupify!test!unit!jobs!domains!add_users_test.rb#" "#!Users!anorwell!work!backupify!test!unit!helpers!google_mail_service_rest_data_presenter_test.rb#" "#!Users!anorwell!work!backupify!test!unit!helpers!data_collectors!service_helper_test.rb#" "#!Users!anorwell!work!backupify!test!unit!google_mail_messages_by_label_test.rb#" "#!Users!anorwell!work!backupify!test!unit!google_mail!rest_models!canonical_datum_test.rb#" "#!Users!anorwell!work!backupify!test!unit!google_administration_test.rb#" "#!Users!anorwell!work!backupify!test!unit!domain!account_adder_test.rb#" "#!Users!anorwell!work!backupify!test!unit!data_interface!office365!cql!mail_adapter_test.rb#" "#!Users!anorwell!work!backupify!test!unit!concerns!s3_datum_test.rb#" "#!Users!anorwell!work!backupify!test!unit!concerns!marketo!subscription_observer_test.rb#" "#!Users!anorwell!work!backupify!test!unit!concerns!add_backup_jobs_on_service_observer_test.rb#" "#!Users!anorwell!work!backupify!test!unit!base_s3_datum_test.rb#" "#!Users!anorwell!work!backupify!test!unit!backupify!google!redirect_decorator_test.rb#" "#!Users!anorwell!work!backupify!test!unit!backupify!google!drive!v2!download_in_memory_decorator_test.rb#" "#!Users!anorwell!work!backupify!test!unit!backupify!google!base_api_test.rb#" "#!Users!anorwell!work!backupify!test!unit!backupify!config_loader_test.rb#" "#!Users!anorwell!work!backupify!test!unit!backupify!auth!office365!o_auth2_test.rb#" "#!Users!anorwell!work!backupify!test!unit!active_run!google!mail!imap!backup_test.rb#" "#!Users!anorwell!work!backupify!test!unit!active_run!backup_test.rb#" "#!Users!anorwell!work!backupify!test!lib!data_models!office365!factories.rb#" "#!Users!anorwell!work!backupify!test!javascripts!unit!controllers!services!ServiceDetailsController_test.js#" "#!Users!anorwell!work!backupify!test!integration!suspended_user_test.rb#" "#!Users!anorwell!work!backupify!test!integration!jobs!google_calendar!backup_integration_test.rb#" "#!Users!anorwell!work!backupify!test!integration!backupify!google!mail!v1!labels_integration_test.rb#" "#!Users!anorwell!work!backupify!test!integration!backupify!google!drive!v2!files_api_test.rb#" "#!Users!anorwell!work!backupify!test!integration!backupify!google!base_api_test.rb#" "#!Users!anorwell!work!backupify!test!functional!subscriptions_controller_test.rb#" "#!Users!anorwell!work!backupify!test!functional!settings!domains_controller_test.rb#" "#!Users!anorwell!work!backupify!test!functional!salesforce!restores_controller_test.rb#" "#!Users!anorwell!work!backupify!test!functional!restores_controller_test.rb#" "#!Users!anorwell!work!backupify!test!functional!office365!mail!folders_controller_test.rb#" "#!Users!anorwell!work!backupify!test!functional!office365!accounts!dashboard_controller_test.rb#" "#!Users!anorwell!work!backupify!test!functional!concerns!trial_expiration_test.rb#" "#!Users!anorwell!work!backupify!test!functional!api!v1!base_controller_test.rb#" "#!Users!anorwell!work!backupify!test!fixtures!vcr!google_docs!fetch_content.yml#" "#!Users!anorwell!work!backupify!test!fixtures!vcr!domain.yml#" "#!Users!anorwell!work!backupify!test!factories!office365_factories.rb#" "#!Users!anorwell!work!backupify!test!factories!factories.rb#" "#!Users!anorwell!work!backupify!test!concerns!fields_equal.rb#" "#!Users!anorwell!work!backupify!spec!javascripts!unit!views!gmail!gmail_table_view_spec.js#" "#!Users!anorwell!work!backupify!spec!javascripts!helpers!rosie.js#" "#!Users!anorwell!work!backupify!script!stop_resque.sh#" "#!Users!anorwell!work!backupify!script!start_trident.sh#" "#!Users!anorwell!work!backupify!script!s3_version_info.rb#" "#!Users!anorwell!work!backupify!script!domains_with_eol_apis_report.rb#" "#!Users!anorwell!work!backupify!oauth2-test.rb#" "#!Users!anorwell!work!backupify!lib!storage!adapters!abstract_adapter.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!twitter_connection.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!service_connection_interface.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!google_sites_connection.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!google_mail!rest_history_api.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!google_mail!rest_api.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!google_mail!messages.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!google_mail!label_lookup.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!google_drive!api_rate_limit!service_limiter.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!google_docs_update.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!google_docs_connection.rb#" "#!Users!anorwell!work!backupify!lib!service_connection!google_contacts_connection.rb#" "#!Users!anorwell!work!backupify!lib!office365!models!mail!folder.rb#" "#!Users!anorwell!work!backupify!lib!office365!data_views!message.rb#" "#!Users!anorwell!work!backupify!lib!office365!api!ews!client.rb#" "#!Users!anorwell!work!backupify!lib!office365!adapters!mail_thrift!messages_by_folder.rb#" "#!Users!anorwell!work!backupify!lib!office365!adapters!common!thrift_model_attributes.rb#" "#!Users!anorwell!work!backupify!lib!jobs!utils!log_long_running_active_jobs.rb#" "#!Users!anorwell!work!backupify!lib!jobs!utils!clean_duplicates.rb#" "#!Users!anorwell!work!backupify!lib!jobs!update_s3_region.rb#" "#!Users!anorwell!work!backupify!lib!jobs!segment_backup_common.rb#" "#!Users!anorwell!work!backupify!lib!jobs!office365!writers!mail!redis_cached_folder_writer.rb#" "#!Users!anorwell!work!backupify!lib!jobs!office365!mail!writers!message_restore_writer.rb#" "#!Users!anorwell!work!backupify!lib!jobs!office365!filters!mail!full_restore_filter.rb#" "#!Users!anorwell!work!backupify!lib!jobs!office365!filters!mail!all_messages_filter.rb#" "#!Users!anorwell!work!backupify!lib!jobs!marketo!bulk_data_load.rb#" "#!Users!anorwell!work!backupify!lib!jobs!log_context!resque.rb#" "#!Users!anorwell!work!backupify!lib!jobs!log_context!process.rb#" "#!Users!anorwell!work!backupify!lib!jobs!google_mail!restores!rest_api_writer.rb#" "#!Users!anorwell!work!backupify!lib!jobs!google_mail!restore.rb#" "#!Users!anorwell!work!backupify!lib!jobs!google_mail!export.rb#" "#!Users!anorwell!work!backupify!lib!jobs!google_mail!chunk_restore.rb#" "#!Users!anorwell!work!backupify!lib!jobs!google_mail!backup!segment.rb#" "#!Users!anorwell!work!backupify!lib!jobs!google_mail!backup!rest!segment.rb#" "#!Users!anorwell!work!backupify!lib!jobs!google_mail!backup!rest!message_backup.rb#" "#!Users!anorwell!work!backupify!lib!jobs!google_mail!backup!master.rb#" "#!Users!anorwell!work!backupify!lib!jobs!google_docs!exports!util.rb#" "#!Users!anorwell!work!backupify!lib!jobs!google_calendar!master_restore.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!util!filter.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!util!example.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!util!cassandra_filter.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!restores!full_restore_filter.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!restores!batch_restore_filter_wrapper.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!restores!active_item_restore_filter.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!master_backup.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!exports!util.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!batch_restore_job.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!backup!segment_common.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!backup!segment.rb#" "#!Users!anorwell!work!backupify!lib!jobs!generic!backup!master.rb#" "#!Users!anorwell!work!backupify!lib!jobs!domains!auto_add_users.rb#" "#!Users!anorwell!work!backupify!lib!jobs!domains!add_users_from_organization_units.rb#" "#!Users!anorwell!work!backupify!lib!jobs!domains!add_users!common.rb#" "#!Users!anorwell!work!backupify!lib!jobs!backup_notifications!backup_summary_scheduler_job.rb#" "#!Users!anorwell!work!backupify!lib!jobs!audit!audit_s3_data.rb#" "#!Users!anorwell!work!backupify!lib!jobs!async_job_status.rb#" "#!Users!anorwell!work!backupify!lib!jobs!add_new_google_domain_users_scheduler.rb#" "#!Users!anorwell!work!backupify!lib!google_user_list!common.rb#" "#!Users!anorwell!work!backupify!lib!domain_connection!google_user_list!legacy.rb#" "#!Users!anorwell!work!backupify!lib!domain_connection!connection_checker.rb#" "#!Users!anorwell!work!backupify!lib!data_interface!office365!mail.rb#" "#!Users!anorwell!work!backupify!lib!data_interface!office365!cql!mail!pipelines.rb#" "#!Users!anorwell!work!backupify!lib!data_interface!office365!calendar_thrift!event_search.rb#" "#!Users!anorwell!work!backupify!lib!data_interface!common!cql!pipes!content_writer.rb#" "#!Users!anorwell!work!backupify!lib!backupify!restore_users.rb#" "#!Users!anorwell!work!backupify!lib!backupify!redis!base.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!streaming_decorators!rate_limit_error_classifier.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!streaming_decorators!error_classifier.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!google_client_error_classifier.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!google_auth!o_uath_2.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!google_auth!o_auth2_consumer.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!google_auth!o_auth2.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!google_auth!o_auth1.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!drive!v2!rate_limiter_decorator.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!directory!v1!directory_api.rb#" "#!Users!anorwell!work!backupify!lib!backupify!google!basic_client!redirects_decorator.rb#" "#!Users!anorwell!work!backupify!lib!backupify!auth!google!scopes.rb#" "#!Users!anorwell!work!backupify!lib!backupify!auth!google!o_auth2!scopes.rb#" "#!Users!anorwell!work!backupify!lib!auth!two_legged_google_client.rb#" "#!Users!anorwell!work!backupify!lib!auth!scopes.rb#" "#!Users!anorwell!work!backupify!lib!auth!google_scopes.rb#" "#!Users!anorwell!work!backupify!lib!auth!google_client_factory.rb#" "#!Users!anorwell!work!backupify!lib!auth!consumer_helper.rb#" "#!Users!anorwell!work!backupify!lib!auth!bandwidth_tracking_client_decorator.rb#" "#!Users!anorwell!work!backupify!Gemfile#" "#!Users!anorwell!work!backupify!features!step_definitions!oauth_steps.rb#" "#!Users!anorwell!work!backupify!db!schema.rb#" "#!Users!anorwell!work!backupify!db!migrate!201407281234567_add_administrator_to_domain.rb#" "#!Users!anorwell!work!backupify!db!migrate!20131022121010_remove_unused_columns_from_subscription.rb#" "#!Users!anorwell!work!backupify!config!rubber!rubber-cassandra.yml#" "#!Users!anorwell!work!backupify!config!rubber!role!stunnel_outbound!cassandra2.rb#" "#!Users!anorwell!work!backupify!config!rubber!role!qless_worker!trident.yml#" "#!Users!anorwell!work!backupify!config!rubber!common!database.yml#" "#!Users!anorwell!work!backupify!config!redis.yml#" "#!Users!anorwell!work!backupify!config!initializers!log4r.rb#" "#!Users!anorwell!work!backupify!config!cassandra.yml#" "#!Users!anorwell!work!backupify!cass_schema!office365!schema.cql#" "#!Users!anorwell!work!backupify!app!views!user_sessions!new.html.erb#" "#!Users!anorwell!work!backupify!app!views!settings!domains!accounts_ajax.html.erb#" "#!Users!anorwell!work!backupify!app!views!services!show.json.rabl#" "#!Users!anorwell!work!backupify!app!views!services!new.html.erb#" "#!Users!anorwell!work!backupify!app!views!notifications!_google_apps_account.html.erb#" "#!Users!anorwell!work!backupify!app!views!google_mail_services!show.json.rabl#" "#!Users!anorwell!work!backupify!app!views!google_mail_services!labels.json.rabl#" "#!Users!anorwell!work!backupify!app!views!domains!re_auth!index.html.erb#" "#!Users!anorwell!work!backupify!app!views!data!google_mail_rest_models!canonical_datum_show.json.rabl#" "#!Users!anorwell!work!backupify!app!views!data!google_drive_hierarchical_datum_index.json.rabl#" "#!Users!anorwell!work!backupify!app!views!data!gmail_datum_index.json.rabl#" "#!Users!anorwell!work!backupify!app!views!admin!users!_user.html.erb#" "#!Users!anorwell!work!backupify!app!services!user_session!user_session_creator.rb#" "#!Users!anorwell!work!backupify!app!models!user_session.rb#" "#!Users!anorwell!work!backupify!app!models!google_sites_active_backup_run.rb#" "#!Users!anorwell!work!backupify!app!models!google_mail_service.rb#" "#!Users!anorwell!work!backupify!app!models!google_mail_rest_models!message.rb#" "#!Users!anorwell!work!backupify!app!models!google_mail_rest_models!label_by_service.rb#" "#!Users!anorwell!work!backupify!app!models!google_mail_rest_models!label.rb#" "#!Users!anorwell!work!backupify!app!models!google_mail_rest_datum.rb#" "#!Users!anorwell!work!backupify!app!models!google_mail_messages_by_label.rb#" "#!Users!anorwell!work!backupify!app!models!google_mail_active_backup_run.rb#" "#!Users!anorwell!work!backupify!app!models!google_docs_service.rb#" "#!Users!anorwell!work!backupify!app!models!google_customer!permission.rb#" "#!Users!anorwell!work!backupify!app!models!google_calendar_datum.rb#" "#!Users!anorwell!work!backupify!app!models!google_apps_permissions.rb#" "#!Users!anorwell!work!backupify!app!models!google_administration!roles.rb#" "#!Users!anorwell!work!backupify!app!models!failed_data.rb#" "#!Users!anorwell!work!backupify!app!models!export_run.rb#" "#!Users!anorwell!work!backupify!app!models!domain_concerns!connect.rb#" "#!Users!anorwell!work!backupify!app!models!domain!account_adder.rb#" "#!Users!anorwell!work!backupify!app!models!domain!access_checker.rb#" "#!Users!anorwell!work!backupify!app!models!customer.rb#" "#!Users!anorwell!work!backupify!app!models!concerns!s3_datum!content_core.rb#" "#!Users!anorwell!work!backupify!app!models!concerns!restore_dispatcher.rb#" "#!Users!anorwell!work!backupify!app!models!concerns!notification_service_observer.rb#" "#!Users!anorwell!work!backupify!app!models!concerns!backup.rb#" "#!Users!anorwell!work!backupify!app!models!backupify_product.rb#" "#!Users!anorwell!work!backupify!app!models!backupify!active_run.rb#" "#!Users!anorwell!work!backupify!app!models!backupify!active_run!state_machine.rb#" "#!Users!anorwell!work!backupify!app!models!backup_slot.rb#" "#!Users!anorwell!work!backupify!app!models!backup_run.rb#" "#!Users!anorwell!work!backupify!app!models!active_run!google!mail!labels!shared.rb#" "#!Users!anorwell!work!backupify!app!models!active_run!google!mail!imap!uuid_backup.rb#" "#!Users!anorwell!work!backupify!app!models!active_run!google!mail!backup.rb#" "#!Users!anorwell!work!backupify!app!models!active_run!backup.rb#" "#!Users!anorwell!work!backupify!app!models!activation_observer.rb#" "#!Users!anorwell!work!backupify!app!mailers!restore_mailer.rb#" "#!Users!anorwell!work!backupify!app!mailers!reauth_mailer.rb#" "#!Users!anorwell!work!backupify!app!helpers!data_presenters!service_data_presenter_helper.rb#" "#!Users!anorwell!work!backupify!app!helpers!data_presenters!mail_rest_data_presenter.rb#" "#!Users!anorwell!work!backupify!app!helpers!data_collectors!mail_rest.rb#" "#!Users!anorwell!work!backupify!app!decorators!office365!mail!message_metadata_show_decorator.rb#" "#!Users!anorwell!work!backupify!app!controllers!services_controller.rb#" "#!Users!anorwell!work!backupify!app!controllers!restores_controller.rb#" "#!Users!anorwell!work!backupify!app!controllers!resellers!domains_controller.rb#" "#!Users!anorwell!work!backupify!app!controllers!office365_controller.rb#" "#!Users!anorwell!work!backupify!app!controllers!office365!services_controller.rb#" "#!Users!anorwell!work!backupify!app!controllers!office365!accounts!dashboard_controller.rb#" "#!Users!anorwell!work!backupify!app!controllers!api!v1!base_controller.rb#" "#!Users!anorwell!work!backupify!app!controllers!admin!users_controller.rb#" "#!Users!anorwell!work!backupify!app!assets!stylesheets!redesign!_user_sessions.scss#" "#!Users!anorwell!work!backupify!app!assets!javascripts!states!office365!index.js#" "#!Users!anorwell!work!backupify!app!assets!javascripts!controllers!office365!StateOffice365IndexController.js#" "#!Users!anorwell!work!backupify!app!assets!javascripts!controllers!office365!StateOffice365AccountDashboardController.js#" "#!Users!anorwell!work!backupify!app!assets!javascripts!angular!controllers!add_services.js#" "#!Users!anorwell!work!authify!test!backupify!o_auth1_consumer_test.rb#" "#!Users!anorwell!work!authify!lib!backupify!auth!token_pool!pool.rb#" "#!Users!anorwell!work!authify!lib!backupify!auth!o_auth2_token_auth.rb#" "#!Users!anorwell!work!authify!lib!backupify!auth!o_auth2_service_account.rb#" "#!Users!anorwell!work!authify!lib!backupify!auth!auth_object.rb#" "#!Users!anorwell!work!authify!authify.gemspec#" "#!Users!anorwell!work!async_job!test!test_helper.rb#" "#!Users!anorwell!work!async_job!test!async_job!middleware!retry_exceptions_test.rb#" "#!Users!anorwell!work!async_job!lib!async_job!worker.rb#" "#!Users!anorwell!work!async_job!lib!async_job!pausable_job_reserver.rb#" "#!Users!anorwell!work!async_job!lib!async_job!middleware!uniqueness.rb#" "#!Users!anorwell!work!async_job!lib!async_job!middleware!sharding.rb#" "#!Users!anorwell!work!async_job!lib!async_job!middleware!automatic_heartbeat.rb#" "#!Users!anorwell!work!async_job!lib!async_job!job_reserver.rb#" "#!Users!anorwell!work!async_job!lib!async_job!job_callbacks.rb#" "#!Users!anorwell!work!async_job!lib!async_job!dummy_job.rb#" "#!Users!anorwell!work!async_job!lib!async_job!callbacks.rb#" "#!Users!anorwell!work!async_job!Gemfile#" "#!Users!anorwell!work!async_backup!lib!active_run!uuid_backup.rb#" "#!Users!anorwell!misc!test.sdf#" "#!Users!anorwell!misc!test#" "#!Users!anorwell!misc!splunk-query#" "#!Users!anorwell!misc!domain!domain_details.csv#" "#!Users!anorwell!misc!benchmark.rb#" "#!Users!anorwell!misc!2.tmp#" "#!Users!anorwell!Downloads!testdata.csv#" "#!Users!anorwell!Downloads!PeopleQuery!src!main!PeopleQuery.java#" "#!Users!anorwell!Downloads!BackupifyLoadSortCSV_RyanFleisher!RedisDataStore.java#" "#!Users!anorwell!Documents!scratch.rb#" "#!Users!anorwell!bin!update_keys.rb#" "#!Users!anorwell!.rbenv!versions!1.9.3-p385!lib!ruby!gems!1.9.1!gems!qmore-0.5.3!lib!qmore!job_reserver.rb#" "#!Users!anorwell!.rbenv!version#" "#!etc!hosts#" "../" "./")
 
- ("/Users/anorwell/work/backupify/" (21538 55649 0 0) "vendor/" "tmp/" "test/" "spec/" "script/" "safe-deploy-log.log" "README.md" "Rakefile" "public/" "Procfile" "package.json" "log/" "lib/" "Gemfile.lock" "Gemfile" "features/" "doc/" "db/" "config.ru" "config/" "cequel/" "Capfile" "app/" ".rbenv-gemsets" ".jshintrc" ".gitignore" ".git/" ".foreman" "../" "./")
+ ("/Users/anorwell/.emacs.d/custom/" (21860 36631 0 0) "js2-mode.el" "csv-mode.el" "06csv-mode.el" "05rinari.el" "04webmode.el" "03key-chord.el" "02smartparens.el" "01projectile.el" "00common-setup.el" "../" "./")
 
- ("/Users/anorwell/work/backupify/config/" (21538 50925 0 0) "twemproxy/" "trident.yml" "rubber/" "routes.rb" "redis.yml" "redis/" "qless-web.ru" "log4r.yml" "locales/" "kill_hung_workers.yml" "jasmine.yml" "initializers/" "google_apps_manifest.xml" "fonts/" "environments/" "environment.rb" "dyndns.org.key" "dyndns.org.crt" "dyndns.org.ca-bundle" "deploy.rb" "database.yml" "cucumber.yml" "cequel.yml" "ca-bundle.crt" "boot.rb" "backupify.org.key" "backupify.org.crt" "backupify.org.ca-bundle" "backupify.com.key" "backupify.com.crt" "backupify.com.ca-bundle" "async_job_schedule.yml" "application.rb" "analytical.yml" "../" "./")
+ ("/Users/anorwell/work/backupify/app/assets/javascripts/controllers/office365/" (21860 30724 0 0) "StatesOffice365VendorController.js" "StateOffice365AccountSeatController.js" "StateOffice365AccountDashboardController.js" "StateOffice365AccountController.js" "Office365BetaAcceptanceController.js" "../" "./")
 
- ("/Users/anorwell/work/backupify/config/initializers/" (21538 55649 0 0) "wrap_parameters.rb" "time_formats.rb" "statsd.rb" "simple_form.rb" "show_for.rb" "session_store.rb" "savon.rb" "sanitize.rb" "rubymine_passenger_debug.rb" "rubber_secret.rb" "rollout.rb" "redis_objects.rb" "rails_footnotes.rb" "rails_4_core_ext.rb" "rabl.rb" "pry.rb" "permissions.rb" "passenger.rb" "openid.rb" "omniauth.rb" "oauth2_token_pooling.rb" "mini_profiler.rb" "mime_types.rb" "marketo.rb" "log_job_completion.rb" "log4r.rb" "inflections.rb" "formtastic.rb" "db_connection_fix.rb" "cookie_verification_secret.rb" "cassandra_datum.rb" "cassandra.rb" "bower_rails.rb" "backtrace_silencers.rb" "authlogic_secure_cookie_patch.rb" "authlogic_openid.rb" "async_job.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/" (21854 17645 0 0) "vendor/" "tmp/" "test/" "script/" "safe-deploy-log.log" "README.md" "Rakefile" "public/" "Procfile" "package.json" "log/" "lib/" "Guardfile" "Gemfile.lock" "Gemfile" "features/" "ec2_backupifydev_keys.zip.enc" "doc/" "db/" "config.ru" "config/" "cequel/" "cass_schema/" "Capfile" "app/" ".travis.yml" ".rbenv-gemsets" ".jshintrc" ".gitignore" ".git/" ".foreman" ".bundle/" "../" "./")
 
- ("/Users/anorwell/.ec2_backupify/" (21537 34414 0 0) "rubber-secret.yml" "profile" "pk-7FYPJGEYI2BH6SU4EGWHQH276TN4PIUD.pem" "cert-7FYPJGEYI2BH6SU4EGWHQH276TN4PIUD.pem" "backupify.pem.pub" "backupify.pem" "backupify-03202012.pem.pub" "backupify-03202012.pem" "backupify-01132014.pem.pub" "backupify-01132014.pem" "../" "./")
+ ("/Users/anorwell/work/emacs.d/" (21777 41808 0 0) "url/" "snippets/" "recentf" "README" "projectile.cache" "projectile-bookmarks.eld" "persp-confs/" "init.el" "ido.last" "eshell/" "ensime/" "elpa/" "custom/" "Cask" "auto-save-list/" ".mc-lists.el" ".gitignore" ".git/" ".cask/" "../" "./")
 
- ("/Users/anorwell/work/backupify/lib/" (21537 35099 0 0) "zuora_interface.rb" "zuora/" "zendesk_helpers/" "zendesk/" "util/" "templates/" "tasks/" "simple_form/" "service_connection/" "salesforce/" "s3/" "rollout_support.rb" "post_backup_data_stats_factory.rb" "plugins/" "omni_auth/" "multipart_related_body.rb" "marketo_record.rb" "line_buffer.rb" "jobs/" "jmxquery.jar" "ext/" "dummy_worker.rb" "domain_connection.rb" "domain_connection/" "country_state_helper.rb" "bfy/" "backupify_cassandra/" "backupify/" "backup_summary.rb" "auth/" "active_support/" "action_dispatch/" "../" "./")
+ ("/Users/anorwell/work/emacs.d/custom/" (21860 36631 0 0) "js2-mode.el" "csv-mode.el" "06csv-mode.el" "05rinari.el" "04webmode.el" "03key-chord.el" "02smartparens.el" "01projectile.el" "00common-setup.el" "../" "./")
 
- ("/Users/anorwell/work/backupify/lib/jobs/" (21537 35099 0 0) "validations.rb" "validations/" "utils/" "update_s3_region.rb" "update_archived_google_apps_account_state_scheduler.rb" "update_archived_google_apps_account_state.rb" "twitter/" "subscriptions/" "set_domain_retention_period.rb" "services/" "segment_track_failed_data.rb" "salesforce/" "reports/" "remove_old_password_resets.rb" "remove_google_forms_scheduler.rb" "remove_google_forms.rb" "remove_blacklisted_docs_scheduler.rb" "remove_blacklisted_docs.rb" "re_enable_deauthorized_services.rb" "post_backup_data_stats.rb" "post_backup/" "master_track_failed_data.rb" "marketo/" "helpers/" "google_sites/" "google_mail/" "google_docs/" "google_contacts/" "google_calendar/" "google_apps_account/" "generic/" "generate_google_drive_hierarchy_data.rb" "full_domain_export_kickoff_job.rb" "fix_gdoc_filenames.rb" "failed_data_converter.rb" "facebook/" "event_logging/" "duplicate_s3_cleanup.rb" "domains/" "data_retention_scheduler.rb" "data_retention.rb" "count_google_domain_users.rb" "clean_exports.rb" "backup_scheduler/" "backup_notifications/" "audit/" "../" "./")
+ ("/Users/anorwell/work/backupify/app/assets/templates/vendor/" (21860 30724 0 0) "vendor.html" "vendor-account.html" "vendor-account-seat.html" "vendor-account-dashboard.html" "activity-with-action.html" "activity-no-action.html" "../" "./")
 
- ("/Users/anorwell/work/backupify/lib/jobs/google_mail/" (21537 35099 0 0) "segment_compress_content.rb" "restores/" "restore.rb" "resave_label_history.rb" "master_compress_content.rb" "item_restore.rb" "imap_restore.rb" "helper.rb" "exports/" "export.rb" "compression_cleanup.rb" "batch_item_restore.rb" "backup/" "audit.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/app/models/" (21854 6567 0 0) "zuora_subscription.rb" "user_notification.rb" "user.rb" "twitter_service.rb" "twitter_datum.rb" "system_audit.rb" "subscription.rb" "sso_api_key.rb" "sharded_google_mail_datum.rb" "sharded_google_docs_datum.rb" "service_data_cleanup.rb" "service_configuration.rb" "service.rb" "seat_to_service_association.rb" "search.rb" "salesforce_service.rb" "salesforce_datum.rb" "salesforce_backup_run.rb" "salesforce_api_preference.rb" "s3_region.rb" "s3_data_cleanup_run.rb" "restore_status.rb" "restore_run.rb" "reseller.rb" "report.rb" "promotion.rb" "office365_service.rb" "office365_mail_service.rb" "office365_calendar_service.rb" "office365/" "notification.rb" "line_item.rb" "item_restore.rb" "invite.rb" "google_sites_service.rb" "google_sites_datum.rb" "google_mail_service.rb" "google_mail_search.rb" "google_mail_rest_models/" "google_mail_messages_by_label.rb" "google_mail_labels_by_message.rb" "google_mail_label_backup_run.rb" "google_mail_label.rb" "google_mail_id_mapping.rb" "google_mail_datum.rb" "google_mail_backup_run.rb" "google_docs_service.rb" "google_docs_datum.rb" "google_docs_active_restore_run.rb" "google_docs_active_item_restore.rb" "google_customer.rb" "google_contacts_service.rb" "google_contacts_datum.rb" "google_calendar_service.rb" "google_calendar_datum.rb" "google_apps_account.rb" "google_account.rb" "full_domain_export.rb" "failed_data.rb" "facebook_fanpage_service.rb" "facebook_datum.rb" "export_run.rb" "drive_search.rb" "domain.rb" "domain/" "disabled_domain_service.rb" "deleted_google_drive_datum.rb" "data_cleanup_run.rb" "customer_feature_rollout.rb" "customer.rb" "customer/" "crm_service.rb" "coupon.rb" "concerns/" "common_item_restore.rb" "base_versioned_datum.rb" "base_s3_datum.rb" "base_datum.rb" "backupify_product_suite.rb" "backupify_product.rb" "backupify/" "backup_slot.rb" "backup_run.rb" "auto_add_ou.rb" "api/" "admin_ability.rb" "active_run/" "active_restore_run.rb" "active_item_restore.rb" "active_export_run.rb" "activation.rb" "ability.rb" "ability/" "../" "./")
 
- ("/Users/anorwell/work/backupify/test/" (21537 58194 0 0) "unit/" "test_helper.rb" "test_constants/" "support/" "lib/" "javascripts/" "integration/" "functional/" "fixtures/" "factories/" "concerns/" "../" "./")
+ ("/Users/anorwell/work/pyper/test/unit/pyper/" (21831 52730 0 0) "write_pipes/" "read_pipes/" "../" "./")
 
- ("/Users/anorwell/work/backupify/test/unit/" (21537 58188 0 0) "zuora_subscription_test.rb" "zuora_interface_test.rb" "zendesk_helpers/" "zendesk/" "views/" "user_test.rb" "user_notification_test.rb" "user_after_commit_test.rb" "twitter_service_test.rb" "twitter_datum_test.rb" "temporary_access_test.rb" "system_audit_test.rb" "subscription_test.rb" "storage_usage_test.rb" "sso_api_key_test.rb" "soap_api_client_test.rb" "service_test.rb" "service_connection/" "service_configuration_test.rb" "search_test.rb" "scripts/" "salesforce_service_test.rb" "salesforce_datum_test.rb" "salesforce_client_test.rb" "salesforce_backup_run_test.rb" "salesforce_auth_oauth_test.rb" "salesforce_api_preference_test.rb" "s3_region_test.rb" "s3_helper_test.rb" "restores/" "restore_users_test.rb" "restore_status_test.rb" "rest_api_client_test.rb" "reseller_test.rb" "report_notifier_test.rb" "redis_test.rb" "promotion_test.rb" "password_reset_test.rb" "ops_notifier_test.rb" "notifier_test.rb" "notification_test.rb" "multipart_related_body_test.rb" "modules/" "metadata_api_client_test.rb" "marketo_record_test.rb" "mailers/" "login_details_test.rb" "logger_support_test.rb" "line_item_test.rb" "line_buffer_test.rb" "lib/" "jobs/" "invite_test.rb" "helpers/" "google_sites_service_test.rb" "google_sites_datum_test.rb" "google_mail_service_test.rb" "google_mail_search_test.rb" "google_mail_messages_by_label_test.rb" "google_mail_labels_by_message_test.rb" "google_mail_label_test.rb" "google_mail_id_mapping_test.rb" "google_mail_datum_test.rb" "google_mail_audit_script_test.rb" "google_drive_hierarchical_datum_test.rb" "google_docs_service_test.rb" "google_docs_datum_test.rb" "google_contacts_service_test.rb" "google_contacts_datum_test.rb" "google_calendar_service_test.rb" "google_calendar_datum_test.rb" "google_apps_account_test.rb" "google_account_test.rb" "gmail_imap_limited_notifier_test.rb" "full_domain_export_test.rb" "failed_data_test.rb" "facebook_fanpage_service_test.rb" "facebook_datum_test.rb" "ext/" "export_run_test.rb" "exception_helper_test.rb" "ec2_inactivity_monitor_test.rb" "drive_search_test.rb" "domain_test.rb" "domain_connection/" "domain/" "disable_service_type_script_test.rb" "deleted_google_drive_datum_test.rb" "decorators/" "crm_service_test.rb" "coupon_test.rb" "concerns/" "collectd/" "bulk_api_client_test.rb" "base_versioned_datum_test.rb" "base_s3_datum_test.rb" "base_google_connection_test.rb" "base_datum_test.rb" "backupify_product_test.rb" "backupify_product_suite_test.rb" "backupify_cassandra/" "backupify/" "backup_summary_test.rb" "backup_slot_test.rb" "backup_run_test.rb" "auth/" "audit_log_test.rb" "atomic_increment_test.rb" "api_call_counter_test.rb" "active_support/" "active_run_test.rb" "active_run/" "active_master_run_test.rb" "active_export_run_test.rb" "activation_test.rb" "action_dispatch/" "ability_test.rb" "../" "./")
+ ("/Users/anorwell/work/pyper/test/unit/" (21831 52730 0 0) "pyper/" "../" "./")
 
- ("/Users/anorwell/work/backupify/test/unit/active_run/" (21537 58705 0 0) "state_machine_test.rb" "salesforce/" "google/" "encoders/" "backup_test.rb" "../" "./")
+ ("/Users/anorwell/work/pyper/test/" (21831 52730 0 0) "unit/" "test_helper.rb" "fixtures/" "../" "./")
 
- ("/Users/anorwell/work/backupify/test/unit/backupify/" (21537 48442 0 0) "uri_lib_test.rb" "tree_lib_test.rb" "statsd_test.rb" "salesforce/" "read_only_mode_test.rb" "rate_limiter_test.rb" "provisioning_api_test.rb" "options_helper_test.rb" "net/" "migration_helper_test.rb" "metrics/" "javascript_stash_test.rb" "input_iterator_test.rb" "google_apps_connection_test.rb" "google/" "file_lib_test.rb" "export_helper_test.rb" "directory_api_test.rb" "csv_processor_test.rb" "csv_lib_test.rb" "auth/" "../" "./")
+ ("/Users/anorwell/work/pyper/lib/pyper/pipes/" (21831 52730 0 0) "pry.rb" "mod_key.rb" "field_rename.rb" "default_values.rb" "../" "./")
 
- ("/Users/anorwell/work/backupify/app/models/" (21537 51304 0 0) "zuora_subscription.rb" "user_session.rb" "user_notification.rb" "user.rb" "twitter_service.rb" "twitter_datum.rb" "system_audit.rb" "subscription.rb" "sso_api_key.rb" "service_configuration.rb" "service.rb" "search.rb" "salesforce_service.rb" "salesforce_datum.rb" "salesforce_backup_run.rb" "salesforce_api_preference.rb" "s3_region.rb" "restore_status.rb" "restore_run.rb" "reseller.rb" "report.rb" "promotion.rb" "password_reset.rb" "notification.rb" "login_details.rb" "line_item.rb" "item_restore.rb" "invite.rb" "google_sites_service.rb" "google_sites_datum.rb" "google_mail_service.rb" "google_mail_search.rb" "google_mail_messages_by_label.rb" "google_mail_labels_by_message.rb" "google_mail_label_backup_run.rb" "google_mail_label.rb" "google_mail_id_mapping.rb" "google_mail_datum.rb" "google_mail_backup_run.rb" "google_drive_hierarchical_datum.rb" "google_docs_service.rb" "google_docs_datum.rb" "google_docs_active_restore_run.rb" "google_customer.rb" "google_contacts_service.rb" "google_contacts_datum.rb" "google_calendar_service.rb" "google_calendar_datum.rb" "google_apps_account.rb" "google_administration/" "google_account.rb" "full_domain_export.rb" "failed_data.rb" "facebook_fanpage_service.rb" "facebook_datum.rb" "export_run.rb" "drive_search.rb" "domain.rb" "domain/" "disabled_domain_service.rb" "deleted_google_drive_datum.rb" "crm_service.rb" "coupon.rb" "concerns/" "base_versioned_datum.rb" "base_s3_datum.rb" "base_datum.rb" "backupify_product_suite.rb" "backupify_product.rb" "backupify/" "backup_slot.rb" "backup_run.rb" "auto_add_ou.rb" "audit_log.rb" "admin_ability.rb" "active_run/" "active_restore_run.rb" "active_item_restore.rb" "active_export_run.rb" "activation.rb" "ability.rb" "../" "./")
+ ("/Users/anorwell/work/pyper/lib/pyper/read_pipes/" (21831 52730 0 0) "virtus_parser.rb" "virtus_deserializer.rb" "pagination_encoding.rb" "pagination_decoding.rb" "force_enumerator.rb" "content_fetch.rb" "cassandra_items.rb" "cass_mod_key_enumerator.rb" "attribute_deserializer.rb" "../" "./")
 
- ("/Users/anorwell/work/backupify/app/controllers/" (21537 35099 0 0) "users_controller.rb" "user_sso/" "user_sessions_controller.rb" "twitter_services_controller.rb" "subscriptions_controller.rb" "settings/" "services_controller.rb" "service_configurations_controller.rb" "searches_controller.rb" "salesforce_services_controller.rb" "salesforce_backup_runs_controller.rb" "salesforce/" "restores_controller.rb" "resellers/" "password_resets_controller.rb" "pages_controller.rb" "notifications_controller.rb" "notifications/" "google_sites_services_controller.rb" "google_mail_services_controller.rb" "google_mail_services/" "google_mail_searches_controller.rb" "google_docs_services_controller.rb" "google_contacts_services_controller.rb" "google_calendar_services_controller.rb" "google_apps_accounts_controller.rb" "facebook_fanpage_services_controller.rb" "exports_controller.rb" "drives_controller.rb" "drive_searches_controller.rb" "domains_controller.rb" "domains/" "deleted_data_controller.rb" "data_controller.rb" "concerns/" "backups_controller.rb" "backup_runs_controller.rb" "application_controller.rb" "api/" "admin/" "account/" "../" "./")
+ ("/Users/anorwell/work/pyper/lib/pyper/" (21831 52730 0 0) "write_pipes/" "version.rb" "read_pipes/" "pipes/" "pipeline.rb" "../" "./")
 
- ("/Users/anorwell/work/backupify/app/controllers/domains/" (21537 51304 0 0) "re_auth_controller.rb" "multi_admin_controller.rb" "../" "./")
+ ("/Users/anorwell/work/pyper/lib/" (21831 52730 0 0) "pyper.rb" "pyper/" "../" "./")
 
- ("/Users/anorwell/.ec2_backupifydev/" (21537 34443 0 0) "rubber-secret.yml" "profile" "pk-QCTEJU3LHVZLPOL4MNYDF3IUYM5UXTOY.pem" "original-rubber-secret.yml" "mod-secret.yml" "eric.yml" "cert-QCTEJU3LHVZLPOL4MNYDF3IUYM5UXTOY.pem" "backupifydev.pem.pub" "backupifydev.pem" "backupifydev-03252009.pem.pub" "backupifydev-03252009.pem" "../" "./")
+ ("/Users/anorwell/work/pyper/" (21831 52730 0 0) "test/" "README.md" "Rakefile" "pyper.gemspec" "LICENSE.txt" "lib/" "Gemfile.lock" "Gemfile" ".gitignore" ".git/" "../" "./")
 
- ("/Users/anorwell/Documents/" (21345 4468 0 0) "WebEx/" "scratch.rb" "notes~" "notes_archive" "notes" ".localized" "#notes#" "../" "./")
+ ("/Users/anorwell/work/backupify/lib/data_interface/" (21846 17479 0 0) "store_status.rb" "result_set.rb" "office365/" "google/" "datum/" "common/" "base_interface.rb" "activity_feed/" "../" "./")
 
- ("/Users/anorwell/work/backupify/app/models/active_run/" (21537 41422 0 0) "state_machine.rb" "salesforce/" "google/" "encoders/" "backup.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/lib/data_interface/office365/" (21846 17478 0 0) "multi_store/" "mail_thrift/" "mail.rb" "cql/" "common/" "calendar_thrift/" "calendar.rb" "cache/" "../" "./")
 
- ("/Users/anorwell/work/permissions_client/" (21536 38227 0 0) "test/" "script/" "README.md" "Rakefile" "permissions_client.gemspec" "mock_server/" "lib/" "Gemfile.lock" "Gemfile" ".ruby-version" ".gitignore" ".git/" "../" "./")
+ ("/Users/anorwell/work/backupify/lib/data_interface/office365/cql/" (21846 17478 0 0) "mail/" "calendar/" "../" "./")
 
- ("/Users/anorwell/work/permissions_client/lib/" (21536 38227 0 0) "permissions/" "../" "./")
+ ("/Users/anorwell/work/backupify/lib/data_interface/office365/cql/mail/" (21846 17479 0 0) "adapter.rb" "../" "./")
 
- ("/Users/" (21130 9344 0 0) "Shared/" "Guest/" "anorwell/" ".localized" "../" "./")
+ ("/Users/anorwell/work/cassava/lib/cassava/" (21743 36008 0 0) "version.rb" "client.rb" "../" "./")
 
- ("/Users/anorwell/bin/" (21388 47174 0 0) "swap_keys.sh" "../" "./")
+ ("/Users/anorwell/work/backupify/lib/" (21853 59198 0 0) "zuora_interface.rb" "zuora/" "zendesk_helpers/" "zendesk/" "writers/" "util/" "user_navigation.rb" "user_navigation/" "templates/" "tasks/" "storage/" "simple_form/" "service_connection/" "searchable/" "salesforce/" "rollout_support.rb" "post_backup_data_stats_factory.rb" "office365/" "multipart_related_body.rb" "minitest/" "metadata_sharding/" "marketo_record.rb" "line_buffer.rb" "jobs/" "jmxquery.jar" "format_converters/" "ext/" "dummy_worker.rb" "domain_connection.rb" "domain_connection/" "datto/" "data_models/" "data_interface/" "data_filter/" "country_state_helper.rb" "cassandra_connection.rb" "billing_api/" "backupify_cassandra/" "backupify/" "backup_summary.rb" "auth/" "active_support/" "action_dispatch/" "../" "./")
 
- ("/Users/anorwell/work/permissions_client/test/permissions/" (21502 9540 0 0) "test/" "scopes/" "scope_test.rb" "client/" "../" "./")
+ ("/Users/anorwell/work/backupify/lib/data_models/" (21844 61381 0 0) "mail/" "generic/" "file/" "calendar/" "activity_feed/" "../" "./")
 
- ("/Users/anorwell/work/lumber/" (21503 18356 0 0) "TODO" "spec/" "README.md" "Rakefile" "lumber.gemspec" "LICENSE" "lib/" "Gemfile.lock" "Gemfile" "CHANGELOG" ".travis.yml" ".ruby-version" ".idea/" ".gitignore" ".git/" ".document" ".coveralls.yml" "../" "./")
+ ("/Users/anorwell/work/backupify/lib/data_models/calendar/" (21837 6918 0 0) "office365/" "event_metadata.rb" "../" "./")
 
- ("/Users/anorwell/work/lumber/lib/" (21503 15780 0 0) "lumber.rb" "lumber/" "generators/" "../" "./")
+ ("/Users/anorwell/work/backupify/lib/data_models/calendar/office365/" (21831 32156 0 0) "event.rb" "../" "./")
 
- ("/Users/anorwell/work/lumber/lib/lumber/" (21503 15780 0 0) "version.rb" "server.rb" "server/" "railtie.rb" "lumber.rb" "logger_support.rb" "log4r.rb" "level_util.rb" "json_formatter.rb" "inheritance_registry.rb" "../" "./")
+ ("/Users/anorwell/Documents/" (21781 52269 0 0) "WebEx/" "scratch.rb" "notes~" "notes_archive" "notes" "ENG-MaintenanceforAWSserverrestarts-260914-1613-2.pdf" "CB_Enroll_Pre_Only_20140101.pdf" "CB_Enroll_Pre_Only_20140101 copy.pdf" "cass training/" "aws-shutdown-maintenance" ".localized" ".DS_Store" "#notes#" "../" "./")
 
- ("/Users/anorwell/work/lumber/spec/" (21503 15780 0 0) "spec_helper.rb" "spec.opts" "server_spec.rb" "rails_integration_spec.rb" "lumber_spec.rb" "lumber_rails_template.rb" "logger_support_spec.rb" "level_util_spec.rb" "json_formatter_spec.rb" "inheritance_registry_spec.rb" "../" "./")
+ ("/Users/anorwell/.ec2_backupifydev/" (21851 39592 0 0) "rubber-secret.yml" "profile" "pk-QCTEJU3LHVZLPOL4MNYDF3IUYM5UXTOY.pem" "original-rubber-secret.yml" "mod-secret.yml" "eric.yml" "cert-QCTEJU3LHVZLPOL4MNYDF3IUYM5UXTOY.pem" "backupifydev.pem.pub" "backupifydev.pem" "backupifydev-03252009.pem.pub" "backupifydev-03252009.pem" "backupify-validator.pem" ".ec2_backupify/" "../" "./")
 
- ("/Users/anorwell/work/pegasus_service/config/initializers/" (21334 29127 0 0) "storage_strategy.rb" "rescue_responses.rb" "redis_objects.rb" "passenger.rb" "mime_types.rb" "log4r_exceptionable.rb" "inflections.rb" "backtrace_silencers.rb" "async_job.rb" "active_tenant.rb" "active_model_serializer.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/config/initializers/" (21853 58220 0 0) "wrap_parameters.rb" "time_formats.rb" "swift_configuration.rb" "statsd.rb" "sso.rb" "simple_form.rb" "show_for.rb" "session_store.rb" "savon.rb" "sanitize.rb" "s3_configuration.rb" "rubymine_passenger_debug.rb" "rubber_secret.rb" "redis_objects.rb" "rails_footnotes.rb" "rails_4_core_ext.rb" "rabl.rb" "pry.rb" "permissions.rb" "passenger.rb" "oauth2_token_pooling.rb" "mini_profiler.rb" "mime_types.rb" "marketo.rb" "log_job_completion.rb" "log4r.rb" "inflections.rb" "formtastic.rb" "db_connection_fix.rb" "cookie_verification_secret.rb" "cassava.rb" "cassandra_logger.rb" "cassandra_datum.rb" "cassandra2.rb" "cassandra.rb" "cass_schema.rb" "backupify_service_config.rb" "backupify_configurable.rb" "backtrace_silencers.rb" "async_job.rb" "../" "./")
 
- ("/Users/anorwell/work/pegasus_service/config/" (21334 29127 0 0) "user-sso.yml" "trident.yml" "routes.rb" "redis.yml" "qless-web.ru" "pegasus-service.yml" "paperclip.yml" "log4r.yml" "locales/" "initializers/" "environments/" "environment.rb" "database.yml" "boot.rb" "async_job_schedule.yml" "application.rb" "active-tenant.yml" "../" "./")
+ ("/Users/anorwell/.ec2_backupify/" (21851 39636 0 0) "rubber-secret.yml~" "rubber-secret.yml.bak" "rubber-secret.yml" "profile" "pk-UPG4EKBQHDKSKV73BS26SJDHWQ7WSLX2.pem" "pk-7FYPJGEYI2BH6SU4EGWHQH276TN4PIUD.pem" "cert-UPG4EKBQHDKSKV73BS26SJDHWQ7WSLX2.pem" "cert-7FYPJGEYI2BH6SU4EGWHQH276TN4PIUD.pem" "backupify.pem.pub" "backupify.pem" "backupify-validator.pem" "backupify-06062011.pem.pub" "backupify-06062011.pem" "backupify-03252009.pem.pub" "backupify-03252009.pem" "backupify-03202012.pem.pub" "backupify-03202012.pem" "backupify-01132014.pem.pub" "backupify-01132014.pem" ".rubber-secret.yml.swp" "../" "./")
 
- ("/Users/anorwell/work/pegasus_service/" (21334 29127 0 0) "test/" "script/" "README.rdoc" "Rakefile" "public/" "Procfile" "log/" "lib/" "Gemfile.lock" "Gemfile" "doc/" "db/" "config.ru" "config/" "Capfile" "bin/" "app/" ".travis.yml" ".gitignore" ".git/" ".foreman" ".env" ".coveralls.yml" "../" "./")
+ ("/Users/anorwell/work/backupify/config/" (21853 58220 0 0) "twemproxy/" "trident.yml" "swift.yml" "sso.yml" "rubber/" "routes.rb" "redis.yml" "redis/" "qless-web.ru" "permissions.yml" "pegasus-service.yml" "log4r.yml" "locales/" "kill_hung_workers.yml" "jasmine.yml" "initializers/" "google_apps_manifest.xml" "fonts/" "environments/" "environment.rb" "dyndns.org.key" "dyndns.org.crt" "dyndns.org.ca-bundle" "deploy.rb" "database.yml" "cucumber.yml" "cequel.yml" "cass_datastores.yml" "ca-bundle.crt" "boot.rb" "backupify.org.trusted_certs.pem" "backupify.org.key" "backupify.org.crt" "backupify.org.ca-bundle" "backupify.org-stunnel.pem" "backupify.com.trusted_certs.pem" "backupify.com.key" "backupify.com.crt" "backupify.com.ca-bundle" "backupify.com-stunnel.pem" "async_job_schedule.yml" "application.rb" "analytical.yml" "../" "./")
 
- ("/Users/anorwell/work/permissions_client/test/permissions/scopes/" (21501 62658 0 0) "test/" "evaluator_test.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/app/models/api/billing/v0/" (21853 58264 0 0) "partner.rb" "billing_product.rb" "billing_customer.rb" "../" "./")
 
- ("/Users/anorwell/work/permissions_client/lib/permissions/scopes/" (21501 62259 0 0) "scope_types.rb" "evaluator.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/app/models/api/billing/" (21853 58244 0 0) "v0/" "../" "./")
 
- ("/Users/anorwell/work/permissions_client/test/" (21499 38876 0 0) "vcr_cassettes/" "test_helper.rb" "permissions/" "../" "./")
+ ("/Users/anorwell/work/backupify/app/models/api/" (21853 58244 0 0) "billing/" "../" "./")
 
- ("/Users/anorwell/work/permissions/" (21494 4914 0 0) "service/" ".gitmodules" ".git/" "../" "./")
+ ("/Users/anorwell/work/backupify/app/controllers/" (21853 58220 0 0) "users_controller.rb" "user_sso/" "user_sessions_controller.rb" "twitter_services_controller.rb" "subscriptions_controller.rb" "settings/" "services_controller.rb" "service_configurations_controller.rb" "searches_controller.rb" "salesforce_services_controller.rb" "salesforce_backup_runs_controller.rb" "salesforce/" "restores_controller.rb" "resellers/" "products_controller.rb" "pages_controller.rb" "office365_controller.rb" "office365/" "notifications_controller.rb" "notifications/" "google_sites_services_controller.rb" "google_mail_services_controller.rb" "google_mail_services/" "google_mail_searches_controller.rb" "google_docs_services_controller.rb" "google_docs_services/" "google_contacts_services_controller.rb" "google_contacts_services/" "google_calendar_services_controller.rb" "google_apps_accounts_controller.rb" "facebook_fanpage_services_controller.rb" "exports_controller.rb" "drives_controller.rb" "drive_searches_controller.rb" "domains_controller.rb" "domains/" "deleted_data_controller.rb" "data_controller.rb" "concerns/" "billing_api/" "backups_controller.rb" "backup_runs_controller.rb" "apps_controller.rb" "application_controller.rb" "api/" "admin/" "account/" "../" "./")
 
- ("/Users/anorwell/work/authify/lib/backupify/auth/" (21436 12609 0 0) "token_pool/" "o_auth2_token_auth.rb" "o_auth2_service_account.rb" "o_auth2_consumer.rb" "o_auth2_config.rb" "o_auth2.rb" "o_auth2/" "o_auth1_two_legged.rb" "o_auth1_consumer.rb" "o_auth1_config.rb" "o_auth1.rb" "errors.rb" "auth_object.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/app/controllers/api/" (21853 58282 0 0) "v1/" "billing/" "../" "./")
 
- ("/Users/anorwell/work/authify/lib/backupify/" (21436 12609 0 0) "auth.rb" "auth/" "../" "./")
+ ("/Users/anorwell/work/backupify/app/controllers/api/billing/" (21853 58282 0 0) "v0/" "../" "./")
 
- ("/Users/anorwell/work/authify/lib/" (21418 550 0 0) "backupify/" "authify.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/app/controllers/api/billing/v0/" (21853 58290 0 0) "api_controller.rb" "../" "./")
 
- ("/Users/anorwell/work/authify/" (21438 51530 0 0) "test/" "README.md" "Rakefile" "lib/" "Gemfile.lock" "Gemfile" "authify.gemspec" ".git/" "../" "./")
+ ("/Users/anorwell/work/backupify/script/" (21846 17479 0 0) "zabbix_host_create.sh" "user_cost_report.rb" "useful_shell.sh" "useful_queries.sql" "useful_console.rb" "update_local_jenkins_dns.rb" "twemproxy/" "truncate_logs_older_than.rb" "truncate_history_table.rb" "transfer_high_watermarks.rb" "tokengentool" "time_tests.rb" "stop_qless.sh" "start_qless.rb" "smaps.pl" "services_summary_csv.rb" "server" "script_helper.rb" "script_example.rb" "salesforce/" "s3_version_info.rb" "s3_swift_compare.rb" "s3_stats.rb" "s3_multipart_upload.rb" "rubber" "restore_users.rb" "restore_snapshot.sh" "reset_redis.rb" "reset_qless.sh" "reset_cassandra_schema.rb" "reset_cassandra2.rb" "reset_cassandra.rb" "reset_cass_datastores.sh" "reset_cass2.sh" "reset_cass.sh" "reset_all.sh" "reports/" "repair_and_clean_cassandra_node.rb" "remove_gmail_migration_backups.rb" "redis-sampler.rb" "rails" "qless/" "profile_backup_segment.rb" "pgpool_failover.rb" "pgpool_failback.rb" "passenger_cycle_large_procs.rb" "parallel_test.rb" "oauth2/" "oauth.rb" "move_to_initial_queues.rb" "migrations/" "migrate_permissions.rb" "list_remote_branches.rb" "jmxdump.rb" "jenkins_build.sh" "initial_service_backup_metrics.rb" "import_legacy_payment_plans.rb" "imap.rb" "group_google_apps_services.rb" "googleapps/" "google_mail_audit_script.rb" "fix_twitter_authorization.rb" "fix_missing_services.rb" "fix_facebook_authorization.rb" "fix_duplicate_activations.rb" "find_stuck_backups.rb" "find_large_twitter_accounts.rb" "fb_crawl.rb" "fanpages/" "expired_data_report.sh" "expired_data_report.rb" "expired_data_cleanup.sh" "expired_data_cleanup.rb" "es_status.rb" "encrypt_content.rb" "ec2_inactivity_monitor.rb" "dump_zuora_plans.rb" "dump_service.rb" "domains_with_eol_apis_report.rb" "domain_types.rb" "domain_id_assignment_archive.rb" "domain_id_assignment.rb" "disable_service_type_script.rb" "debug_helper.rb" "cucumber" "create_users_for_domain.rb" "create_manifest.rb" "copy_s3_data.rb" "console/" "collectd/" "clear_drive_hierarchy_snapshot_id.rb" "cleanup_broken_zuora_pro500.rb" "cleanup_bad_calendar_start_times.rb" "cleanup-abrs.rb" "change_master.sh" "cassandra_migrate.rb" "cassandra_keys.rb" "cassandra_columns.rb" "cassandra_clean_old_s3_backups.rb" "cassandra_calculate_tokens.rb" "base64_decode_content.rb" "backfill_domain_counts.rb" "archive_to_s3.rb" "analyse_redis_monitor.rb" "add_service_type.rb" "add_feature_to_subscriptions.rb" "add_customer_ids.rb" ".#stop_resque.sh" ".#start_trident.sh" "../" "./")
+
+ ("/Users/anorwell/work/cass_schema/lib/cass_schema/" (21753 54190 0 0) "yaml_helper.rb" "version.rb" "tasks/" "runner.rb" "errors.rb" "datastore.rb" "../" "./")
+
+ ("/Users/anorwell/work/cass_schema/lib/" (21753 54190 0 0) "cass_schema.rb" "cass_schema/" "../" "./")
+
+ ("/Users/anorwell/work/cass_schema/" (21852 58424 0 0) "test/" "README.md" "Rakefile" "LICENSE.txt" "lib/" "Gemfile.lock" "Gemfile" "cass_schema.gemspec" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/anorwell/work/backupify/config/rubber/" (21852 54617 0 0) "rubber.yml" "rubber-zabbixagent.yml" "rubber-wale.yml" "rubber-twemproxy.yml" "rubber-stunnel.yml" "rubber-statsd.yml" "rubber-stackdriver.yml" "rubber-splunk.yml" "rubber-smoke.yml" "rubber-rvm.yml" "rubber-ruby.yml" "rubber-redis.yml" "rubber-qless.yml" "rubber-postgresql.yml" "rubber-pgpool.yml" "rubber-pgbouncer.yml" "rubber-passenger.yml" "rubber-node.yml" "rubber-newrelic.yml" "rubber-monit.yml" "rubber-mongodb.yml" "rubber-logstash.yml" "rubber-jira.yml" "rubber-jenkins.yml" "rubber-java.yml" "rubber-instances.yml" "rubber-hubot.yml" "rubber-haproxy.yml" "rubber-graphite.yml" "rubber-elasticsearch.yml" "rubber-dns.yml" "rubber-complete.yml" "rubber-collectd.yml" "rubber-cassandra2.yml" "rubber-cassandra.yml" "rubber-apache.yml" "role/" "instance-yuri.yml" "instance-stagingtest.yml" "instance-staging.yml" "instance-smoke.yml" "instance-slitest.yml" "instance-shibailo.yml" "instance-sergeyev.yml" "instance-salesforcescan.yml" "instance-rpineau.yml" "instance-rfleisher.yml" "instance-production.yml" "instance-pilipenok.yml" "instance-pen.yml" "instance-pegasus2.yml" "instance-mhoydis2.yml" "instance-mhoydis.yml" "instance-mbittarelli.yml" "instance-matt.yml" "instance-marketing.yml" "instance-localci.yml" "instance-jlawrence.yml" "instance-jfrancese.yml" "instance-jdewolf.yml" "instance-jbyoun.yml" "instance-jbodah.yml" "instance-jason.yml" "instance-gsalmon.yml" "instance-genohta.yml" "instance-eric.yml" "instance-dtran.yml" "instance-dmitry.yml" "instance-desmond.yml" "instance-demo.yml" "instance-dblock.yml" "instance-dattostaging.yml" "instance-cmatysik.yml" "instance-cass_test.yml" "instance-cass_clone.yml" "instance-bpovlich.yml" "instance-benlog.yml" "instance-anthony.yml" "instance-anorwell.yml" "instance-alexey.yml" "instance-akostka.yml" "instance-ablyamit.yml" "instance-ably.yml" "deploy-zabbixagent.rb" "deploy-wale.rb" "deploy-util.rb" "deploy-twemproxy.rb" "deploy-sysstat.rb" "deploy-stunnel_outbound.rb" "deploy-stunnel.rb" "deploy-statsd.rb" "deploy-stackdriver.rb" "deploy-splunk.rb" "deploy-smoke.rb" "deploy-setup.rb" "deploy-redis.rb" "deploy-qless.rb" "deploy-postgresql.rb" "deploy-pgpool.rb" "deploy-pgbouncer.rb" "deploy-passenger.rb" "deploy-node.rb" "deploy-newrelic.rb" "deploy-monit.rb" "deploy-mongodb.rb" "deploy-logstash.rb" "deploy-logging.rb" "deploy-loadtest.rb" "deploy-jira.rb" "deploy-jenkins.rb" "deploy-hubot.rb" "deploy-haproxy.rb" "deploy-graphite.rb" "deploy-elasticsearch.rb" "deploy-collectd.rb" "deploy-cassandra2.rb" "deploy-cassandra.rb" "deploy-apache.rb" "common/" "../" "./")
+
+ ("/Users/anorwell/work/backupify/config/rubber/common/" (21852 57429 0 0) "twemproxy.yml" "sysstat.conf" "sysstat-default.conf" "stunnel.conf" "ssh-authorized-keys.conf" "splunk-rsyslog.conf" "rubber.profile" "rsyslog_cloud_certs.crt" "rsyslog.conf" "rsyslog-logrotate.conf" "redis.yml" "rcS.conf" "postfix-main.cf" "ntp.conf" "ntp-sysctl.conf" "log4r.yml" "hosts.conf" "database.yml" "crontab" "cequel.yml" "cass_datastores.yml" "async_job_schedule.yml" "../" "./")
+
+ ("/Users/anorwell/work/backupify/lib/domain_connection/" (21826 11402 0 0) "google_user_list/" "connection_checker.rb" "connection.rb" "../" "./")
+
+ ("/Users/anorwell/work/chef-repo/solo/nodes/" (21852 37045 0 0) "permissionssvc02.json" "permissionssvc01.json" "permissionsdb02.json" "permissionsdb01.json" "permissions.json" "instances-production.json" ".gitkeep" "../" "./")
+
+ ("/Users/anorwell/work/backupify/app/models/ability/" (21803 57376 0 0) "scope_evaluators.rb" "role_actions.rb" "../" "./")
+
+ ("/Users/anorwell/work/" (21851 29917 0 0) "zshrc-file/" "vendor_assets/" "user_sso/" "trident/" "storage_strategy/" "search-scala/" "ruby-driver/" "rubber/" "resume/" "rake-backupify/" "rails/" "qmore/" "qless-core/" "qless/" "pyper/" "permissions_service/" "permissions_client/" "permissions/" "pegasus_service/" "pegasus_deploy/" "paginatable/" "optionate/" "metadata_store/" "m/" "lumber/" "jimson/" "interviews/" "hubot/" "google_auth/" "google-api-ruby-client/" "gem_logger/" "filter_io/" "faraday/" "enqueue_service/" "emacs.d/" "datto_ui_library/" "chef-repo/" "cequel_cql2/" "cequel-migrations-rails/" "cequel/" "cassava/" "cassandra_datum/" "cassandra/" "cass_schema/" "cass_migrations/" "beautify-with-words/" "backupify_logger_support/" "backupify_dev/" "backupify_cassandra/" "backupify/" "authify/" "async_job/" "active_tenant/" "active_runs/" "active_backup/" "active_attr_extensions/" "active_attr/" ".DS_Store" "../" "./")
+
+ ("/Users/anorwell/work/backupify/test/" (21849 63698 0 0) "unit/" "test_helper.rb" "test_constants/" "support/" "scripts/" "lib/" "javascripts/" "integration/" "functional/" "fixtures/" "factories/" "concerns/" "../" "./")
+
+ ("/Users/anorwell/work/backupify/test/concerns/" (21849 63698 0 0) "zuora_subscription_test_helper.rb" "x_should.rb" "vcr_recording.rb" "unused_cassettes.rb" "test_setup.rb" "test_coverage.rb" "swift.rb" "stubs_d.rb" "storage_helper.rb" "sso.rb" "s3.rb" "routes.rb" "redis.rb" "products_test_helper.rb" "permissions.rb" "mutating_delegate.rb" "misc_shoulda.rb" "metadata_sharding/" "logger_testing.rb" "log_context.rb" "imap.rb" "http.rb" "google_mail_datum_common.rb" "google_docs_datum_common.rb" "google_calendar_connection_test_helper.rb" "google_apps.rb" "google.rb" "domain_access_checker.rb" "date_time.rb" "database.rb" "controllers.rb" "context.rb" "console_scripts.rb" "cassandra.rb" "async_job.rb" "assertions.rb" "activity_feed_testing.rb" "../" "./")
+
+ ("/Users/anorwell/work/backupify/app/decorators/office365/mail/" (21849 62272 0 0) "message_show_decorator.rb" "message_metadata_show_decorator.rb" "message_index_decorator.rb" "../" "./")
+
+ ("/Users/anorwell/work/ruby-driver/lib/cassandra/address_resolution/policies/" (21846 7594 0 0) "none.rb" "ec2_multi_region.rb" "../" "./")
+
+ ("/Users/anorwell/work/backupify/app/models/backupify/" (21846 459 0 0) "datto_cassandra_datum.rb" "active_run.rb" "active_run/" "active_master_run.rb" "../" "./")
+
+ ("/Users/anorwell/work/backupify/lib/backupify_cassandra/" (21846 459 0 0) "model.rb" "model/" "clients/" "client_configuration.rb" "adapters/" "../" "./")
+
+ ("/Users/anorwell/work/backupify/lib/backupify_cassandra/config/" (21845 65301 0 0) "cassandra_drive_hierarchy_configuration.rb" "cassandra_configuration.rb" "cassandra2_configuration.rb" "basic_configuration.rb" "../" "./")
+
+ ("/Users/anorwell/work/backupify/config/rubber/role/" (21780 24238 0 0) "zabbixagent/" "web_tools/" "wale/" "twemproxy/" "tools/" "stunnel_outbound/" "stunnel/" "statsd/" "stackdriver_agent/" "splunk/" "redis_proc_b/" "redis_proc_a/" "redis_default/" "redis/" "qless_worker/" "qless_web/" "qless/" "postgresql_slave/" "postgresql/" "pgpool/" "pgbouncer/" "passenger/" "opscenter/" "newrelic/" "monit/" "mongodb/" "logstash_server/" "local_jenkins/" "jira/" "jenkins/" "hubot/" "haproxy/" "graphite_web/" "graphite_server/" "elasticsearch/" "db_util/" "db/" "collectd/" "cassandra2/" "cassandra/" "app/" "apache/" "../" "./")
+
+ ("/Users/anorwell/work/backupify/config/rubber/role/stunnel_outbound/" (21844 61381 0 0) "twemproxy.yml" "stunnel.conf" "statsd.rb" "socat-outbound-init.sh" "redis.yml" "pgbouncer.ini" "monit-socat-outbound.conf" "cequel.yml" "cassandra2.rb" "cassandra.rb" "cass_datastores.yml" "../" "./")
+
+ ("/Users/anorwell/work/backupify/app/decorators/office365/" (21833 11388 0 0) "seats_decorator.rb" "seat_decorator.rb" "mail/" "../" "./")
+
+ ("/Users/anorwell/work/backupify/app/controllers/office365/accounts/" (21844 61381 0 0) "seats_controller.rb" "dashboard_controller.rb" "activities_controller.rb" "../" "./")
+
+ ("/Users/anorwell/Desktop/" (21843 48009 0 0) "Screen Shot 2015-05-13 at 5.00.51 PM.png" "Screen Shot 2015-05-13 at 3.55.09 PM.png" "Screen Shot 2015-05-13 at 3.53.32 PM.png" "Screen Shot 2015-04-17 at 1.45.15 PM.png" "Screen Shot 2015-04-14 at 2.23.54 PM.png" "Screen Shot 2015-04-10 at 9.46.45 AM.png" "Screen Shot 2015-04-10 at 9.44.47 AM.png" "Screen Shot 2015-04-02 at 4.15.24 PM.png" "Screen Shot 2015-03-26 at 3.36.53 PM.png" "Screen Shot 2015-02-25 at 9.36.59 AM.png" "Screen Shot 2015-01-21 at 5.06.42 PM.png" "Screen Shot 2015-01-20 at 2.09.34 PM.png" "Screen Shot 2015-01-20 at 2.08.46 PM.png" "Sample Tunnelblick VPN Configuration/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/anorwell/work/datto_ui_library/test/dummy/" (21786 47528 0 0) "tmp/" "test/" "spec/" "script/" "README.rdoc" "Rakefile" "public/" "log/" "lib/" "db/" "config.ru" "config/" "app/" "../" "./")
+
+ ("/Users/anorwell/work/datto_ui_library/test/dummy/config/" (21776 30963 0 0) "secrets.yml" "routes.rb" "locales/" "jasmine.yml" "initializers/" "environments/" "environment.rb" "database.yml" "boot.rb" "application.rb" "../" "./")
+
+ ("/Users/anorwell/work/backupify/lib/data_interface/common/" (21837 6918 0 0) "thrift/" "cql/" "content/" "../" "./")
+
+ ("/Users/anorwell/work/backupify/lib/data_interface/common/cql/" (21837 6918 0 0) "pipes/" "../" "./")
+
+ ("/Users/anorwell/work/backupify/lib/data_interface/common/cql/pipes/" (21837 6918 0 0) "result_set_wrapper.rb" "../" "./")
+
+ ("/Users/anorwell/work/backupify/cass_schema/office365_indexes/" (21842 13585 0 0) "schema.cql" "../" "./")
+
+ ("/Users/anorwell/work/backupify/cass_schema/" (21842 13585 0 0) "test_datastore/" "README.md" "office365_metadata/" "office365_indexes/" "../" "./")
+
+ ("/Users/anorwell/work/backupify/cass_schema/office365_metadata/" (21842 13585 0 0) "schema.cql" "../" "./")
+
+ ("/Users/anorwell/work/backupify/lib/data_models/mail/" (21831 32156 0 0) "office365/" "message_metadata.rb" "../" "./")
+
+ ("/Users/anorwell/work/backupify/lib/data_models/mail/office365/" (21837 6918 0 0) "message.rb" "../" "./")
+
+ ("/Users/anorwell/work/backupify/app/views/data/office365/" (21823 41586 0 0) "mail_message_show.json.rabl" "mail_message_index.json.rabl" "mail_folder_index.json.rabl" "../" "./")
+
+ ("/Users/anorwell/work/backupify/lib/data_interface/office365/common/thrift/" (21831 32156 0 0) "item_serializer.rb" "item_data_views.rb" "folder_serializer.rb" "column_names.rb" "attachment_serializer.rb" "adapter.rb" "../" "./")
+
+ ("/Users/anorwell/work/backupify/lib/data_interface/office365/common/" (21831 32156 0 0) "thrift/" "restorable_content.rb" "folder_hierarchy_builder.rb" "../" "./")
+
+ ("/Users/anorwell/work/backupify/lib/data_interface/office365/mail_thrift/" (21837 6918 0 0) "messages_by_folder.rb" "message_serializer.rb" "message_search.rb" "message_data_views.rb" "folders_by_service.rb" "folder_serializer.rb" "canonical_datum.rb" "attachment_serializer.rb" "attachment_datum.rb" "adapter.rb" "../" "./")
+
+ ("/Users/anorwell/work/backupify/app/views/data/" (21833 11388 0 0) "show.json.rabl" "show.js.erb" "show.html.erb" "office365/" "metadata/" "index.html.erb" "google_sites_datum_show.json.rabl" "google_sites_datum_index.json.rabl" "google_mail_rest_models/" "google_mail_datum_show.json.rabl" "google_drive_hierarchical_datum_index.json.rabl" "google_docs_datum_show.json.rabl" "google_contacts_datum_show.json.rabl" "google_contacts_datum_index.json.rabl" "google_calendar_datum_show.json.rabl" "google_calendar_datum_index.json.rabl" "gmail_datum_index.json.rabl" "gdoc_datum_index.json.rabl" "_video_display.html.erb" "_twitter_list.html.erb" "_twitter_datum_detail.html.erb" "_twitter_datum.html.erb" "_service_details_nav.html.erb" "_salesforce_list.html.erb" "_salesforce_datum_version_detail.html.erb" "_salesforce_datum_detail.html.erb" "_salesforce_datum.html.erb" "_revision_history.html.erb" "_photo_display.html.erb" "_meta_data_details.html.erb" "_google_sites_list.html.erb" "_google_sites_datum_detail.html.erb" "_google_sites_datum.html.erb" "_google_mail_list.html.erb" "_google_mail_datum.html.erb" "_google_docs_list.html.erb" "_google_docs_datum_detail.html.erb" "_google_docs_datum.html.erb" "_google_contacts_list.html.erb" "_google_contacts_datum_detail.html.erb" "_google_contacts_datum.html.erb" "_google_calendar_list.html.erb" "_google_calendar_datum_detail.html.erb" "_google_calendar_datum.html.erb" "_facebook_list.html.erb" "_facebook_datum_detail.html.erb" "_facebook_datum.html.erb" "_detail_header_actions.html.erb" "_bread_crumb.html.erb" "../" "./")
+
+ ("/Users/anorwell/work/backupify/app/views/data/metadata/" (21823 41586 0 0) "show.json.rabl" "office365/" "google_sites_datum_show.json.rabl" "google_mail_rest_models/" "google_mail_datum_show.json.rabl" "google_docs_datum_show.json.rabl" "google_contacts_datum_show.json.rabl" "google_calendar_datum_show.json.rabl" "../" "./")
+
+ ("/Users/anorwell/work/backupify/app/views/data/metadata/office365/" (21823 41586 0 0) "mail_message_show.json.rabl" "../" "./")
+
+ ("/Users/anorwell/work/backupify/test/unit/" (21837 6918 0 0) "zuora_subscription_test.rb" "zuora_interface_test.rb" "zendesk_helpers/" "zendesk/" "views/" "util/" "user_test.rb" "user_notification_test.rb" "twitter_service_test.rb" "twitter_datum_test.rb" "temporary_access_test.rb" "system_audit_test.rb" "subscription_test.rb" "storage_usage_test.rb" "storage/" "sso_api_key_test.rb" "soap_api_client_test.rb" "sharded_google_mail_datum_test.rb" "sharded_google_docs_datum_test.rb" "service_test.rb" "service_data_cleanup_test.rb" "service_connection/" "service_configuration_test.rb" "search_test.rb" "scripts/" "salesforce_service_test.rb" "salesforce_datum_test.rb" "salesforce_client_test.rb" "salesforce_backup_run_test.rb" "salesforce_auth_oauth_test.rb" "salesforce_api_preference_test.rb" "salesforce/" "s3_region_test.rb" "restores/" "restore_users_test.rb" "restore_status_test.rb" "rest_api_client_test.rb" "reseller_test.rb" "report_notifier_test.rb" "redis_test.rb" "promotion_test.rb" "ops_notifier_test.rb" "office365_mail_service_test.rb" "office365_calendar_service_test.rb" "office365/" "notifier_test.rb" "notification_test.rb" "multipart_related_body_test.rb" "modules/" "metadata_sharding/" "metadata_api_client_test.rb" "marketo_record_test.rb" "mailers/" "logger_support_test.rb" "line_item_test.rb" "line_buffer_test.rb" "lib/" "jobs/" "invite_test.rb" "helpers/" "google_sites_service_test.rb" "google_sites_datum_test.rb" "google_mail_service_test.rb" "google_mail_search_test.rb" "google_mail_rest_models/" "google_mail_messages_by_label_test.rb" "google_mail_labels_by_message_test.rb" "google_mail_label_test.rb" "google_mail_id_mapping_test.rb" "google_mail_datum_test.rb" "google_mail_audit_script_test.rb" "google_docs_service_test.rb" "google_docs_datum_test.rb" "google_customer_test.rb" "google_contacts_service_test.rb" "google_contacts_datum_test.rb" "google_calendar_service_test.rb" "google_calendar_datum_test.rb" "google_apps_account_test.rb" "google_account_test.rb" "gmail_imap_limited_notifier_test.rb" "full_domain_export_test.rb" "format_converters/" "failed_data_test.rb" "facebook_fanpage_service_test.rb" "facebook_datum_test.rb" "export_run_test.rb" "exception_helper_test.rb" "ec2_inactivity_monitor_test.rb" "drive_search_test.rb" "domain_test.rb" "domain_connection/" "domain/" "disabled_domain_service_test.rb" "disable_service_type_script_test.rb" "deleted_google_drive_datum_test.rb" "decorators/" "data_interface/" "data_cleanup_run_test.rb" "customer_test.rb" "crm_service_test.rb" "coupon_test.rb" "console/" "concerns/" "collectd/" "bulk_api_client_test.rb" "base_versioned_datum_test.rb" "base_s3_datum_test.rb" "base_google_connection_test.rb" "base_datum_test.rb" "backupify_product_test.rb" "backupify_product_suite_test.rb" "backupify_cassandra/" "backupify/" "backup_summary_test.rb" "backup_slot_test.rb" "backup_run_test.rb" "auth/" "atomic_increment_test.rb" "api_call_counter_test.rb" "active_support/" "active_run_test.rb" "active_run/" "active_master_run_test.rb" "active_export_run_test.rb" "activation_test.rb" "action_dispatch/" "ability_test.rb" "ability/" "../" "./")
+
+ ("/Users/anorwell/work/backupify/lib/data_interface/activity_feed/" (21840 64631 0 0) "interface.rb" "adapter.rb" "../" "./")
 
  ("/Users/anorwell/work/backupify/app/" (21310 54242 0 0) "views/" "models/" "mailers/" "helpers/" "decorators/" "controllers/" "assets/" "../" "./")
 
- ("/Users/anorwell/work/backupify/lib/jobs/post_backup/" (21490 17255 0 0) "hooks.rb" "google/" "../" "./")
+ ("/Users/anorwell/work/backupify/app/assets/javascripts/controllers/" (21823 41587 0 0) "user_services.js" "user_search.js" "StatesController.js" "StateContentController.js" "ServiceNewListingLabsController.js" "ServiceNewListingController.js" "SalesInformationController.js" "office365/" "gapps/" "export/" "customer/" "backup/" "authorize/" "app_header/" "admin/" "../" "./")
 
- ("/Users/anorwell/work/backupify/test/unit/jobs/generic/backup/" (21494 9345 0 0) "segment_test.rb" "segment_common_test.rb" "master_test.rb" "facebook_twitter_test.rb" "error_handling/" "../" "./")
+ ("/Users/anorwell/work/datto_ui_library/app/assets/templates/datto_ui_library/components/status_tile/" (21799 64227 0 0) "status-tile.html" "../" "./")
 
- ("/Users/anorwell/work/backupify/test/unit/jobs/generic/" (21494 9345 0 0) "util/" "restores/" "restore_test.rb" "item_restore_test.rb" "exports/" "export_test.rb" "backup/" "active_run_base_test.rb" "../" "./")
+ ("/Users/anorwell/work/datto_ui_library/app/assets/templates/datto_ui_library/components/" (21799 64227 0 0) "tree/" "status_tile/" "pagination/" "link.html" "item_list_table/" "item_details/" "display_tree/" "breadcrumb.html" "app-logo-status.html" "alert.html" "../" "./")
 
- ("/Users/anorwell/work/backupify/test/unit/jobs/" (21494 9345 0 0) "validations_test.rb" "utils/" "update_s3_region_test.rb" "update_archived_google_apps_account_state_test.rb" "update_archived_google_apps_account_state_scheduler_test.rb" "twitter/" "subscriptions/" "set_domain_retention_period_test.rb" "services/" "segment_track_failed_data_test.rb" "salesforce/" "reports/" "remove_old_password_resets_test.rb" "remove_google_forms_test.rb" "remove_google_forms_scheduler_test.rb" "recalculate_storage.rb" "re_enable_deauthorized_services_test.rb" "post_backup_data_stats_test.rb" "post_backup/" "master_track_failed_data_test.rb" "marketo/" "helpers/" "google_sites/" "google_mail/" "google_docs/" "google_contacts/" "google_calendar/" "google_apps_account/" "generic/" "generate_google_drive_hierarchy_data_test.rb" "full_domain_export_kickoff_job_test.rb" "fix_gdoc_filenames_test.rb" "failed_data_converter_test.rb" "facebook/" "event_logging/" "duplicate_s3_cleanup_test.rb" "domains/" "data_retention_test.rb" "data_retention_scheduler_test.rb" "count_google_domain_users_test.rb" "clean_exports_test.rb" "backup_scheduler/" "backup_notifications/" "audit/" "async_job_metrics_test.rb" "../" "./")
+ ("/Users/anorwell/work/datto_ui_library/app/assets/templates/datto_ui_library/" (21776 30963 0 0) "components/" "app_header/" "../" "./")
 
- ("/Users/anorwell/work/permissions_client/test/permissions/client/" (21499 39729 0 0) "test/" "connection_test.rb" "../" "./")
+ ("/Users/anorwell/work/datto_ui_library/app/assets/templates/" (21776 30963 0 0) "datto_ui_library/" "../" "./")
 
- ("/Users/anorwell/work/authify/test/" (21438 51530 0 0) "vcr_cassettes/" "test_helper.rb" "fixtures/" "backupify/" "../" "./")
+ ("/Users/anorwell/work/datto_ui_library/app/assets/" (21776 30963 0 0) "templates/" "stylesheets/" "javascripts/" "images/" "../" "./")
 
- ("/Users/anorwell/work/authify/test/backupify/" (21418 11 0 0) "auth/" "../" "./")
+ ("/Users/anorwell/work/datto_ui_library/app/assets/javascripts/" (21776 30963 0 0) "datto_ui_library/" "../" "./")
 
- ("/Users/anorwell/work/authify/test/backupify/auth/" (21436 12609 0 0) "token_pool/" "o_auth2_token_auth_test.rb" "o_auth2_service_account_test.rb" "o_auth2_consumer_test.rb" "o_auth2/" "o_auth1_two_legged_test.rb" "o_auth1_test.rb" "o_auth1_consumer_test.rb" "../" "./")
+ ("/Users/anorwell/work/datto_ui_library/app/assets/javascripts/datto_ui_library/" (21799 64227 0 0) "templateCompilation.js.erb" "services/" "modules/" "javascripts.js" "filters/" "factories/" "directives/" "application.js" "../" "./")
 
- ("/Users/anorwell/work/permissions_client/mock_server/" (21499 38466 0 0) "test_server.rb" "README.md" "mock_certs/" "Gemfile.lock" "Gemfile" "../" "./")
+ ("/Users/anorwell/work/backupify/app/assets/javascripts/states/vendor/" (21823 41586 0 0) "vendor.js" "vendor.account.seat.js" "vendor.account.js" "vendor.account.dashboard.js" "../" "./")
 
- ("/Users/anorwell/work/permissions_client/lib/permissions/client/" (21499 37549 0 0) "connection.rb" "client.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/app/assets/javascripts/states/backup/" (21803 57376 0 0) "root.js" "new.js" "instance.show.newdata.js" "instance.show.js" "instance.show.history.js" "instance.show.data.js" "instance.show.data.detail.js" "instance.js" "instance.edit.js" "index.js" "../" "./")
 
- ("/Users/anorwell/work/backupify/test/unit/backupify/google/" (21494 9345 0 0) "two_legged_request_factory_test.rb" "streaming_decorators/" "retry_error_decorator_test.rb" "rate_limiter_decorator_test.rb" "rate_limit_logging_decorator_test.rb" "plus/" "google_client_error_classifier_test.rb" "error_logging_decorator_test.rb" "drive/" "default_request_factory_test.rb" "decorators/" "contacts/" "calendar/" "basic_client_test.rb" "basic_client/" "base_api_test.rb" "api_test.rb" "admin/" "account_data_hash_test.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/app/assets/javascripts/states/" (21823 41586 0 0) "vendor/" "states.js" "backup/" "authorize_instance/" "../" "./")
 
- ("/Users/anorwell/work/backupify/test/unit/backupify/google/drive/v2/" (21494 9345 0 0) "revisions_api_test.rb" "replies_api_test.rb" "permissions_api_test.rb" "parents_api_test.rb" "files_download_test.rb" "files_api_test.rb" "comments_api_test.rb" "children_api_test.rb" "changes_api_test.rb" "apps_api_test.rb" "about_api_test.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/app/assets/templates/office365/" (21823 41586 0 0) "message_content.html" "beta_agreement.html" "../" "./")
 
- ("/Users/anorwell/work/backupify/test/integration/backupify/google/drive/v2/" (21490 17256 0 0) "revisions_api_test.rb" "replies_api_test.rb" "permissions_api_test.rb" "parents_api_test.rb" "files_api_test.rb" "comments_api_test.rb" "children_api_test.rb" "changes_api_test.rb" "apps_api_test.rb" "about_api_test.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/app/assets/templates/" (21803 57376 0 0) "vendor/" "temporary_access.html" "service_ui/" "office365/" "layouts/" "index.html" "export_runs/" "dashboard/" "backup/" "authorize_instance/" "api_token.html" "api_endpoint.html" "admin/" "../" "./")
 
- ("/Users/anorwell/work/backupify/lib/jobs/generic/" (21494 9344 0 0) "util/" "restores/" "restore.rb" "re_enqueue.rb" "item_restore.rb" "exports/" "export.rb" "backup/" "active_run_base.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/app/assets/javascripts/resources/" (21823 41586 0 0) "restore/" "resources.js" "office365/" "export/" "customer/" "backup/" "authorize/" "../" "./")
 
- ("/Users/anorwell/work/backupify/lib/jobs/post_backup/google/" (21490 17255 0 0) "docs.rb" "calendar.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/app/assets/javascripts/app/" (21823 41586 0 0) "constants.js.erb" "app.js" "../" "./")
 
- ("/Users/anorwell/work/backupify/lib/jobs/google_docs/" (21490 17255 0 0) "sort_restore_hierarchy.rb" "revisions/" "restores/" "restore.rb" "mark_bad_new_spreadsheets.rb" "item_restore.rb" "failed_data_converter.rb" "exports/" "export.rb" "backup/" "../" "./")
+ ("/Users/anorwell/work/backupify/app/assets/javascripts/directives/" (21823 41586 0 0) "select2.js" "ivhTreeviewNodeLabel.js" "directives.js" "bkVendorAccountDashboardLinkFixer.js" "../" "./")
 
- ("/Users/anorwell/work/async_job/lib/async_job/middleware/" (21454 39488 0 0) "uniqueness.rb" "sharding.rb" "retry_exceptions.rb" "metrics.rb" "dev_tools.rb" "concurrency.rb" "cache_active_record.rb" "automatic_tags.rb" "automatic_heartbeat.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/app/assets/javascripts/" (21803 57376 0 0) "templateCompilation.js.erb" "states/" "services/" "resources/" "lib/" "interceptors/" "filters/" "directives/" "controllers/" "application.js" "app/" "../" "./")
 
- ("/Users/anorwell/work/backupify/lib/backupify/google/drive/v2/" (21494 9345 0 0) "schema.json" "client.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/app/assets/" (21555 2605 0 0) "templates/" "stylesheets/" "javascripts/" "images/" "../" "./")
 
- ("/Users/anorwell/work/backupify/lib/backupify/google/api/" (21490 17255 0 0) "two_legged_request_factory.rb" "default_request_factory.rb" "client.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/lib/backupify/auth/" (21490 17255 0 0) "google.rb" "google/" "../" "./")
-
- ("/Users/anorwell/work/backupify/lib/backupify/auth/google/" (21490 17255 0 0) "scopes/" "o_auth2.rb" "o_auth2/" "o_auth1.rb" "o_auth1/" "../" "./")
-
- ("/Users/anorwell/work/backupify/lib/backupify/google/basic_client/" (21490 17255 0 0) "streaming_response_validator_decorator.rb" "retries_decorator.rb" "response_validator_decorator.rb" "redirects_decorator.rb" "helpers.rb" "google_usage_limit_error.rb" "google_server_error.rb" "google_redirect.rb" "google_rate_limit_error.rb" "google_missing_document_error.rb" "google_error.rb" "google_client_error.rb" "google_auth_error.rb" "client.rb" "bandwidth_tracking_decorator.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/lib/backupify/google/" (21494 9345 0 0) "streaming_decorators/" "retry_error_decorator.rb" "rate_limiter_decorator.rb" "rate_limit_logging_decorator.rb" "provisioning/" "plus/" "oauth2/" "google_client_error_classifier.rb" "error_logging_decorator.rb" "drive/" "directory/" "decorators/" "contacts/" "calendar/" "basic_client.rb" "basic_client/" "api.rb" "api/" "admin/" "account_data_hash.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/test/factories/" (21495 34605 0 0) "users.rb" "twitter_friend_ids_datum.rb" "twitter_dm_datum.rb" "subscriptions.rb" "sso_api_keys.rb" "services.rb" "service_configurations.rb" "sequences.rb" "salesforce_backup_runs.rb" "salesforce_active_backup_runs.rb" "restore_runs.rb" "resellers.rb" "reports.rb" "queued_backup_runs.rb" "products.rb" "notifications.rb" "line_items.rb" "item_restores.rb" "invites.rb" "google_mail_labels.rb" "google_mail_label_backup_run.rb" "google_mail_label_active_backup_run.rb" "google_mail_imap_responses.rb" "google_mail_backup_runs.rb" "google_mail_active_backup_runs.rb" "google_calendar_active_backup_runs.rb" "factories.rb" "facebook_results.rb" "facebook_fanpage_services.rb" "export_runs.rb" "domains.rb" "coupons.rb" "backupify_products.rb" "backup_runs.rb" "active_restore_runs.rb" "active_item_restores.rb" "active_backup_runs.rb" "activations.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/lib/jobs/domains/add_users/" (21494 9344 0 0) "segment.rb" "master.rb" "common.rb" "../" "./")
-
- ("/Users/anorwell/misc/domain/" (21484 53085 0 0) "talent2_users.csv" "problem_domains_sizes.csv" "problem_domains" "isd623-disabled.csv" "isd623-disabled-sorted.csv" "domain_details.csv" "disabled_ous_oauth2_sorted.csv" "disabled_oauth2_only.csv" "disabled_oauth2_domain_status.csv" "Backupify_problem_domains.csv" "../" "./")
-
- ("/Users/anorwell/work/backupify/db/migrate/" (21494 9344 0 0) "201408181234567_create_auto_add_ous.rb" "201408151154000_remove_domain_lower_name_constraint.rb" "201408111119000_add_domain_lower_name_constraint.rb" "201408041634567_add_bucket_to_full_export.rb" "201408041234567_add_administrator_to_domain.rb" "201407232345698_remove_batch_record_restore.rb" "201407231234567_add_requested_records_to_active_restore_run.rb" "201407112345698_add_type_to_active_restore_run.rb" "201407102345678_index_activations_on_google_id.rb" "201407082345678_add_uniqueness_index_to_google_accounts.rb" "201407071234567_add_index_to_google_accounts_primary_email.rb" "201406271234567_add_configured_for_login_to_users.rb" "201406111234567_add_oauth2_tokens.rb" "201406091234567_rename_google_account_fields.rb" "201405282345678_add_index_to_salesforce_api_preferences.rb" "201405281234567_add_salesforce_api_preferences.rb" "201405152234567_change_can_be_auto_added_on_google_accounts.rb" "201405142234567_add_timestamps_to_google_accounts.rb" "201405141234567_set_deleted_to_false_for_google_account_deleted.rb" "201404301234567_change_active_item_restores_datum_id_to_text.rb" "201404281234567_remove_disabled_service_types_from_domains.rb" "201404251234567_create_disabled_domain_services.rb" "201404241234567_remove_unused_keys_from_service_status.rb" "201404221234567_add_index_to_google_accounts_google_id.rb" "201404052345678_remove_account_list_from_archived_domain.rb" "201404051234567_remove_account_list_from_domain.rb" "201404041234567_add_can_be_auto_added_to_google_account.rb" "201403041638190_add_active_restore_run_and_active_item_restore.rb" "201402272014360_change_salesforce_product_codes.rb" "201402191200000_create_google_account.rb" "20140211126457_add_accessible_history_period_to_backupify_products.rb" "20140211123456_add_master_restore_failure_boolean_to_batch_restore.rb" "20140206170738_make_personal_inactive.rb" "20140206123456_add_full_restore_boolean_to_batch_restore.rb" "20131211960810_change_product_names.rb" "20131211960710_create_active_export_run.rb" "20131211960708_add_s3_bucket_to_domain.rb" "20131210135413_create_sso_api_keys_and_move_sso_id_from_subscription.rb" "20131203114904_add_sso_id_to_subscriptions.rb" "20131202012345_add_unlimited_services_to_backupify_products.rb" "20131112093000_add_type_to_active_backup_runs.rb" "20131111960708_create_google_mail_labels.rb" "20131111923456_create_google_mail_label_active_backup_runs.rb" "20131104161321_drop_salesforce_backup_runs.rb" "20131031094212_update_product_class_for_salesforce_product.rb" "20131028104800_add_force_full_to_active_backup_run.rb" "20131022162301_remove_unused_columns_from_archived_subscription.rb" "20131022121010_remove_unused_columns_from_subscription.rb" "20131013133651_drop_history.rb" "20131002173706_drop_next_hour_slot_from_services.rb" "20130927113006_create_backup_slot.rb" "20130927112846_add_notifications_count_to_domain.rb" "20130926130817_create_user_notifications.rb" "20130925181601_add_domain_id_to_notifications.rb" "20130925155304_domain_two_legged_configured.rb" "20130826162749_add_index_on_parent_to_services.rb" "20130826162618_remove_can_use_drive_api_from_domains.rb" "20130725162842_remove_user_from_notifications.rb" "20130724150243_rename_to_batch_restore.rb" "20130718173618_add_domain_id_column.rb" "20130621151451_add_restore_to_service_id.rb" "20130610135415_add_unprotected_accounts_count_to_domains.rb" "20130606210749_add_google_id_to_users.rb" "20130606130812_add_organizational_unit_to_users.rb" "20130531134302_add_remote_state_to_services.rb" "20130521111843_add_sites_for_owners_only_to_domains.rb" "20130516104511_drop_payment_plans_table.rb" "20130514174033_add_can_use_drive_api_to_domains.rb" "20130507171500_delete_ignore_storage_limits_line_items.rb" "20130507171220_drop_products_table.rb" "20130507162749_add_index_on_type_to_services.rb" "20130506191254_add_disabled_service_types_to_domains.rb" "20130429133903_create_line_item_archive.rb" "20130423201201_adds_storage_totals_to_domains.rb" "20130418132954_add_path_prefix_to_services.rb" "20130329152823_add_services_enabled_index.rb" "20130328191113_add_services_subscription_id.rb" "20130319180928_add_trialable_flag_to_backupify_product.rb" "20130318214530_add_existing_tables_to_salesforce_backup_run.rb" "20130315191017_create_line_items.rb" "20130315185249_create_backupify_products.rb" "20130314133027_change_archive_url_to_text_column.rb" "20130312135426_add_state_column_to_exports.rb" "20130307174526_add_indices_to_full_domain_exports.rb" "20130237175445_create_active_backup_runs.rb" "20130227194643_add_ended_at_to_exports.rb" "20130226180237_create_full_domain_exports.rb" "20130225160604_add_exports_failed_column.rb" "20130213164627_create_password_resets.rb" "20130207142856_rename_and_remove_authlogic_magic_columns.rb" "20130206132949_normalize_domain_names.rb" "20130205162207_drop_sti_for_backup_run.rb" "20130131155418_drop_audit_logs.rb" "20130117201959_add_retention_period_to_domain.rb" "20130114220142_remove_services_migration_columns.rb" "20130110200039_add_restored_folder_ids_to_record_restores.rb" "20130107155936_record_restores_str_to_text.rb" "20130104201502_add_domains_child_app_access_enabled.rb" "20130102222730_add_retention_period_to_service.rb" "20121220154958_per_object_encryption_flag.rb" "20121219144344_create_email_results_column_on_service_restores.rb" "20121217163236_add_multi_admin_flag_to_products_and_subscriptions.rb" "20121214132555_add_missing_billing_contact_index.rb" "20121214131330_add_composite_index_for_generated_by_domain_lookup.rb" "20121213184759_add_composite_index_for_scheduler.rb" "20121210192009_add_unique_index_for_service_attributes.rb" "20121120204005_add_admin_to_activations.rb" "20121113165004_add_audit_logging_flag_to_products_and_subscriptions.rb" "20121029153510_rename_salesforce_integration_key.rb" "20120913124022_create_audit_logs.rb" "20120822220755_add_increased_backup_frequency_to_subscriptions.rb" "20120822220314_add_increased_backup_frequency_to_products.rb" "20120817192835_add_company_to_users.rb" "20120817180543_add_reseller_to_subscription.rb" "20120816193430_add_service_id_state_index.rb" "20120718192319_create_subscriptions.rb" "20120718155634_create_backup_runs.rb" "20120713131546_add_exception_to_record_restores.rb" "20120705173232_create_products.rb" "20120705170102_add_next_hour_slot_to_services.rb" "20120627135148_add_salesforce_integration_key_to_chosen_plans.rb" "20120626173350_add_increased_backup_frequency_to_chosen_plans.rb" "20120626173321_add_increased_backup_frequency_to_payment_plans.rb" "20120326203444_add_limit_reached_to_history.rb" "20120224162156_add_service_migration_dates.rb" "20120214200848_add_user_id_to_notifications.rb" "20120128210349_add_google_docs_owner_backup_to_domain.rb" "20120126170553_change_record_restore_datum_id_to_text.rb" "20120118140944_add_job_role_to_users.rb" "20120118022750_remove_composite_index_from_history.rb" "20120117190925_add_parent_id_to_services.rb" "20120117164907_fix_history_index.rb" "20120116171223_add_index_to_history.rb" "20120111155929_remove_service_types.rb" "20120111155629_remove_service_type_id.rb" "20120106165356_add_referrer_to_domains.rb" "20111205210225_add_index_to_domains.rb" "20111115151333_add_result_to_record_restore.rb" "20111114193911_add_service_restore_id_to_record_restores.rb" "20111114193737_create_service_restores.rb" "20111109213112_add_auto_add_new_accounts_to_domains.rb" "20111109150058_add_token_to_reports.rb" "20111108210954_add_account_list_to_domains.rb" "20111107160154_add_service_data_count.rb" "20111104154820_add_invoiced_flag_to_chosen_plan.rb" "20111026174533_remove_unused_service_types.rb" "20111018182631_add_revision_to_record_restores.rb" "20111014193350_add_message_to_notifications.rb" "20110913201317_create_record_restores.rb" "20110912205641_create_exports.rb" "20110818170649_add_service_type_column.rb" "20110816171648_add_unique_user_id_activations_index.rb" "20110726173648_domain_summary_email_unsubscribe.rb" "20110721180225_create_notifications.rb" "20110629120511_add_already_configured_state_to_service_configuration.rb" "20110615185042_add_services_generated_by_domain_index.rb" "20110601134213_add_domain_count.rb" "20110503170807_remove_export_history_fields_from_history_table.rb" "20110429204731_create_promotion.rb" "20110429204619_add_promo_code_index.rb" "20110428144453_create_export_history_table.rb" "20110426183309_create_service_export_files_table.rb" "20110426175313_add_export_history_fields_to_history_table.rb" "20110324174241_archived_tables_primary_key.rb" "20110215160712_rename_facebook_fan_page_description.rb" "20110119021343_add_promo_code_to_chosen_plans.rb" "20101208165821_reset_schema.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/lib/domain_connection/" (21494 9344 0 0) "google_user_list/" "connection_checker.rb" "connection.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/config/rubber/" (21497 59036 0 0) "rubber.yml" "rubber-wale.yml" "rubber-twemproxy.yml" "rubber-statsd.yml" "rubber-stackdriver.yml" "rubber-splunk.yml" "rubber-smoke.yml" "rubber-rvm.yml" "rubber-redis.yml" "rubber-qless.yml" "rubber-postgresql.yml" "rubber-pgpool.yml" "rubber-pgbouncer.yml" "rubber-passenger.yml" "rubber-node.yml" "rubber-newrelic.yml" "rubber-monit.yml" "rubber-mongodb.yml" "rubber-logstash.yml" "rubber-jira.yml" "rubber-jenkins.yml" "rubber-instances.yml" "rubber-hubot.yml" "rubber-haproxy.yml" "rubber-graphite.yml" "rubber-elasticsearch.yml" "rubber-dns.yml" "rubber-complete.yml" "rubber-collectd.yml" "rubber-cassandra.yml" "rubber-apache.yml" "role/" "instance-yuri.yml" "instance-stagingtest.yml" "instance-staging.yml" "instance-smoke.yml" "instance-slitest.yml" "instance-shibailo.yml" "instance-sergeyev.yml" "instance-salesforcescan.yml" "instance-production.yml" "instance-pilipenok.yml" "instance-pen.yml" "instance-mhoydis.yml" "instance-mbittarelli.yml" "instance-matt.yml" "instance-marketing.yml" "instance-localci.yml" "instance-keith.yml" "instance-jsalem.yml" "instance-jlawrence.yml" "instance-jbyoun.yml" "instance-jbodah.yml" "instance-jason.yml" "instance-gsalmon.yml" "instance-eric.yml" "instance-dmitry.yml" "instance-demo.yml" "instance-danny.yml" "instance-cass_test.yml" "instance-cass_clone.yml" "instance-bpovlich.yml" "instance-benlog.yml" "instance-anthony.yml" "instance-anorwell.yml" "instance-alexey.yml" "instance-ablyamit.yml" "instance-ably.yml" "deploy-wale.rb" "deploy-util.rb" "deploy-twemproxy.rb" "deploy-sysstat.rb" "deploy-statsd.rb" "deploy-stackdriver.rb" "deploy-splunk.rb" "deploy-smoke.rb" "deploy-setup.rb" "deploy-redis.rb" "deploy-qless.rb" "deploy-postgresql.rb" "deploy-pgpool.rb" "deploy-pgbouncer.rb" "deploy-passenger.rb" "deploy-node.rb" "deploy-newrelic.rb" "deploy-monit.rb" "deploy-mongodb.rb" "deploy-logstash.rb" "deploy-logging.rb" "deploy-loadtest.rb" "deploy-jira.rb" "deploy-jenkins.rb" "deploy-hubot.rb" "deploy-haproxy.rb" "deploy-graphite.rb" "deploy-elasticsearch.rb" "deploy-collectd.rb" "deploy-cassandra.rb" "deploy-apache.rb" "common/" "../" "./")
-
- ("/Users/anorwell/work/backupify/app/models/service_concerns/" (21495 34605 0 0) "restore.rb" "enqueue_ratio.rb" "disabled_code_state_machine.rb" "dirty_status.rb" "backup.rb" "async_job/" "../" "./")
-
- ("/Users/anorwell/work/backupify/lib/jobs/generic/backup/" (21495 34605 0 0) "segment_common.rb" "segment.rb" "master.rb" "facebook_twitter.rb" "error_handling.rb" "error_handling/" "../" "./")
-
- ("/Users/anorwell/work/backupify/lib/jobs/google_mail/backup/" (21494 11578 0 0) "segment_label.rb" "segment.rb" "master_label.rb" "master.rb" "label_hierarchy.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/test/unit/jobs/google_mail/backup/" (21494 11578 0 0) "segment_test.rb" "segment_label_test.rb" "master_test.rb" "master_label_test.rb" "label_hierarchy_test.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/app/assets/javascripts/pages/settings/" (21494 9344 0 0) "domains.js" "../" "./")
-
- ("/Users/anorwell/work/backupify/app/assets/javascripts/pages/" (21494 9345 0 0) "users/" "user_sessions.js" "settings/" "domains.js" "domains/" "../" "./")
-
- ("/Users/anorwell/work/backupify/app/assets/javascripts/angular/controllers/" (21494 9344 0 0) "user_services.js" "user_search.js" "user_login.js" "service_ui.js" "currently_backing_up.js" "admin/" "../" "./")
-
- ("/Users/anorwell/work/backupify/app/views/reauth_mailer/" (21494 9344 0 0) "info.text.erb" "info.html.erb" "../" "./")
-
- ("/Users/anorwell/work/backupify/config/environments/" (21494 9344 0 0) "yuri.rb" "test.rb" "staging.rb" "smoke.rb" "shibailo.rb" "sergeyev.rb" "salesforcescan.rb" "rob.rb" "resellerdev.rb" "production.rb" "preview.rb" "pilipenok.rb" "pen.rb" "michael.rb" "mhoydis.rb" "mcnasby.rb" "mbittarelli.rb" "matt.rb" "marketing.rb" "keith.rb" "jsalem.rb" "jlawrence.rb" "jessi.rb" "jenkins.rb" "jbyoun.rb" "jbodah.rb" "jbeach.rb" "jason.rb" "ignat.rb" "hoffmann.rb" "gsalmon.rb" "gappsdev.rb" "eugene.rb" "eric.rb" "dmitry.rb" "development.rb" "demo.rb" "dave.rb" "danny.rb" "bpovlich.rb" "booshforce.rb" "bdthomas.rb" "anthony.rb" "anorwell.rb" "alexey.rb" "adwordsdev.rb" "acharis.rb" "ablyamit.rb" "ably.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/test/unit/domain/" (21494 9345 0 0) "auto_add_test.rb" "account_adder_test.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/app/models/domain/" (21494 9344 0 0) "auto_add.rb" "account_adder.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/lib/jobs/domains/" (21494 9345 0 0) "user_list_mailer.rb" "update_google_accounts_scheduler.rb" "update_google_accounts.rb" "update_auth_type.rb" "remove_users.rb" "modify_service_type.rb" "invoiced_limit.rb" "calculate_domain_storage_totals/" "billing_verifier.rb" "auto_add_users_scheduler.rb" "auto_add_users.rb" "add_users_from_organization_units.rb" "add_users/" "../" "./")
-
- ("/Users/anorwell/work/backupify/test/unit/jobs/domains/" (21494 9345 0 0) "update_google_accounts_test.rb" "update_google_accounts_scheduler_test.rb" "update_auth_type_test.rb" "modify_service_type_test.rb" "invoiced_limit_test.rb" "calculate_domain_storage_totals/" "billing_verifier_test.rb" "auto_add_users_test.rb" "auto_add_users_scheduler_test.rb" "add_users_from_organization_units_test.rb" "add_users/" "../" "./")
-
- ("/Users/anorwell/work/backupify/app/views/settings/domains/" (21494 9344 0 0) "user_services.html.erb" "show.html.erb" "organization_units.html.erb" "new_child_domain.html.erb" "new.html.erb" "index.html.erb" "edit.html.erb" "dashboard.html.erb" "auth_help.html.erb" "accounts_ajax.html.erb" "accounts.html.erb" "_welcome_screen.html.erb" "_user_list_form.html.erb" "_user_bar.html.erb" "_subdomain_form.html.erb" "_services.html.erb" "_recently_deleted_items.html.erb" "_domain_settings_form.html.erb" "_action_bar.html.erb" "../" "./")
-
- ("/Users/anorwell/work/permissions_client/lib/permissions_client/" (21499 36812 0 0) "connection.rb" "client.rb" "../" "./")
-
- ("/Users/anorwell/work/permissions_client/script/" (21494 16709 0 0) "../" "./")
-
- ("/Users/anorwell/.emacs.d/custom/" (21466 32326 0 0) "csv-mode.el" "06csv-mode.el" "05rinari.el" "04webmode.el" "03key-chord.el" "02smartparens.el" "01projectile.el" "00common-setup.el" "../" "./")
-
- ("/Users/anorwell/.emacs.d/" (21468 1118 0 0) "url/" "snippets/" "recentf" "README" "projectile.cache" "projectile-bookmarks.eld" "init.el" "ido.last" "eshell/" "ensime/" "custom/" "Cask" "auto-save-list/" ".mc-lists.el" ".gitignore" ".git/" ".cask/" "../" "./")
-
- ("/Users/anorwell/work/backupify/app/controllers/user_sso/" (21310 54289 0 0) "clients_controller.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/lib/backupify/" (21490 17255 0 0) "uri_lib.rb" "tree_lib.rb" "thread_dump_signal_handler.rb" "temporary_access.rb" "storage_usage.rb" "statsd.rb" "sign_up.rb" "send_grid.rb" "salesforce/" "restore_users.rb" "redis/" "read_only_mode.rb" "rate_limiter.rb" "rate_limiter/" "net/" "migration_helper.rb" "metrics/" "logger_support.rb" "line_item_migration_helper.rb" "last_visited.rb" "javascript_stash.rb" "input_iterator.rb" "google/" "file_lib.rb" "export_helper.rb" "exception_helper.rb" "encryption.rb" "csv_processor.rb" "csv_lib.rb" "cassandra_helper.rb" "bootstrap_form_builder.rb" "auth/" "atomic_increment.rb" "async_job/" "api_response.rb" "../" "./")
-
- ("/Users/anorwell/work/async_job/lib/async_job/" (21454 39488 0 0) "worker.rb" "web.rb" "web/" "version.rb" "trident_adapter.rb" "test_helper.rb" "sharding.rb" "sharding/" "scheduler.rb" "reservers.rb" "reservers/" "model.rb" "middleware/" "manager.rb" "jobs/" "job_callbacks.rb" "clients/" "callbacks.rb" ".#job_reserver.rb" "../" "./")
-
- ("/Users/anorwell/work/async_job/lib/" (21436 5589 0 0) "async_job.rb" "async_job/" "../" "./")
-
- ("/Users/anorwell/work/async_job/" (21436 5589 0 0) "test/" "README.md" "Rakefile" "LICENSE.txt" "lib/" "Gemfile.lock" "Gemfile" "config.ru" "bin/" "async_job.gemspec" ".travis.yml" ".gitignore" ".git/" ".coveralls.yml" "../" "./")
-
- ("/Users/anorwell/work/backupify/lib/tasks/" (21490 17255 0 0) "sass.rake" "promotion.rake" "metric_fu.rake" "explicit_tests.rake" "cucumber.rake" "create_cql_environment.rake" "convert_subscriptions_to_line_items.rake" ".gitkeep" "../" "./")
-
- ("/Users/anorwell/work/backupify/script/" (21490 24878 0 0) "user_cost_report.rb" "useful_shell.sh" "useful_queries.sql" "useful_console.rb" "update_local_jenkins_dns.rb" "twemproxy/" "truncate_logs_older_than.rb" "truncate_history_table.rb" "transfer_high_watermarks.rb" "tokengentool" "time_tests.rb" "stop_qless.sh" "start_qless.rb" "smaps.pl" "server" "script_helper.rb" "script_example.rb" "salesforce/" "s3_multipart_upload.rb" "rubber" "restore_users.rb" "restore_snapshot.sh" "reset_redis.rb" "reset_qless.sh" "reset_cassandra_schema.rb" "reset_cassandra.rb" "reset_cass.sh" "reset_all.sh" "reports/" "repair_and_clean_cassandra_node.rb" "remove_s3_dupes.rb" "remove_gmail_migration_backups.rb" "redis-sampler.rb" "rails" "qless/" "profile_backup_segment.rb" "pgpool_failover.rb" "pgpool_failback.rb" "passenger_cycle_large_procs.rb" "parallel_test.rb" "oauth2/" "oauth.rb" "move_to_initial_queues.rb" "migrate_twitter_cassandra_data.rb" "migrate_google_mail_cassandra_data.rb" "list_remote_branches.rb" "jmxdump.rb" "initial_service_backup_metrics.rb" "import_legacy_payment_plans.rb" "imap.rb" "group_google_apps_services.rb" "googleapps/" "google_mail_audit_script.rb" "fix_twitter_authorization.rb" "fix_missing_services.rb" "fix_index.rb" "fix_facebook_authorization.rb" "fix_duplicate_activations.rb" "find_large_twitter_accounts.rb" "fb_crawl.rb" "fanpages/" "es_status.rb" "encrypt_content.rb" "ec2_inactivity_monitor.rb" "dump_zuora_plans.rb" "dump_service.rb" "domain_types.rb" "domain_id_assignment_archive.rb" "domain_id_assignment.rb" "disable_service_type_script.rb" "debug_helper.rb" "cucumber" "create_users_for_domain.rb" "create_manifest.rb" "copy_s3_data.rb" "convert_redis_base64_keys_to_cassandra.rb" "collectd/" "clear_drive_hierarchy_snapshot_id.rb" "cleanup_broken_zuora_pro500.rb" "cleanup-abrs.rb" "check_bad_services.rb" "change_master.sh" "cassandra_migration_audit.rb" "cassandra_migrate.rb" "cassandra_keys.rb" "cassandra_columns.rb" "cassandra_clean_old_s3_backups.rb" "cassandra_calculate_tokens.rb" "base64_decode_content.rb" "backup_missing_data.rb" "backfill_domain_counts.rb" "archive_to_s3.rb" "analyse_redis_monitor.rb" "add_service_type.rb" "add_feature_to_subscriptions.rb" ".#stop_resque.sh" ".#start_trident.sh" "../" "./")
-
- ("/Users/anorwell/work/backupify/test/functional/domains/" (21490 17256 0 0) "re_auth_controller_test.rb" "multi_admin_controller_test.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/app/mailers/" (21491 24939 0 0) "support_notifier.rb" "settings_domain_mailer.rb" "service_export_mailer.rb" "salesforce_restore_mailer.rb" "sales_mailer.rb" "restore_mailer.rb" "reseller_backup_summary_mailer.rb" "report_notifier.rb" "reauth_mailer.rb" "ops_notifier.rb" "notifier.rb" "gmail_imap_limited_notifier.rb" "full_domain_export_mailer.rb" "billing_verifier_summary_mailer.rb" "backup_summary_mailer.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/lib/domain_connection/google_user_list/" (21490 17255 0 0) "provisioning.rb" "legacy.rb" "directory.rb" "common.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/lib/backupify/auth/google/o_auth1/" (21490 17255 0 0) "scopes.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/lib/jobs/generic/backup/error_handling/" (21490 17255 0 0) "google.rb" "../" "./")
+ ("/Users/anorwell/work/backupify/test/functional/" (21840 46871 0 0) "views/" "users_controller_test.rb" "user_sso/" "user_sessions_controller_test.rb" "twitter_services_controller_test.rb" "support_notifier_test.rb" "subscriptions_controller_test.rb" "settings/" "services_controller_test.rb" "service_export_mailer_test.rb" "service_configurations_controller_test.rb" "searches_controller_test.rb" "salesforce_services_controller_test.rb" "salesforce_backup_runs_controller_test.rb" "salesforce/" "restores_controller_test.rb" "resellers/" "reseller_backup_summary_mailer_test.rb" "products_controller_test.rb" "pages_controller_test.rb" "office365_controller_test.rb" "office365/" "notifications_controller_test.rb" "last_visited_test.rb" "google_sites_services_controller_test.rb" "google_mail_services/" "google_docs_services/" "google_contacts_services_controller_test.rb" "google_contacts_services/" "google_calendar_services_controller_test.rb" "google_apps_accounts_controller_test.rb" "facebook_fanpage_services_controller_test.rb" "exports_controller_test.rb" "drives_controller_test.rb" "domains_controller_test.rb" "domains/" "deleted_data_controller_test.rb" "data_controller_test.rb" "concerns/" "billing_verifier_summary_mailer_test.rb" "backups_controller_test.rb" "backup_summary_mailer_test.rb" "backup_runs_controller_test.rb" "apps_controller_test.rb" "application_controller_test.rb" "api/" "admin/" "account/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

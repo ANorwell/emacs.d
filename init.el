@@ -49,16 +49,22 @@
  '(company-dabbrev-code-modes
    (quote
     (asm-mode batch-file-mode c++-mode c-mode cperl-mode csharp-mode css-mode emacs-lisp-mode erlang-mode f90-mode fortran-mode haskell-mode java-mode javascript-mode jde-mode js2-mode lisp-mode lua-mode objc-mode perl-mode php-mode prog-mode python-mode ruby-mode scheme-mode shell-script-mode enh-ruby-mode)))
-; '(company-etags-use-main-table-list t)
  '(custom-safe-themes
    (quote
     ("8bb1e9a22e9e9d405ca9bdf20b91301eba12c0b9778413ba7600e48d2d3ad1fb" default)))
  '(ediff-window-setup-function (quote ediff-setup-windows-plain))
  '(enh-ruby-bounce-deep-indent (quote true))
+ '(enh-ruby-use-encoding-map nil)
  '(helm-buffers-fuzzy-matching t)
+ '(helm-ls-git-show-abs-or-relative (quote relative))
+ '(js-expr-indent-offset 2)
+ '(js-indent-level 2)
  '(js2-basic-offset 2)
- '(js2-bounce-indent-p t)
+ '(js2-bounce-indent-p nil)
+ '(js2-indent-chained t)
+ '(js2-pretty-multiline-declarations nil)
  '(max-lisp-eval-depth 600)
+ '(safe-local-variable-values (quote ((encoding . utf-8))))
  '(show-trailing-whitespace t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
