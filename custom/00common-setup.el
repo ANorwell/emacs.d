@@ -138,12 +138,16 @@
           '(lambda ()
              (outline-minor-mode)
              (setq outline-regexp " *\\(def \\|clas\\|require\\|describe\\|public\\|private\\|protected\\|context\\|module\\|require\\|should\\|xshould\\)")
+             (subword-mode)
+             (yard-mode)
              (local-set-key (kbd "C-,") 'rails-test-buffer-switch)))
 
 (add-hook 'ruby-mode-hook
           '(lambda ()
              (outline-minor-mode)
              (setq outline-regexp " *\\(def \\|clas\\|require\\|describe\\|public\\|private\\|context\\|module\\|require\\|should\\)")
+             (subword-mode)
+             (yard-mode)
              (local-set-key (kbd "C-,") 'rails-test-buffer-switch)))
 
 

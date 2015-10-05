@@ -22,6 +22,7 @@
         end-of-buffer
         find-tag
         kill-region
+        m-test-current-buffer-file
         query-replace
         show-entry
         spin-push-current-buffer-file
