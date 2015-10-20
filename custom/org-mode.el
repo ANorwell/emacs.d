@@ -1,6 +1,7 @@
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
+(setq org-startup-indented t)
 
 (eval-after-load "org-present"
   '(progn
@@ -9,16 +10,21 @@
                  (org-present-big)
                  (org-display-inline-images)
                  (org-present-hide-cursor)
+                 (visual-line-mode)
                  (org-present-read-only)))
      (add-hook 'org-present-mode-quit-hook
                (lambda ()
                  (org-present-small)
                  (org-remove-inline-images)
                  (org-present-show-cursor)
+                 (visual-line-mode)
                  (org-present-read-write)))))
 
 ;; for ruby, eval code as verbatim
 (setq org-babel-default-header-args:ruby '((:results . "verbatim")))
+
+;; markdown exports
+(load "ox-md.el")
 
 ;;; org-beautify-theme.el --- A sub-theme to make org-mode more beautiful.
 ;; Copyright (C) 2014 Jonathan Arkell

@@ -117,3 +117,4 @@
 (load "ob-ruby.el")
 
 (server-start)
+(put 'narrow-to-region 'disabled nil)
