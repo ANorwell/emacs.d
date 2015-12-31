@@ -44,12 +44,13 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#3F3F3F" "#CC9393" "#7F9F7F" "#F0DFAF" "#8CD0D3" "#DC8CC3" "#93E0E3" "#DCDCCC"])
+ '(company-auto-complete nil)
  '(company-backends
    (quote
-    (company-bbdb company-nxml company-css company-eclim company-semantic company-clang company-xcode company-ropemacs company-capf
+    (company-bbdb company-nxml company-css company-eclim company-semantic company-clang company-xcode company-capf
                   (company-dabbrev-code company-keywords)
                   company-oddmuse company-files company-dabbrev)))
- '(company-begin-commands nil)
+ '(company-begin-commands t)
  '(company-dabbrev-code-modes
    (quote
     (asm-mode batch-file-mode c++-mode c-mode cperl-mode csharp-mode css-mode emacs-lisp-mode erlang-mode f90-mode fortran-mode haskell-mode java-mode javascript-mode jde-mode js2-mode lisp-mode lua-mode objc-mode perl-mode php-mode prog-mode python-mode ruby-mode scheme-mode shell-script-mode enh-ruby-mode)))
@@ -59,14 +60,14 @@
     ("9dae95cdbed1505d45322ef8b5aa90ccb6cb59e0ff26fef0b8f411dfc416c552" "00a19ebc359b6419e1e4ab05406d29b265dedd99bcbbf8f870da91098f546e99" "fa94f0c2ddd30df2bca56ddee6854c5926a8a67125d0c28326fd504e377563a9" "8bb1e9a22e9e9d405ca9bdf20b91301eba12c0b9778413ba7600e48d2d3ad1fb" default)))
  '(ediff-window-setup-function (quote ediff-setup-windows-plain))
  '(enh-ruby-bounce-deep-indent (quote true))
- '(enh-ruby-use-encoding-map nil)
+ '(enh-ruby-use-encoding-map nil t)
  '(fci-rule-color "#383838")
  '(helm-buffers-fuzzy-matching t)
  '(helm-ls-git-show-abs-or-relative (quote relative))
  '(js-expr-indent-offset 2)
  '(js-indent-level 2)
  '(js2-basic-offset 2)
- '(js2-bounce-indent-p nil)
+ '(js2-bounce-indent-p t)
  '(js2-indent-chained t)
  '(js2-pretty-multiline-declarations nil)
  '(max-lisp-eval-depth 600)

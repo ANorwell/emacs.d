@@ -57,7 +57,7 @@
         '(
           emacs-lisp-mode-hook
           java-mode-hook
-          js-mode-hook
+          js2-mode-hook
           lisp-interaction-mode-hook
           lisp-mode-hook
           makefile-mode-hook
@@ -67,6 +67,7 @@
           scheme-mode-hook
           sh-mode-hook
           ))
+
 
 ;;outline-minor-mode
 ;;keys for outline mode
@@ -159,6 +160,7 @@
 (add-hook 'js2-mode-hook
           '(lambda ()
              (outline-minor-mode)
+             (electric-indent-local-mode -1)
              (setq outline-regexp " *\\(.*function\\|describe(\\|it(\\|.*: *{\\|.*= *{\\)")))
 
 
@@ -379,7 +381,9 @@ isn't there and triggers an error"
 (global-set-key (kbd "C-c C-a") 'ag-kill-other-buffers)
 
 (add-hook 'after-init-hook 'global-company-mode)
-(setq company-begin-commands '(self-insert-command))
+
+;; setting this would only run company on the keyboard command
+;;(setq company-begin-commands '(self-insert-command))
 (global-set-key (kbd "M-/") 'company-complete)
 
 (global-set-key (kbd "s-j") 'imenu-anywhere)
@@ -401,7 +405,8 @@ isn't there and triggers an error"
 (defun disable-enh-ruby-encoding ()
   (interactive)
   (defun enh-ruby-mode-set-encoding () ))
-;(add-hook 'enh-ruby-mode-hook 'disable-enh-ruby-encoding)
+(defun enh-ruby-mode-set-encoding () )
+(add-hook 'enh-ruby-mode-hook 'disable-enh-ruby-encoding)
 
 (setq system-uses-terminfo nil)
 

@@ -12,6 +12,7 @@
         org-yank
         sp--self-insert-command
         sp-remove-active-pair-overlay
+        yaml-electric-backspace
         ))
 
 (setq mc/cmds-to-run-once
