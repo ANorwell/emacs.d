@@ -22,6 +22,8 @@
 
 (load "csv-mode.el")
 (load "06csv-mode.el")
+(load "10helm.el")
+(load "11magit.el")
 
 ;;ensime-mode for scala
 ;;(add-to-list 'load-path "~/misc/ensime/elisp/")
@@ -54,6 +56,8 @@
  '(company-dabbrev-code-modes
    (quote
     (asm-mode batch-file-mode c++-mode c-mode cperl-mode csharp-mode css-mode emacs-lisp-mode erlang-mode f90-mode fortran-mode haskell-mode java-mode javascript-mode jde-mode js2-mode lisp-mode lua-mode objc-mode perl-mode php-mode prog-mode python-mode ruby-mode scheme-mode shell-script-mode enh-ruby-mode)))
+ '(company-idle-delay 1.2)
+ '(company-minimum-prefix-length 4)
  '(custom-enabled-themes (quote (zenburn)))
  '(custom-safe-themes
    (quote
@@ -64,12 +68,14 @@
  '(fci-rule-color "#383838")
  '(helm-buffers-fuzzy-matching t)
  '(helm-ls-git-show-abs-or-relative (quote relative))
+ '(ido-use-virtual-buffers t)
  '(js-expr-indent-offset 2)
  '(js-indent-level 2)
  '(js2-basic-offset 2)
  '(js2-bounce-indent-p t)
  '(js2-indent-chained t)
  '(js2-pretty-multiline-declarations nil)
+ '(magit-diff-refine-hunk (quote all))
  '(max-lisp-eval-depth 600)
  '(org-babel-load-languages (quote ((emacs-lisp . t) (ruby . t) (shell . t))))
  '(org-confirm-babel-evaluate nil)

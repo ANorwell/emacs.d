@@ -88,19 +88,6 @@
 (global-set-key [f10] 'menu-bar-open)
 (global-set-key [f11] 'set-buffer-file-coding-system)
 
-;;magit
-(global-set-key (kbd "C-c m") 'magit-status)
-(defun magit-open-repo ()
-  (interactive)
-  (setq current-prefix-arg '(4)) ; C-u
-  (setq current-prefix-arg '(4)) ; C-u
-  (call-interactively 'magit-status))
-(global-set-key (kbd "C-c C-m") 'magit-open-repo)
-(eval-after-load 'magit
-  '(progn
-     (set-face-foreground 'magit-diff-add "green3")
-     (set-face-foreground 'magit-diff-del "red3")))
-
 (add-hook 'cperl-mode-hook
           '(lambda ()
              (outline-minor-mode)
