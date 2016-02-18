@@ -76,6 +76,11 @@
  '(js2-indent-chained t)
  '(js2-pretty-multiline-declarations nil)
  '(magit-diff-refine-hunk (quote all))
+ '(magit-refs-sections-hook
+   (quote
+    (magit-insert-error-header magit-insert-branch-description magit-insert-local-branches)))
+ '(magit-refs-show-commit-count (quote all))
+ '(magit-refs-show-margin (quote branch))
  '(max-lisp-eval-depth 600)
  '(org-babel-load-languages (quote ((emacs-lisp . t) (ruby . t) (shell . t))))
  '(org-confirm-babel-evaluate nil)
@@ -108,6 +113,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(magit-section-highlight ((t (:background "gray28"))))
  '(org-agenda-done ((t (:foreground "PaleGreen"))))
  '(org-block-begin-line ((t (:inherit org-meta-line))))
  '(org-code ((t (:inherit shadow :background "gray15"))))
