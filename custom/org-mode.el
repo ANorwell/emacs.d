@@ -24,7 +24,7 @@
 (setq org-babel-default-header-args:ruby '((:results . "verbatim")))
 
 ;; markdown exports
-(load "ox-md.el")
+;;(load "ox-md.el")
 
 ;;; org-beautify-theme.el --- A sub-theme to make org-mode more beautiful.
 ;; Copyright (C) 2014 Jonathan Arkell

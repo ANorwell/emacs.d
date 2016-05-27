@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/arron/.emacs.d/" . "custom/")
  ("/Users/anorwell/work/backupify/lib/seat_management/seats/" . "seaters/")
  ("/Users/anorwell/work/backupify/lib/seat_management/members/" . "adapters/")
  ("/Users/anorwell/work/backupify/test/unit/seat_management/members/" . "jobs/")
@@ -379,6 +380,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/arron/.emacs.d/"
+ "/home/arron/.emacs.d/custom/"
  "/Users/anorwell/work/backupify/lib/seat_management/seats/seaters/"
  "/Users/anorwell/work/backupify/lib/seat_management/seats/"
  "/Users/anorwell/work/backupify/lib/seat_management/"
@@ -427,26 +430,28 @@
  "/Users/anorwell/work/backupify/app/seat_management/member_resources/adapters/"
  "/Users/anorwell/work/backupify/app/seat_management/member_service/"
  "/Users/anorwell/Downloads/.ec2_backupifydev/"
- "/Users/anorwell/work/backupify/app/assets/features/common/lastSuccessfulBackup/"
- "/Users/anorwell/work/backupify/app/seat_management/member_service/adapters/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "init.el"
+ "bottom-bar.el"
+ "org-mode.el"
+ "ob-ruby.el"
  "office365.rb"
  "seater_factory.rb"
  "errors.rb"
  "segment.rb"
  "updater.rb"
  "member_resources.rb"
- "seat_resources.rb"
- "seat_creation_error.rb"
- "rubber-secret.yml"
- "adapter_factory.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/arron/.emacs.d/custom/" (22344 27561 496666 577000) "03key-chord.el" "05rinari.el" "bottom-bar.el" "00common-setup.el" "11magit.el" "js2-mode.el" "10helm.el" "./" "06csv-mode.el" "02smartparens.el" "04webmode.el" "01projectile.el" "ob-ruby.el" "csv-mode.el" "../" "org-mode.el")
+
+ ("/home/arron/.emacs.d/" (22344 40677 18033 894000) "eshell/" "var/" "projectile-bookmarks.eld" "init.el" "custom/" "ido.last" ".gitignore" "network-security.data" "recentf" ".mc-lists.el" "ensime/" "./" "auto-save-list/" "Cask" ".cask/" "persp-confs/" ".git/" "../" "README" "snippets/")
+
  ("/Users/anorwell/work/backupify/lib/seat_management/seats/seaters/" (22213 56187 0 0) "office365.rb" "../" "./")
 
  ("/Users/anorwell/work/backupify/lib/seat_management/seats/" (22213 59515 0 0) "seaters/" "seater_factory.rb" "../" "./")
@@ -642,10 +647,6 @@
  ("/Users/anorwell/.rbenv/versions/2.1.2/gemsets/backupify/gems/railties-4.1.14.1/lib/" (22185 3870 0 0) "rails.rb" "rails/" "../" "./")
 
  ("/Users/anorwell/.rbenv/versions/2.1.2/gemsets/backupify/gems/railties-4.1.14.1/lib/rails/" (22185 3870 0 0) "welcome_controller.rb" "version.rb" "test_unit/" "test_help.rb" "templates/" "tasks.rb" "tasks/" "source_annotation_extractor.rb" "rubyprof_ext.rb" "ruby_version_check.rb" "railtie.rb" "railtie/" "rack.rb" "rack/" "paths.rb" "mailers_controller.rb" "initializable.rb" "info_controller.rb" "info.rb" "generators.rb" "generators/" "gem_version.rb" "engine.rb" "engine/" "deprecation.rb" "console/" "configuration.rb" "commands.rb" "commands/" "code_statistics_calculator.rb" "code_statistics.rb" "cli.rb" "backtrace_cleaner.rb" "application_controller.rb" "application.rb" "application/" "app_rails_loader.rb" "api/" "all.rb" "../" "./")
-
- ("/Users/anorwell/work/backupify/app/seat_management/views/test/" (22191 50681 0 0) "index.html.erb" "../" "./")
-
- ("/Users/anorwell/work/backupify/app/seat_management/views/" (22191 50681 0 0) "test/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----
