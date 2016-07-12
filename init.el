@@ -3,7 +3,6 @@
 (require 'pallet)
 (pallet-mode t)
 (add-to-list 'load-path "~/.emacs.d/custom")
-;;(add-to-list 'load-path "~/.emacs.d/other_paths")
 
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 
@@ -26,18 +25,18 @@
 (load "10helm.el")
 (load "11magit.el")
 
-;;ensime-mode for scala
-;;(add-to-list 'load-path "~/misc/ensime/elisp/")
-;;(add-to-list 'load-path "~/.emacs.d/ensime/")
-;;(require 'ensime)
-
 ;;; theme
 (load-theme 'zenburn t)
-
 
 ;;ido-mode
 (require 'ido)
 (ido-mode t)
+
+
+;;; ensime manually
+;; (add-to-list 'load-path "~/work/ensime")
+;; (load "ensime.el")
+
 
 
 (custom-set-variables
@@ -66,6 +65,11 @@
  '(ediff-window-setup-function (quote ediff-setup-windows-plain))
  '(enh-ruby-bounce-deep-indent (quote true))
  '(enh-ruby-use-encoding-map nil t)
+ '(ensime-goto-test-config-defaults
+   (quote
+    (:test-class-names-fn ensime-goto-test--test-class-names :test-class-suffixes
+                          ("Test" "Spec" "Specification" "Check")
+                          :impl-class-name-fn ensime-goto-test--impl-class-name :impl-to-test-dir-fn ensime-goto-test--impl-to-test-dir :is-test-dir-fn ensime-goto-test--is-test-dir :test-template-fn ensime-goto-test--test-template-scalatest-2)))
  '(fci-rule-color "#383838")
  '(helm-buffers-fuzzy-matching t)
  '(helm-ls-git-show-abs-or-relative (quote relative))
@@ -85,6 +89,7 @@
  '(max-lisp-eval-depth 600)
  '(org-babel-load-languages (quote ((emacs-lisp . t) (ruby . t) (shell . t))))
  '(org-confirm-babel-evaluate nil)
+ '(package-load-list (quote (\(ensime\ nil\)\ all)))
  '(safe-local-variable-values (quote ((encoding . utf-8))))
  '(show-trailing-whitespace t)
  '(vc-annotate-background "#2B2B2B")
@@ -131,6 +136,20 @@
 (load "ob-ruby.el")
 
 (load "bottom-bar.el")
+
+;; the package manager
+(require 'package)
+(setq
+ use-package-always-ensure t
+ package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                    ("org" . "http://orgmode.org/elpa/")
+                    ("melpa" . "http://melpa.org/packages/")))
+
+(package-initialize)
+(when (not package-archive-contents)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(require 'use-package)
 
 (server-start)
 (put 'narrow-to-region 'disabled nil)

@@ -14,8 +14,6 @@
 (setenv "TERM" "eterm-color")
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
-
 (setq org-src-fontify-natively t)
 
 (setq backup-directory-alist
@@ -42,6 +40,9 @@
                       '(lambda()
                          (save-excursion
                            (delete-trailing-whitespace))))))
+
+(add-hook 'scala-mode-hook 'ensime-mode)
+
 
 ;;markdown mode
 (autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
@@ -102,6 +103,7 @@
           '(lambda ()
              (outline-minor-mode)
              (setq outline-regexp "[\s\r\t]*\\(class\\|def\\|package\\|import\\|case class\\|object\\|trait\\|abstract\\|mixin\\|protected def\\|sealed\\|override\\|private def\\|describe\\|it(\\)")
+             (subword-mode)
              (local-set-key (kbd "C-,") 'spec-buffer-switch)))
 
 (add-hook 'php-mode-hook
@@ -157,15 +159,15 @@
 project"
   (interactive)
   (switch-to-buffer (find-file-noselect
-   (if (string-match "Spec.scala$" (buffer-file-name))
-(concat
-  (substring (replace-regexp-in-string "test" "main"
-      (buffer-file-name)) 0 -10)
-  ".scala")
-(concat
-  (substring (replace-regexp-in-string "main" "test"
-      (buffer-file-name)) 0 -6)
-  "Spec.scala")))))
+   (if (string-match "Test.scala$" (buffer-file-name))
+       (concat
+        (substring (replace-regexp-in-string "test" "main"
+                                             (buffer-file-name)) 0 -10)
+        ".scala")
+     (concat
+      (substring (replace-regexp-in-string "main" "test"
+                                           (buffer-file-name)) 0 -6)
+      "Test.scala")))))
 
 ;;(global-set-key (kbd "C-,") 'spec-buffer-switch)
 
@@ -211,8 +213,6 @@ project"
      (replace-regexp-in-string "app\\(.*\\).rb" "test\\1_test.rb" (buffer-file-name))))))
 
 (defun toggle-xshould-on ()
-  "Switch to/from the test file in the test folder of a rails project
-project"
   (interactive)
   (let ((case-fold-search t)) ; or nil
   (goto-char (point-min))
@@ -220,8 +220,6 @@ project"
     (replace-match "xshould" t t nil 1))))
 
 (defun toggle-xshould-off ()
-  "Switch to/from the test file in the test folder of a rails project
-project"
   (interactive)
   (let ((case-fold-search t)) ; or nil
   (goto-char (point-min))
@@ -237,6 +235,29 @@ project"
       (print "toggling on!!!")
       (toggle-xshould-on))))
 (global-set-key (kbd "C-c C-t") 'toggle-should)
+
+
+(defun toggle-ignore-on ()
+  (interactive)
+  (replace-regexp "\\(\\s-+\\)it(" "\\1ignore("))
+
+(defun toggle-ignore-off ()
+  (interactive)
+  (replace-regexp "\\(\\s-+\\)ignore(" "\\1it("))
+
+(defun toggle-ignore ()
+  (interactive)
+  (save-excursion
+    (goto-char 0)
+    (if (search-forward-regexp "^\\s-+\\(ignore\\)" nil t)
+        (progn
+          (print "toggling off!!!!!!")
+          (goto-char 0)
+          (toggle-ignore-off))
+      (print "toggling on!!!")
+      (toggle-ignore-on))))
+(global-set-key (kbd "C-c t") 'toggle-ignore)
+
 
 (defun fix-ruby ()
   (interactive)

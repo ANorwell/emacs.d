@@ -4,10 +4,12 @@
 (setq mc/cmds-to-run-for-all
       '(
         indent-for-tab-command
+        indent-new-comment-line
         org-beginning-of-line
         org-delete-char
         org-end-of-line
         org-kill-line
+        org-return-indent
         org-self-insert-command
         org-yank
         sp--self-insert-command
@@ -24,6 +26,7 @@
         find-tag
         kill-region
         m-test-current-buffer-file
+        org-forward-paragraph
         query-replace
         show-entry
         spin-push-current-buffer-file
