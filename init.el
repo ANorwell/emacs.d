@@ -4,7 +4,11 @@
 (pallet-mode t)
 (add-to-list 'load-path "~/.emacs.d/custom")
 
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+(setq
+ package-archives '(;;("gnu" . "http://elpa.gnu.org/packages/")
+                    ("org" . "http://orgmode.org/elpa/")
+                    ("melpa" . "http://melpa.org/packages/")
+                    ("melpa-stable" . "http://stable.melpa.org/packages/")))
 
 (load "00common-setup.el")
 (load "01projectile.el")
@@ -32,9 +36,11 @@
 (require 'ido)
 (ido-mode t)
 
+(use-package ensime
+  :pin melpa-stable)
 
 ;;; ensime manually
-;; (add-to-list 'load-path "~/work/ensime")
+;; (add-to-list 'load-path "~/work/ensime-emacs")
 ;; (load "ensime.el")
 
 
@@ -87,6 +93,12 @@
  '(magit-refs-show-commit-count (quote all))
  '(magit-refs-show-margin (quote branch))
  '(max-lisp-eval-depth 600)
+ '(minimap-hide-fringes t)
+ '(minimap-major-modes (quote (nil)))
+ '(minimap-minimum-width 10)
+ '(minimap-mode t)
+ '(minimap-width-fraction 0.01)
+ '(neo-theme (quote classic))
  '(org-babel-load-languages (quote ((emacs-lisp . t) (ruby . t) (shell . t))))
  '(org-confirm-babel-evaluate nil)
  '(package-load-list (quote (\(ensime\ nil\)\ all)))

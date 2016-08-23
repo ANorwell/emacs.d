@@ -44,6 +44,22 @@
 (add-hook 'scala-mode-hook 'ensime-mode)
 
 
+;; neotree
+(require 'neotree)
+(setq neo-smart-open t)
+
+(defun neotree-project-dir ()
+  "Open NeoTree using the git root."
+  (interactive)
+  (let ((project-dir (projectile-project-root))
+        (file-name (buffer-file-name)))
+    (if project-dir
+        (if (neotree-toggle)
+            (progn
+              (neotree-dir project-dir)
+              (neotree-find file-name)))
+      (message "Could not find git project root."))))
+
 ;;markdown mode
 (autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
 (setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
@@ -84,10 +100,10 @@
 (global-set-key [C-M-down] 'outline-next-visible-heading)
 
 ;;other keys
+(global-set-key [f8] 'neotree-project-dir)
 (global-set-key [f4] 'goto-line)
-(global-set-key [f8]  'grep)
-(global-set-key [f10] 'menu-bar-open)
 (global-set-key [f11] 'set-buffer-file-coding-system)
+(global-set-key [f9] 'ensime-reload)
 
 (add-hook 'cperl-mode-hook
           '(lambda ()
@@ -102,6 +118,7 @@
 (add-hook 'scala-mode-hook
           '(lambda ()
              (outline-minor-mode)
+             (highlight-symbol-mode)
              (setq outline-regexp "[\s\r\t]*\\(class\\|def\\|package\\|import\\|case class\\|object\\|trait\\|abstract\\|mixin\\|protected def\\|sealed\\|override\\|private def\\|describe\\|it(\\)")
              (subword-mode)
              (local-set-key (kbd "C-,") 'spec-buffer-switch)))
