@@ -61,6 +61,7 @@
 (depends-on "minimap")
 (depends-on "minitest")
 (depends-on "mmm-mode")
+(depends-on "markdown-mode")
 (depends-on "multi-web-mode")
 (depends-on "multiple-cursors")
 (depends-on "neotree")

@@ -104,7 +104,7 @@
  '(package-load-list (quote (\(ensime\ nil\)\ all)))
  '(package-selected-packages
    (quote
-    (flycheck-scala-sbt zenburn-theme yaml-mode wgrep web-mode undo-tree sml-modeline smex smartparens smart-mode-line rubocop robe rinari psgml projectile-rails persp-projectile pallet org-bullets neotree multiple-cursors multi-web-mode mmm-mode minitest minimap magit-gh-pulls key-chord json-mode js2-mode imenu-anywhere highlight-symbol helm-rubygems-local helm-rb helm-projectile helm-ls-git helm-flx helm-ag grizzl go-mode git-gutter flycheck ess ensime enh-ruby-mode company-php color-theme coffee-mode aggressive-indent ag ace-jump-mode ac-php)))
+    (markdown-mode markdown-mode+ flycheck-scala-sbt zenburn-theme yaml-mode wgrep web-mode undo-tree sml-modeline smex smartparens smart-mode-line rubocop robe rinari psgml projectile-rails persp-projectile pallet org-bullets neotree multiple-cursors multi-web-mode mmm-mode minitest minimap magit-gh-pulls key-chord json-mode js2-mode imenu-anywhere highlight-symbol helm-rubygems-local helm-rb helm-projectile helm-ls-git helm-flx helm-ag grizzl go-mode git-gutter flycheck ess ensime enh-ruby-mode company-php color-theme coffee-mode aggressive-indent ag ace-jump-mode ac-php)))
  '(safe-local-variable-values (quote ((encoding . utf-8))))
  '(show-trailing-whitespace t)
  '(vc-annotate-background "#2B2B2B")
