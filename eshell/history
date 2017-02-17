@@ -1,6 +1,0 @@
-exit
-z b
-exit
-cd ../../..
-spin serve
-exit

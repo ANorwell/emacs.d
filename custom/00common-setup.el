@@ -48,22 +48,25 @@
 (require 'neotree)
 (setq neo-smart-open t)
 
-(defun neotree-project-dir ()
-  "Open NeoTree using the git root."
-  (interactive)
-  (let ((project-dir (projectile-project-root))
-        (file-name (buffer-file-name)))
-    (if project-dir
-        (if (neotree-toggle)
-            (progn
-              (neotree-dir project-dir)
-              (neotree-find file-name)))
-      (message "Could not find git project root."))))
+  (defun neotree-project-dir ()
+    "Open NeoTree using the git root."
+    (interactive)
+    (let ((project-dir (projectile-project-root))
+          (file-name (buffer-file-name)))
+      (if project-dir
+          (if (neotree-toggle)
+              (progn
+                (neotree-dir project-dir)
+                (neotree-find file-name)))
+        (message "Could not find git project root."))))
 
 ;;markdown mode
 (autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
 (setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
 (add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
+
+;; web-mode
+(add-to-list 'auto-mode-alist '("\\.[sx]?html?\\(\\.[a-zA-Z_]+\\)?\\'" . web-mode))
 
 ;;newline and indent for various modes
 (mapcar (lambda (hooksym)
@@ -85,6 +88,27 @@
           sh-mode-hook
           ))
 
+(defun ensime-start-or-reload ()
+  "Start or reload ensime"
+  (interactive)
+  (condition-case nil
+    (ensime-shutdown)
+    (error nil))
+  (condition-case nil
+    (ensime-reload)
+    (error (ensime))))
+
+
+;; php stuff
+(require 'ac-php)
+(add-hook 'php-mode-hook
+          '(lambda ()
+             (require 'company-php)
+             (company-mode t)
+             (flymake-mode)
+             (add-to-list 'company-backends 'company-ac-php-backend )))
+
+
 
 ;;outline-minor-mode
 ;;keys for outline mode
@@ -103,7 +127,9 @@
 (global-set-key [f8] 'neotree-project-dir)
 (global-set-key [f4] 'goto-line)
 (global-set-key [f11] 'set-buffer-file-coding-system)
-(global-set-key [f9] 'ensime-reload)
+(global-set-key [f9] 'ensime-start-or-reload)
+
+(add-hook 'prog-mode-hook 'subword-mode)
 
 (add-hook 'cperl-mode-hook
           '(lambda ()
@@ -214,9 +240,10 @@ project"
 (defun m-test-current-buffer-file-and-line ()
   "Run this file in m"
   (interactive)
-  (if (get-buffer "<m-test>") (kill-buffer "<m-test>"))
-  (start-process-shell-command "m-test" "<m-test>" (format "cd %s && bundle exec m %s:%s" (project-dir buffer-file-name)  buffer-file-name (line-number-at-pos)))
-  (view-buffer-other-window "<m-test>"))
+  ;(if (get-buffer "<m-test>") (kill-buffer "<m-test>"))
+                                        ;(start-process-shell-command "m-test" "<m-test>" (format "cd %s && bundle exec m %s:%s" (project-dir buffer-file-name)  buffer-file-name (line-number-at-pos)))
+  (async-shell-command (format "cd %s && bundle exec m %s:%s" (project-dir buffer-file-name)  buffer-file-name (line-number-at-pos))))
+  ;(view-buffer-other-window "<m-test>"))
 (global-set-key (kbd "s-M") 'm-test-current-buffer-file-and-line)
 
 

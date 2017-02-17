@@ -5,4 +5,12 @@ projectile.cache
 url/
 auto-save-list/*
 ido.last
-recentf
+/recentf
+ac-comphist.dat
+tramp
+semanticdb/
+ensime/*
+.mc-lists.el
+var/pcache/
+eshell/*
+elpa/*

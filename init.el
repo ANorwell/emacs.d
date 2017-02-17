@@ -1,7 +1,7 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
-(require 'pallet)
-(pallet-mode t)
+;;(require 'pallet)
+;;(pallet-mode t)
 (add-to-list 'load-path "~/.emacs.d/custom")
 
 (setq
@@ -36,8 +36,8 @@
 (require 'ido)
 (ido-mode t)
 
-(use-package ensime
-  :pin melpa-stable)
+;; (use-package ensime
+;;   :pin melpa-stable)
 
 ;;; ensime manually
 ;; (add-to-list 'load-path "~/work/ensime-emacs")
@@ -102,6 +102,9 @@
  '(org-babel-load-languages (quote ((emacs-lisp . t) (ruby . t) (shell . t))))
  '(org-confirm-babel-evaluate nil)
  '(package-load-list (quote (\(ensime\ nil\)\ all)))
+ '(package-selected-packages
+   (quote
+    (flycheck-scala-sbt zenburn-theme yaml-mode wgrep web-mode undo-tree sml-modeline smex smartparens smart-mode-line rubocop robe rinari psgml projectile-rails persp-projectile pallet org-bullets neotree multiple-cursors multi-web-mode mmm-mode minitest minimap magit-gh-pulls key-chord json-mode js2-mode imenu-anywhere highlight-symbol helm-rubygems-local helm-rb helm-projectile helm-ls-git helm-flx helm-ag grizzl go-mode git-gutter flycheck ess ensime enh-ruby-mode company-php color-theme coffee-mode aggressive-indent ag ace-jump-mode ac-php)))
  '(safe-local-variable-values (quote ((encoding . utf-8))))
  '(show-trailing-whitespace t)
  '(vc-annotate-background "#2B2B2B")
@@ -125,12 +128,14 @@
      (320 . "#8CD0D3")
      (340 . "#94BFF3")
      (360 . "#DC8CC3"))))
- '(vc-annotate-very-old-color "#DC8CC3"))
+ '(vc-annotate-very-old-color "#DC8CC3")
+ '(web-mode-markup-indent-offset 2))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(company-preview-common ((t (:background "RoyalBlue1" :foreground "labelColor"))))
  '(magit-section-highlight ((t (:background "gray28"))))
  '(org-agenda-done ((t (:foreground "PaleGreen"))))
  '(org-block-begin-line ((t (:inherit org-meta-line))))
@@ -161,7 +166,7 @@
 (when (not package-archive-contents)
   (package-refresh-contents)
   (package-install 'use-package))
-(require 'use-package)
+;;(require 'use-package)
 
 (server-start)
 (put 'narrow-to-region 'disabled nil)
