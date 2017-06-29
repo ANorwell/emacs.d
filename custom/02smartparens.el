@@ -5,3 +5,6 @@
 (sp-with-modes '(rhtml-mode)
   (sp-local-pair "<" ">")
   (sp-local-pair "<%" "%>"))
+
+;; after ';', go to the next line and indent everything
+(sp-local-pair 'scala-mode "{" nil :post-handlers '(:add "\n||\n[i]"))

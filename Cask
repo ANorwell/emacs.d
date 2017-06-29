@@ -1,5 +1,6 @@
-(source "gnu" "http://elpa.gnu.org/packages/")
-(source "melpa" "http://melpa.org/packages/")
+;;(source "gnu" "http://elpa.gnu.org/packages/")
+;;(source "melpa" "http://melpa.org/packages/")
+;;(source "melpa-stable" "http://stable.melpa.org/packages/")
 (source org)
 
 (depends-on "ac-php")

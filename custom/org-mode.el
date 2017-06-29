@@ -3,6 +3,9 @@
 
 (setq org-startup-indented t)
 
+(eval-after-load "org"
+  '(require 'ox-qmd nil t))
+
 (eval-after-load "org-present"
   '(progn
      (add-hook 'org-present-mode-hook

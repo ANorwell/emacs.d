@@ -3,6 +3,7 @@
 (tool-bar-mode -1)
 (setq inhibit-splash-screen t)
 (setq-default indent-tabs-mode nil)
+;; basic appearance
 (setq-default tab-width 2)
 (set-face-attribute 'default nil :height 160)
 (global-auto-revert-mode t)
@@ -47,6 +48,7 @@
 ;; neotree
 (require 'neotree)
 (setq neo-smart-open t)
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 
   (defun neotree-project-dir ()
     "Open NeoTree using the git root."
@@ -66,7 +68,7 @@
 (add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
 
 ;; web-mode
-(add-to-list 'auto-mode-alist '("\\.[sx]?html?\\(\\.[a-zA-Z_]+\\)?\\'" . web-mode))
+;;(add-to-list 'auto-mode-alist '("\\.php|\\.[sx]?html?\\(\\.[a-zA-Z_]+\\)?\\'" . web-mode))
 
 ;;newline and indent for various modes
 (mapcar (lambda (hooksym)
@@ -98,30 +100,82 @@
     (ensime-reload)
     (error (ensime))))
 
+(setq ensime-startup-notification nil)
+(setq ensime-startup-snapshot-notification nil)
 
 ;; php stuff
-(require 'ac-php)
+;;(require 'ac-php)
+(add-hook 'web-mode-hook
+          '(lambda ()
+             ;;(require 'company-php)
+             (company-mode t)
+             (flycheck-mode)
+             ;;(add-to-list 'company-backends 'company-ac-php-backend )
+             ))
+
 (add-hook 'php-mode-hook
           '(lambda ()
-             (require 'company-php)
+             ;;(require 'company-php)
              (company-mode t)
-             (flymake-mode)
-             (add-to-list 'company-backends 'company-ac-php-backend )))
+             (flycheck-mode)
+             ;;(add-to-list 'company-backends 'company-ac-php-backend )
+             ))
 
 
 
-;;outline-minor-mode
+
+;;outline-minor-mode / origami-mode
 ;;keys for outline mode
-(global-set-key [C-M-left] 'hide-body)
-(global-set-key [C-M-right] 'show-all)
+(require 'origami)
+(global-origami-mode 1)
+
+(defcustom origami-parser-alist
+  `((java-mode             . origami-java-parser)
+    (scala-mode            . origami-c-parser)
+    (c-mode                . origami-c-parser)
+    (c++-mode              . origami-c-style-parser)
+    (perl-mode             . origami-c-style-parser)
+    (cperl-mode            . origami-c-style-parser)
+    (js-mode               . origami-c-style-parser)
+    (js2-mode              . origami-c-style-parser)
+    (js3-mode              . origami-c-style-parser)
+    (go-mode               . origami-c-style-parser)
+    (php-mode              . origami-c-style-parser)
+    (python-mode           . origami-python-parser)
+    (emacs-lisp-mode       . origami-elisp-parser)
+    (lisp-interaction-mode . origami-elisp-parser)
+    (clojure-mode          . origami-clj-parser)
+    (triple-braces         . ,(origami-markers-parser "{{{" "}}}")))
+  "alist mapping major-mode to parser function."
+  :type 'hook
+  :group 'origami)
+
+(add-to-list 'origami-parser-alist '(scala-mode . origami-java-parser))
+
+
+;; (global-set-key [C-M-left] 'hide-body)
+;; (global-set-key [C-M-right] 'show-all)
+;; (global-set-key [M-up] 'outline-previous-heading)
+;; (global-set-key [M-down] 'outline-next-heading)
+;; (global-set-key [M-left] 'hide-entry)
+;; (global-set-key [M-right] 'show-entry)
+
+(global-set-key [C-M-left] 'origami-close-all-nodes)
+(global-set-key [C-M-right] 'origami-open-all-nodes)
 (global-set-key [M-up] 'outline-previous-heading)
 (global-set-key [M-down] 'outline-next-heading)
-(global-set-key [M-left] 'hide-entry)
-(global-set-key [M-right] 'show-entry)
+(global-set-key [M-left] 'origami-close-node-recursively)
+(global-set-key [M-right] 'origami-open-node-recursively)
 (global-set-key (kbd "C-M-S-<left>") 'hide-entry)
 (global-set-key (kbd "C-M-S-<right>") 'show-entry)
 (global-set-key [C-M-up] 'outline-previous-visible-heading)
 (global-set-key [C-M-down] 'outline-next-visible-heading)
+(global-set-key (kbd "s-p") 'outline-previous-visible-heading)
+(global-set-key (kbd "s-n") 'outline-next-visible-heading)
+(global-set-key (kbd "s-h") 'origami-recursively-toggle-node)
+(global-set-key (kbd "s-k") 'origami-forward-toggle-node)
+(global-set-key (kbd "s-j") 'origami-show-only-node)
+
 
 ;;other keys
 (global-set-key [f8] 'neotree-project-dir)
@@ -134,7 +188,6 @@
 (add-hook 'cperl-mode-hook
           '(lambda ()
              (outline-minor-mode)
-             (hide-sublevels 1)
              (setq
               cperl-indent-level 4
               cperl-indent-parens-as-block t
@@ -149,11 +202,16 @@
              (subword-mode)
              (local-set-key (kbd "C-,") 'spec-buffer-switch)))
 
+(add-hook 'web-mode-hook
+          '(lambda ()
+             (outline-minor-mode)
+             (setq outline-regexp " *\\(private funct\\|public funct\\|funct\\|class\\|#head\\)")))
+
 (add-hook 'php-mode-hook
           '(lambda ()
              (outline-minor-mode)
-             (setq outline-regexp " *\\(private funct\\|public funct\\|funct\\|class\\|#head\\)")
-             (hide-sublevels 1)))
+             (setq outline-regexp " *\\(private funct\\|public funct\\|funct\\|class\\|#head\\)")))
+
 
 (add-hook 'c++-mode-hook
           '(lambda ()
@@ -440,12 +498,6 @@ isn't there and triggers an error"
 
 (global-set-key (kbd "s-j") 'imenu-anywhere)
 
-
-;; robe mode
-
-(add-hook 'enh-ruby-mode-hook 'robe-mode)
-;;(push 'company-robe company-backends)
-
 ;;yasnippet
 ;;(require 'yasnippet)
 ;;(yas-global-mode 1)
@@ -492,3 +544,16 @@ isn't there and triggers an error"
           (cons (substring s 0 i)
                 (s-slice-at regexp (substring s i)))
         (list s)))))
+
+
+;; newline-without-break-of-line
+(defun newline-without-break-of-line ()
+  "1. move to end of the line.
+  2. insert newline with index"
+
+  (interactive)
+  (let ((oldpos (point)))
+    (end-of-line)
+    (newline-and-indent)))
+
+(global-set-key (kbd "<s-return>") 'newline-without-break-of-line)

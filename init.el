@@ -1,21 +1,22 @@
-(require 'cask "~/.cask/cask.el")
-(cask-initialize)
+;;(require 'cask "~/.cask/cask.el")
+;;(cask-initialize)
 ;;(require 'pallet)
 ;;(pallet-mode t)
 (add-to-list 'load-path "~/.emacs.d/custom")
 
-(setq
- package-archives '(;;("gnu" . "http://elpa.gnu.org/packages/")
-                    ("org" . "http://orgmode.org/elpa/")
-                    ("melpa" . "http://melpa.org/packages/")
-                    ("melpa-stable" . "http://stable.melpa.org/packages/")))
+(load "packages.el")
+
+;;ido-mode
+;; do this early -- some other modes detect it
+(require 'ido)
+(ido-mode t)
 
 (load "00common-setup.el")
 (load "01projectile.el")
 
 
-(add-to-list 'load-path "~/.emacs.d/smartparens/")
-(load "smartparens.el")
+;;(add-to-list 'load-path "~/.emacs.d/smartparens/")
+;;(load "smartparens.el")
 (load "02smartparens.el")
 
 (load "03key-chord.el")
@@ -29,21 +30,9 @@
 (load "10helm.el")
 (load "11magit.el")
 
-;;; theme
-(load-theme 'zenburn t)
-
-;;ido-mode
-(require 'ido)
-(ido-mode t)
-
-;; (use-package ensime
-;;   :pin melpa-stable)
-
 ;;; ensime manually
 ;; (add-to-list 'load-path "~/work/ensime-emacs")
 ;; (load "ensime.el")
-
-
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -64,10 +53,10 @@
     (asm-mode batch-file-mode c++-mode c-mode cperl-mode csharp-mode css-mode emacs-lisp-mode erlang-mode f90-mode fortran-mode haskell-mode java-mode javascript-mode jde-mode js2-mode lisp-mode lua-mode objc-mode perl-mode php-mode prog-mode python-mode ruby-mode scheme-mode shell-script-mode enh-ruby-mode)))
  '(company-idle-delay 1.2)
  '(company-minimum-prefix-length 4)
- '(custom-enabled-themes (quote (zenburn)))
+ '(custom-enabled-themes (quote (smart-mode-line-dark)))
  '(custom-safe-themes
    (quote
-    ("a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "9dae95cdbed1505d45322ef8b5aa90ccb6cb59e0ff26fef0b8f411dfc416c552" "00a19ebc359b6419e1e4ab05406d29b265dedd99bcbbf8f870da91098f546e99" "fa94f0c2ddd30df2bca56ddee6854c5926a8a67125d0c28326fd504e377563a9" "8bb1e9a22e9e9d405ca9bdf20b91301eba12c0b9778413ba7600e48d2d3ad1fb" default)))
+    ("67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "9dae95cdbed1505d45322ef8b5aa90ccb6cb59e0ff26fef0b8f411dfc416c552" "00a19ebc359b6419e1e4ab05406d29b265dedd99bcbbf8f870da91098f546e99" "fa94f0c2ddd30df2bca56ddee6854c5926a8a67125d0c28326fd504e377563a9" "8bb1e9a22e9e9d405ca9bdf20b91301eba12c0b9778413ba7600e48d2d3ad1fb" default)))
  '(ediff-window-setup-function (quote ediff-setup-windows-plain))
  '(enh-ruby-bounce-deep-indent (quote true))
  '(enh-ruby-use-encoding-map nil t)
@@ -76,9 +65,11 @@
     (:test-class-names-fn ensime-goto-test--test-class-names :test-class-suffixes
                           ("Test" "Spec" "Specification" "Check")
                           :impl-class-name-fn ensime-goto-test--impl-class-name :impl-to-test-dir-fn ensime-goto-test--impl-to-test-dir :is-test-dir-fn ensime-goto-test--is-test-dir :test-template-fn ensime-goto-test--test-template-scalatest-2)))
+ '(ensime-use-helm t)
  '(fci-rule-color "#383838")
  '(helm-buffers-fuzzy-matching t)
  '(helm-ls-git-show-abs-or-relative (quote relative))
+ '(hs-hide-comments-when-hiding-all t)
  '(ido-use-virtual-buffers t)
  '(js-expr-indent-offset 2)
  '(js-indent-level 2)
@@ -99,12 +90,21 @@
  '(minimap-mode t)
  '(minimap-width-fraction 0.01)
  '(neo-theme (quote classic))
- '(org-babel-load-languages (quote ((emacs-lisp . t) (ruby . t) (shell . t))))
+ '(nrepl-message-colors
+   (quote
+    ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
+ '(org-babel-load-languages (quote ((emacs-lisp . t) (ruby . t))))
  '(org-confirm-babel-evaluate nil)
  '(package-load-list (quote (\(ensime\ nil\)\ all)))
  '(package-selected-packages
    (quote
-    (markdown-mode markdown-mode+ flycheck-scala-sbt zenburn-theme yaml-mode wgrep web-mode undo-tree sml-modeline smex smartparens smart-mode-line rubocop robe rinari psgml projectile-rails persp-projectile pallet org-bullets neotree multiple-cursors multi-web-mode mmm-mode minitest minimap magit-gh-pulls key-chord json-mode js2-mode imenu-anywhere highlight-symbol helm-rubygems-local helm-rb helm-projectile helm-ls-git helm-flx helm-ag grizzl go-mode git-gutter flycheck ess ensime enh-ruby-mode company-php color-theme coffee-mode aggressive-indent ag ace-jump-mode ac-php)))
+    (org ox-qmd origami hide-comnt hideshowvis memoize font-lock+ all-the-icons php-mode diminish bind-key ensime scala-mode groovy-mode projectile flx-ido markdown-mode markdown-mode+ flycheck-scala-sbt zenburn-theme yaml-mode wgrep web-mode undo-tree sml-modeline smex smartparens smart-mode-line rubocop robe rinari psgml projectile-rails pallet org-bullets neotree multiple-cursors multi-web-mode mmm-mode minitest minimap magit-gh-pulls key-chord json-mode js2-mode imenu-anywhere highlight-symbol helm-rubygems-local helm-rb helm-projectile helm-ls-git helm-flx helm-ag grizzl go-mode git-gutter flycheck ess enh-ruby-mode company-php color-theme coffee-mode aggressive-indent ag ace-jump-mode ac-php)))
+ '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
+ '(persp-mode-prefix-key "x")
+ '(rainbow-identifiers-choose-face-function (quote rainbow-identifiers-cie-l*a*b*-choose-face))
+ '(rainbow-identifiers-cie-l*a*b*-color-count 1024)
+ '(rainbow-identifiers-cie-l*a*b*-lightness 80)
+ '(rainbow-identifiers-cie-l*a*b*-saturation 25)
  '(safe-local-variable-values (quote ((encoding . utf-8))))
  '(show-trailing-whitespace t)
  '(vc-annotate-background "#2B2B2B")
@@ -129,7 +129,8 @@
      (340 . "#94BFF3")
      (360 . "#DC8CC3"))))
  '(vc-annotate-very-old-color "#DC8CC3")
- '(web-mode-markup-indent-offset 2))
+ '(web-mode-markup-indent-offset 2)
+ '(yaml-indent-offset 4))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -138,7 +139,7 @@
  '(company-preview-common ((t (:background "RoyalBlue1" :foreground "labelColor"))))
  '(magit-section-highlight ((t (:background "gray28"))))
  '(org-agenda-done ((t (:foreground "PaleGreen"))))
- '(org-block-begin-line ((t (:inherit org-meta-line))))
+ '(org-block-begin-line ((t (:inherit org-meta-line))) t)
  '(org-code ((t (:inherit shadow :background "gray15"))))
  '(org-default ((t (:inherit default))))
  '(org-document-title ((t (:foreground "pale turquoise" :weight bold :height 1.75))))
@@ -155,18 +156,21 @@
 (load "bottom-bar.el")
 
 ;; the package manager
-(require 'package)
-(setq
- use-package-always-ensure t
- package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                    ("org" . "http://orgmode.org/elpa/")
-                    ("melpa" . "http://melpa.org/packages/")))
+;; (require 'package)
+;; (setq
+;;  use-package-always-ensure t
+;;  package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+;;                     ("org" . "http://orgmode.org/elpa/")
+;;                     ("melpa" . "http://melpa.org/packages/")))
 
-(package-initialize)
-(when (not package-archive-contents)
-  (package-refresh-contents)
-  (package-install 'use-package))
-;;(require 'use-package)
+;; (package-initialize)
+;; (when (not package-archive-contents)
+;;   (package-refresh-contents)
+;;   (package-install 'use-package))
+;; ;;(require 'use-package)
+
+;;; theme
+(load-theme 'zenburn t)
 
 (server-start)
 (put 'narrow-to-region 'disabled nil)

@@ -3,14 +3,15 @@
 ;;(require 'grizzl)
 (projectile-global-mode)
 (setq projectile-enable-caching t)
-(setq projectile-indexing-method 'native)
-(setq projectile-completion-system 'grizzl)
-;; Press Command-p for fuzzy find in project
-;; Press Command-b for fuzzy switch buffer
+;;(setq projectile-indexing-method 'native)
+(setq projectile-indexing-method 'alien)
+(setq projectile-completion-system 'helm)
+
 (global-set-key (kbd "s-b") 'projectile-switch-to-buffer)
 (global-set-key (kbd "s-i") 'projectile-ag)
 (global-set-key (kbd "s-f") 'projectile-find-file)
 (global-set-key (kbd "s-s") 'helm-occur)
+(global-set-key (kbd "s-g") 'helm-ls-git-ls)
 
 ;(key-chord-define-global "pf" 'projectile-find-file)
 ;(key-chord-define-global "pg" 'projectile-ag)
@@ -19,8 +20,8 @@
 ;(key-chord-define-global "pk" 'projectile-multi-occur)
 
 (persp-mode)
-(require 'persp-projectile)
-(define-key projectile-mode-map (kbd "s-p") 'projectile-persp-switch-project)
+;;(require 'persp-projectile)
+;;(define-key projectile-mode-map (kbd "s-p") 'projectile-persp-switch-project)
 
 (require 'recentf)
 (recentf-mode 1)
@@ -31,5 +32,3 @@
 (require 'helm-locate)
 (require 'helm-buffers)
 (require 'helm-files)
-
-(global-set-key (kbd "s-g") 'helm-ls-git-ls)

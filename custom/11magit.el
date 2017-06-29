@@ -1,10 +1,10 @@
-(require 'dash)
-(global-set-key (kbd "s-k") 'magit-status)
+;; (require 'dash)
+;; (global-set-key (kbd "s-k") 'magit-status)
 
-(global-set-key (kbd "C-c m") 'magit-status)
+;; (global-set-key (kbd "C-c m") 'magit-status)
 
-(require 'magit-gh-pulls)
-(add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls)
+;; (require 'magit-gh-pulls)
+;; (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls)
 
 ;; (defun magit-open-repo ()
 ;;   (interactive)
