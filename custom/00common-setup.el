@@ -126,46 +126,46 @@
 
 ;;outline-minor-mode / origami-mode
 ;;keys for outline mode
-(require 'origami)
-(global-origami-mode 1)
+;; (require 'origami)
+;; (global-origami-mode 1)
 
-(defcustom origami-parser-alist
-  `((java-mode             . origami-java-parser)
-    (scala-mode            . origami-c-parser)
-    (c-mode                . origami-c-parser)
-    (c++-mode              . origami-c-style-parser)
-    (perl-mode             . origami-c-style-parser)
-    (cperl-mode            . origami-c-style-parser)
-    (js-mode               . origami-c-style-parser)
-    (js2-mode              . origami-c-style-parser)
-    (js3-mode              . origami-c-style-parser)
-    (go-mode               . origami-c-style-parser)
-    (php-mode              . origami-c-style-parser)
-    (python-mode           . origami-python-parser)
-    (emacs-lisp-mode       . origami-elisp-parser)
-    (lisp-interaction-mode . origami-elisp-parser)
-    (clojure-mode          . origami-clj-parser)
-    (triple-braces         . ,(origami-markers-parser "{{{" "}}}")))
-  "alist mapping major-mode to parser function."
-  :type 'hook
-  :group 'origami)
+;; (defcustom origami-parser-alist
+;;   `((java-mode             . origami-java-parser)
+;;     (scala-mode            . origami-c-parser)
+;;     (c-mode                . origami-c-parser)
+;;     (c++-mode              . origami-c-style-parser)
+;;     (perl-mode             . origami-c-style-parser)
+;;     (cperl-mode            . origami-c-style-parser)
+;;     (js-mode               . origami-c-style-parser)
+;;     (js2-mode              . origami-c-style-parser)
+;;     (js3-mode              . origami-c-style-parser)
+;;     (go-mode               . origami-c-style-parser)
+;;     (php-mode              . origami-c-style-parser)
+;;     (python-mode           . origami-python-parser)
+;;     (emacs-lisp-mode       . origami-elisp-parser)
+;;     (lisp-interaction-mode . origami-elisp-parser)
+;;     (clojure-mode          . origami-clj-parser)
+;;     (triple-braces         . ,(origami-markers-parser "{{{" "}}}")))
+;;   "alist mapping major-mode to parser function."
+;;   :type 'hook
+;;   :group 'origami)
 
-(add-to-list 'origami-parser-alist '(scala-mode . origami-java-parser))
+;; (add-to-list 'origami-parser-alist '(scala-mode . origami-java-parser))
 
 
-;; (global-set-key [C-M-left] 'hide-body)
-;; (global-set-key [C-M-right] 'show-all)
-;; (global-set-key [M-up] 'outline-previous-heading)
-;; (global-set-key [M-down] 'outline-next-heading)
-;; (global-set-key [M-left] 'hide-entry)
-;; (global-set-key [M-right] 'show-entry)
-
-(global-set-key [C-M-left] 'origami-close-all-nodes)
-(global-set-key [C-M-right] 'origami-open-all-nodes)
+(global-set-key [C-M-left] 'hide-body)
+(global-set-key [C-M-right] 'show-all)
 (global-set-key [M-up] 'outline-previous-heading)
 (global-set-key [M-down] 'outline-next-heading)
-(global-set-key [M-left] 'origami-close-node-recursively)
-(global-set-key [M-right] 'origami-open-node-recursively)
+(global-set-key [M-left] 'hide-entry)
+(global-set-key [M-right] 'show-entry)
+
+;; (global-set-key [C-M-left] 'origami-close-all-nodes)
+;; (global-set-key [C-M-right] 'origami-open-all-nodes)
+;; (global-set-key [M-up] 'outline-previous-heading)
+;; (global-set-key [M-down] 'outline-next-heading)
+;; (global-set-key [M-left] 'origami-close-node-recursively)
+;; (global-set-key [M-right] 'origami-open-node-recursively)
 (global-set-key (kbd "C-M-S-<left>") 'hide-entry)
 (global-set-key (kbd "C-M-S-<right>") 'show-entry)
 (global-set-key [C-M-up] 'outline-previous-visible-heading)
