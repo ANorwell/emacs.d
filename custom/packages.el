@@ -1,6 +1,6 @@
 (setq
  package-archives '(;;("gnu" . "http://elpa.gnu.org/packages/")
-                    ("org" . "http://orgmode.org/elpa/")
+                    ;;("org" . "http://orgmode.org/elpa/")
                     ("melpa" . "http://melpa.org/packages/")
                     ("melpa-stable" . "http://stable.melpa.org/packages/")))
 
@@ -9,6 +9,8 @@
 
 
 ;; NOTE: ensime shpuld probably be installed using melpa-stable! comment out melpa and edit package list
+;; (setq package-selected-packages
+;;       '(ensime))
 
 (setq package-selected-packages
       '(

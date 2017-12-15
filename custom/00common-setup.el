@@ -25,6 +25,9 @@
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+;; wakatime
+(global-wakatime-mode 1)
+
 (defadvice yes-or-no-p (around prevent-dialog activate)
   "Prevent yes-or-no-p from activating a dialog"
   (let ((use-dialog-box nil))
@@ -42,33 +45,7 @@
                          (save-excursion
                            (delete-trailing-whitespace))))))
 
-(add-hook 'scala-mode-hook 'ensime-mode)
-
-
-;; neotree
-(require 'neotree)
-(setq neo-smart-open t)
-(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
-
-  (defun neotree-project-dir ()
-    "Open NeoTree using the git root."
-    (interactive)
-    (let ((project-dir (projectile-project-root))
-          (file-name (buffer-file-name)))
-      (if project-dir
-          (if (neotree-toggle)
-              (progn
-                (neotree-dir project-dir)
-                (neotree-find file-name)))
-        (message "Could not find git project root."))))
-
-;;markdown mode
-(autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
-(setq auto-mode-alist (cons '("\\.md" . markdown-mode) auto-mode-alist))
-(add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
-
-;; web-mode
-;;(add-to-list 'auto-mode-alist '("\\.php|\\.[sx]?html?\\(\\.[a-zA-Z_]+\\)?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.js|\\.twig" . web-mode))
 
 ;;newline and indent for various modes
 (mapcar (lambda (hooksym)
@@ -98,7 +75,15 @@
     (error nil))
   (condition-case nil
     (ensime-reload)
-    (error (ensime))))
+    (error (ensime)))
+  (setq company-idle-delay 1.3)
+  (set (make-local-variable 'company-idle-delay) 1.4))
+
+(defun set-company-idle ()
+  "fix stupid ensime"
+  (interactive)
+  (setq company-idle-delay 1.3)
+  (set (make-local-variable 'company-idle-delay) 1.3))
 
 (setq ensime-startup-notification nil)
 (setq ensime-startup-snapshot-notification nil)
@@ -182,6 +167,8 @@
 (global-set-key [f4] 'goto-line)
 (global-set-key [f11] 'set-buffer-file-coding-system)
 (global-set-key [f9] 'ensime-start-or-reload)
+(global-set-key [f10] 'set-company-idle)
+(global-set-key (kbd "S-<tab>") 'yas-expand)
 
 (add-hook 'prog-mode-hook 'subword-mode)
 
@@ -193,13 +180,18 @@
               cperl-indent-parens-as-block t
               cperl-close-paren-offset -4)))
 
+(add-hook 'after-change-major-mode-hook
+          'set-company-idle)
 
 (add-hook 'scala-mode-hook
           '(lambda ()
              (outline-minor-mode)
              (highlight-symbol-mode)
-             (setq outline-regexp "[\s\r\t]*\\(class\\|def\\|package\\|import\\|case class\\|object\\|trait\\|abstract\\|mixin\\|protected def\\|sealed\\|override\\|private def\\|describe\\|it(\\)")
+             (setq outline-regexp "[\s\r\t]*\\(class\\|def\\|package\\|import\\|case class\\|case object\\|object\\|trait\\|abstract\\|mixin\\|protected def\\|sealed\\|override\\|private def\\|describe\\|it(\\)")
              (subword-mode)
+             (setq company-idle-delay 1.3)
+             (ensime-mode)
+             (setq company-idle-delay 1.3)
              (local-set-key (kbd "C-,") 'spec-buffer-switch)))
 
 (add-hook 'web-mode-hook

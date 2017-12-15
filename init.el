@@ -30,6 +30,9 @@
 (load "10helm.el")
 (load "11magit.el")
 
+(add-to-list 'load-path "~/.emacs.d/ensime-emacs/")
+(load "ensime.el")
+
 ;;; ensime manually
 ;; (add-to-list 'load-path "~/work/ensime-emacs")
 ;; (load "ensime.el")
@@ -67,6 +70,7 @@
                           :impl-class-name-fn ensime-goto-test--impl-class-name :impl-to-test-dir-fn ensime-goto-test--impl-to-test-dir :is-test-dir-fn ensime-goto-test--is-test-dir :test-template-fn ensime-goto-test--test-template-scalatest-2)))
  '(ensime-use-helm t)
  '(fci-rule-color "#383838")
+ '(global-wakatime-mode t)
  '(helm-buffers-fuzzy-matching t)
  '(helm-ls-git-show-abs-or-relative (quote relative))
  '(hs-hide-comments-when-hiding-all t)
@@ -98,7 +102,7 @@
  '(package-load-list (quote (\(ensime\ nil\)\ all)))
  '(package-selected-packages
    (quote
-    (org ox-qmd origami hide-comnt hideshowvis memoize font-lock+ all-the-icons php-mode diminish bind-key ensime scala-mode groovy-mode projectile flx-ido markdown-mode markdown-mode+ flycheck-scala-sbt zenburn-theme yaml-mode wgrep web-mode undo-tree sml-modeline smex smartparens smart-mode-line rubocop robe rinari psgml projectile-rails pallet org-bullets neotree multiple-cursors multi-web-mode mmm-mode minitest minimap magit-gh-pulls key-chord json-mode js2-mode imenu-anywhere highlight-symbol helm-rubygems-local helm-rb helm-projectile helm-ls-git helm-flx helm-ag grizzl go-mode git-gutter flycheck ess enh-ruby-mode company-php color-theme coffee-mode aggressive-indent ag ace-jump-mode ac-php)))
+    (wakatime-mode yard-mode org ox-qmd origami hide-comnt hideshowvis memoize font-lock+ all-the-icons php-mode diminish bind-key scala-mode groovy-mode projectile flx-ido markdown-mode markdown-mode+ flycheck-scala-sbt zenburn-theme yaml-mode wgrep web-mode undo-tree sml-modeline smex smartparens smart-mode-line rubocop robe rinari psgml projectile-rails pallet org-bullets neotree multiple-cursors multi-web-mode mmm-mode minitest minimap magit-gh-pulls key-chord json-mode js2-mode imenu-anywhere highlight-symbol helm-rubygems-local helm-rb helm-projectile helm-ls-git helm-flx helm-ag grizzl go-mode git-gutter flycheck ess enh-ruby-mode company-php color-theme coffee-mode aggressive-indent ag ace-jump-mode ac-php)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(persp-mode-prefix-key "x")
  '(rainbow-identifiers-choose-face-function (quote rainbow-identifiers-cie-l*a*b*-choose-face))
@@ -129,6 +133,11 @@
      (340 . "#94BFF3")
      (360 . "#DC8CC3"))))
  '(vc-annotate-very-old-color "#DC8CC3")
+ '(wakatime-api-key "7cf60366-e6eb-4fc6-9f66-a54ba8432972")
+ '(wakatime-cli-path "wakatime")
+ '(wakatime-python-bin nil)
+ '(web-mode-code-indent-offset 2)
+ '(web-mode-css-indent-offset 2)
  '(web-mode-markup-indent-offset 2)
  '(yaml-indent-offset 4))
 (custom-set-faces
@@ -139,7 +148,7 @@
  '(company-preview-common ((t (:background "RoyalBlue1" :foreground "labelColor"))))
  '(magit-section-highlight ((t (:background "gray28"))))
  '(org-agenda-done ((t (:foreground "PaleGreen"))))
- '(org-block-begin-line ((t (:inherit org-meta-line))) t)
+ '(org-block-begin-line ((t (:inherit org-meta-line))))
  '(org-code ((t (:inherit shadow :background "gray15"))))
  '(org-default ((t (:inherit default))))
  '(org-document-title ((t (:foreground "pale turquoise" :weight bold :height 1.75))))

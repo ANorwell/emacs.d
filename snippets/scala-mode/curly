@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: curly
+# key: f
+# --
+{ $1 =>
+  $2
+}
