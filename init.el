@@ -44,6 +44,8 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#3F3F3F" "#CC9393" "#7F9F7F" "#F0DFAF" "#8CD0D3" "#DC8CC3" "#93E0E3" "#DCDCCC"])
+ '(comment-padding " ")
+ '(comment-style (quote multi-line))
  '(company-auto-complete nil)
  '(company-backends
    (quote
@@ -70,7 +72,6 @@
                           :impl-class-name-fn ensime-goto-test--impl-class-name :impl-to-test-dir-fn ensime-goto-test--impl-to-test-dir :is-test-dir-fn ensime-goto-test--is-test-dir :test-template-fn ensime-goto-test--test-template-scalatest-2)))
  '(ensime-use-helm t)
  '(fci-rule-color "#383838")
- '(global-wakatime-mode t)
  '(helm-buffers-fuzzy-matching t)
  '(helm-ls-git-show-abs-or-relative (quote relative))
  '(hs-hide-comments-when-hiding-all t)
@@ -102,7 +103,7 @@
  '(package-load-list (quote (\(ensime\ nil\)\ all)))
  '(package-selected-packages
    (quote
-    (wakatime-mode yard-mode org ox-qmd origami hide-comnt hideshowvis memoize font-lock+ all-the-icons php-mode diminish bind-key scala-mode groovy-mode projectile flx-ido markdown-mode markdown-mode+ flycheck-scala-sbt zenburn-theme yaml-mode wgrep web-mode undo-tree sml-modeline smex smartparens smart-mode-line rubocop robe rinari psgml projectile-rails pallet org-bullets neotree multiple-cursors multi-web-mode mmm-mode minitest minimap magit-gh-pulls key-chord json-mode js2-mode imenu-anywhere highlight-symbol helm-rubygems-local helm-rb helm-projectile helm-ls-git helm-flx helm-ag grizzl go-mode git-gutter flycheck ess enh-ruby-mode company-php color-theme coffee-mode aggressive-indent ag ace-jump-mode ac-php)))
+    (comment-dwim-2 scala-mode company ensime neotree markdown-mode yaml-mode web-mode idomenu projectile helm multiple-cursors perspective smartparens undo-tree org-bullets zenburn-theme smart-mode-line helm-ls-git highlight-symbol php-mode flycheck all-the-icons ag hideshowvis origami)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(persp-mode-prefix-key "x")
  '(rainbow-identifiers-choose-face-function (quote rainbow-identifiers-cie-l*a*b*-choose-face))
@@ -133,9 +134,6 @@
      (340 . "#94BFF3")
      (360 . "#DC8CC3"))))
  '(vc-annotate-very-old-color "#DC8CC3")
- '(wakatime-api-key "7cf60366-e6eb-4fc6-9f66-a54ba8432972")
- '(wakatime-cli-path "wakatime")
- '(wakatime-python-bin nil)
  '(web-mode-code-indent-offset 2)
  '(web-mode-css-indent-offset 2)
  '(web-mode-markup-indent-offset 2)
@@ -152,8 +150,8 @@
  '(org-code ((t (:inherit shadow :background "gray15"))))
  '(org-default ((t (:inherit default))))
  '(org-document-title ((t (:foreground "pale turquoise" :weight bold :height 1.75))))
- '(org-level-1 ((t (:inherit default :foreground "orange1" :box (:line-width 5 :color "#3F3F3F") :slant normal :weight normal :height 1.75 :width normal :foundry "nil" :family "Lucida Grande"))))
- '(org-level-2 ((t (:inherit default :foreground "turquoise2" :box (:line-width 5 :color "#3F3F3F") :slant normal :weight normal :height 1.25 :width normal :foundry "nil" :family "Lucida Grande"))))
+ '(org-level-1 ((t (:inherit default :foreground "orange1" :box (:line-width 1 :color "#3F3F3F") :slant normal :weight normal :height 1.25 :width normal :foundry "nil" :family "Lucida Grande"))))
+ '(org-level-2 ((t (:inherit default :foreground "turquoise2" :box (:line-width 1 :color "#3F3F3F") :slant normal :weight normal :height 1.1 :width normal :foundry "nil" :family "Lucida Grande"))))
  '(org-level-3 ((t (:foreground "#7CB8BB" :height 1.1 :family "Lucida Grande"))))
  '(org-level-4 ((t (:foreground "#D0BF8F" :family "Lucida Grande"))))
  '(org-meta-line ((t (:inherit font-lock-comment-face :background "gray21" :height 0.8))))

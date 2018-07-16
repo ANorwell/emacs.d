@@ -26,6 +26,9 @@
 ;; for ruby, eval code as verbatim
 (setq org-babel-default-header-args:ruby '((:results . "verbatim")))
 
+(setq org-todo-keywords '((sequence "TODO" "|" "DONE")))
+
+
 ;; markdown exports
 ;;(load "ox-md.el")
 

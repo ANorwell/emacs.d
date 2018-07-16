@@ -25,9 +25,6 @@
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-;; wakatime
-(global-wakatime-mode 1)
-
 (defadvice yes-or-no-p (around prevent-dialog activate)
   "Prevent yes-or-no-p from activating a dialog"
   (let ((use-dialog-box nil))
@@ -64,6 +61,7 @@
           python-mode-hook
           ruby-mode-hook
           scheme-mode-hook
+          scala-mode-hook
           sh-mode-hook
           ))
 
@@ -192,6 +190,7 @@
              (setq company-idle-delay 1.3)
              (ensime-mode)
              (setq company-idle-delay 1.3)
+             (electric-pair-mode 1)
              (local-set-key (kbd "C-,") 'spec-buffer-switch)))
 
 (add-hook 'web-mode-hook
@@ -549,3 +548,7 @@ isn't there and triggers an error"
     (newline-and-indent)))
 
 (global-set-key (kbd "<s-return>") 'newline-without-break-of-line)
+
+
+(setq ag-highlight-search t)
+(setq ag-reuse-buffers 't)
