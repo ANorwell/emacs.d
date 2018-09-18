@@ -196,23 +196,27 @@
 (add-hook 'web-mode-hook
           '(lambda ()
              (outline-minor-mode)
+             (electric-pair-mode 1)
              (setq outline-regexp " *\\(private funct\\|public funct\\|funct\\|class\\|#head\\)")))
 
 (add-hook 'php-mode-hook
           '(lambda ()
              (outline-minor-mode)
+             (electric-pair-mode 1)
              (setq outline-regexp " *\\(private funct\\|public funct\\|funct\\|class\\|#head\\)")))
 
 
 (add-hook 'c++-mode-hook
           '(lambda ()
              (outline-minor-mode)
+             (electric-pair-mode 1)
              (setq outline-regexp "^[^\s\r\t\n]")
              (hide-sublevels 1)))
 
 (add-hook 'python-mode-hook
           '(lambda ()
              (outline-minor-mode)
+             (electric-pair-mode 1)
              (setq outline-regexp " *\\(def \\|clas\\|#hea\\)")
              (hide-sublevels 1)))
 
@@ -221,6 +225,7 @@
              (outline-minor-mode)
              (setq outline-regexp " *\\(def \\|clas\\|require\\|describe\\|public\\|private\\|protected\\|context\\|module\\|require\\|should\\|xshould\\)")
              (subword-mode)
+             (electric-pair-mode 1)
              (yard-mode)
              (local-set-key (kbd "C-,") 'rails-test-buffer-switch)))
 
@@ -229,6 +234,7 @@
              (outline-minor-mode)
              (setq outline-regexp " *\\(def \\|clas\\|require\\|describe\\|public\\|private\\|context\\|module\\|require\\|should\\)")
              (subword-mode)
+             (electric-pair-mode 1)
              (yard-mode)
              (local-set-key (kbd "C-,") 'rails-test-buffer-switch)))
 
@@ -236,11 +242,13 @@
 (add-hook 'js-mode-hook
           '(lambda ()
              (outline-minor-mode)
+             (electric-pair-mode 1)
              (setq outline-regexp " *\\(function\\|describe(\\|it(\\)")))
 
 (add-hook 'js2-mode-hook
           '(lambda ()
              (outline-minor-mode)
+             (electric-pair-mode 1)
              (electric-indent-local-mode -1)
              (setq outline-regexp " *\\(.*function\\|describe(\\|it(\\|.*: *{\\|.*= *{\\)")))
 
