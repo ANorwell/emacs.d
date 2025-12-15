@@ -191,15 +191,15 @@ else
     PATH_EXPORT="# Emacs is in system PATH"
 fi
 
-SHELL_CONFIG_BLOCK="
+SHELL_CONFIG_BLOCK='
 # Emacs configuration (added by emacs.d/setup.sh)
-${PATH_EXPORT}
+'"${PATH_EXPORT}"'
 export COLORTERM=truecolor
 
 # Emacs client aliases (auto-starts daemon if needed)
-alias e='emacsclient -t -a \"\"'       # open in terminal (blocking)
-alias en='emacsclient -c -n -a \"\"'   # open new GUI frame (non-blocking)
-"
+alias e='"'"'emacsclient -t -a ""'"'"'       # open in terminal (blocking)
+alias en='"'"'emacsclient -c -n -a ""'"'"'   # open new GUI frame (non-blocking)
+'
 
 # Check if config already exists
 if [ -f "$SHELL_RC" ] && grep -q "emacs.d/setup.sh" "$SHELL_RC" 2>/dev/null; then
