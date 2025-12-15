@@ -1,0 +1,278 @@
+#!/usr/bin/env bash
+# Emacs setup script for macOS and Linux
+# Installs Emacs and sets up config symlink
+
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CONFIG_LINK="${HOME}/.config/emacs"
+
+# Detect OS
+detect_os() {
+    case "$(uname -s)" in
+        Darwin*) echo "macos" ;;
+        Linux*)  echo "linux" ;;
+        *)       echo "unknown" ;;
+    esac
+}
+
+OS=$(detect_os)
+
+echo "=== Emacs Setup ($OS) ==="
+echo ""
+
+################################################################################
+# Emacs Installation
+################################################################################
+
+install_emacs_macos() {
+    if ! command -v brew &> /dev/null; then
+        echo "Error: Homebrew is not installed."
+        echo "Install it from https://brew.sh"
+        exit 1
+    fi
+
+    echo ">> Tapping d12frosted/emacs-plus..."
+    brew tap d12frosted/emacs-plus 2>/dev/null || true
+
+    echo ""
+    echo ">> Installing emacs-plus@31 (Emacs 31 with native compilation)..."
+    echo "   This may take a while as it compiles from source..."
+    echo ""
+
+    if brew list d12frosted/emacs-plus/emacs-plus@31 &>/dev/null; then
+        echo "   emacs-plus@31 is already installed"
+    else
+        brew install d12frosted/emacs-plus/emacs-plus@31
+    fi
+
+    BREW_PREFIX="$(brew --prefix)"
+    EMACS_BIN_DIR="${BREW_PREFIX}/opt/emacs-plus@31/bin"
+}
+
+install_emacs_linux() {
+    echo ">> Checking for Emacs..."
+
+    if command -v emacs &> /dev/null; then
+        EMACS_VERSION=$(emacs --version | head -1)
+        echo "   Found: $EMACS_VERSION"
+        EMACS_BIN_DIR=""  # Use system PATH
+
+        # Check version
+        MAJOR_VERSION=$(emacs --version | head -1 | grep -oE '[0-9]+' | head -1)
+        if [ "$MAJOR_VERSION" -lt 29 ]; then
+            echo ""
+            echo "   Warning: Emacs $MAJOR_VERSION detected. This config requires Emacs 29+."
+            echo "   Consider upgrading via your package manager or building from source."
+        fi
+    else
+        echo "   Emacs not found. Installing..."
+        echo ""
+
+        # Detect package manager and install
+        if command -v apt-get &> /dev/null; then
+            echo "   Detected apt (Debian/Ubuntu)"
+            echo "   For latest Emacs, consider: sudo add-apt-repository ppa:ubuntuhandbook1/emacs"
+            read -p "   Install emacs with apt? [y/N] " -n 1 -r
+            echo ""
+            if [[ $REPLY =~ ^[Yy]$ ]]; then
+                sudo apt-get update && sudo apt-get install -y emacs
+            fi
+        elif command -v dnf &> /dev/null; then
+            echo "   Detected dnf (Fedora/RHEL)"
+            read -p "   Install emacs with dnf? [y/N] " -n 1 -r
+            echo ""
+            if [[ $REPLY =~ ^[Yy]$ ]]; then
+                sudo dnf install -y emacs
+            fi
+        elif command -v pacman &> /dev/null; then
+            echo "   Detected pacman (Arch)"
+            read -p "   Install emacs with pacman? [y/N] " -n 1 -r
+            echo ""
+            if [[ $REPLY =~ ^[Yy]$ ]]; then
+                sudo pacman -S emacs
+            fi
+        elif command -v brew &> /dev/null; then
+            echo "   Detected Homebrew on Linux"
+            read -p "   Install emacs with brew? [y/N] " -n 1 -r
+            echo ""
+            if [[ $REPLY =~ ^[Yy]$ ]]; then
+                brew install emacs
+            fi
+        else
+            echo "   Could not detect package manager."
+            echo "   Please install Emacs 29+ manually."
+        fi
+
+        EMACS_BIN_DIR=""
+    fi
+}
+
+# Install based on OS
+case "$OS" in
+    macos)
+        install_emacs_macos
+        ;;
+    linux)
+        install_emacs_linux
+        ;;
+    *)
+        echo "Error: Unsupported operating system"
+        exit 1
+        ;;
+esac
+
+################################################################################
+# Config Symlink
+################################################################################
+
+mkdir -p "${HOME}/.config"
+
+echo ""
+echo ">> Setting up config symlink..."
+
+if [ -L "$CONFIG_LINK" ]; then
+    CURRENT_TARGET="$(readlink "$CONFIG_LINK")"
+    if [ "$CURRENT_TARGET" = "$SCRIPT_DIR" ]; then
+        echo "   Symlink already points to this directory"
+    else
+        echo "   Updating symlink (was: $CURRENT_TARGET)"
+        rm "$CONFIG_LINK"
+        ln -s "$SCRIPT_DIR" "$CONFIG_LINK"
+    fi
+elif [ -e "$CONFIG_LINK" ]; then
+    echo "   Warning: $CONFIG_LINK exists and is not a symlink"
+    echo "   Please back it up and remove it, then run this script again"
+    exit 1
+else
+    ln -s "$SCRIPT_DIR" "$CONFIG_LINK"
+    echo "   Created symlink: $CONFIG_LINK -> $SCRIPT_DIR"
+fi
+
+################################################################################
+# Verify Installation
+################################################################################
+
+echo ""
+echo ">> Verifying installation..."
+
+if [ -n "$EMACS_BIN_DIR" ] && [ -x "${EMACS_BIN_DIR}/emacs" ]; then
+    EMACS_PATH="${EMACS_BIN_DIR}/emacs"
+    EMACS_VERSION=$("$EMACS_PATH" --version | head -1)
+    echo "   Found: $EMACS_VERSION"
+elif command -v emacs &> /dev/null; then
+    EMACS_VERSION=$(emacs --version | head -1)
+    echo "   Found: $EMACS_VERSION"
+    EMACS_BIN_DIR=""
+else
+    echo "   Warning: Could not find emacs binary"
+fi
+
+################################################################################
+# Shell Configuration
+################################################################################
+
+echo ""
+echo ">> Shell configuration"
+
+# Detect shell config file
+if [ -n "$ZSH_VERSION" ] || [ -f "${HOME}/.zshrc" ]; then
+    SHELL_RC="${HOME}/.zshrc"
+elif [ -f "${HOME}/.bashrc" ]; then
+    SHELL_RC="${HOME}/.bashrc"
+else
+    SHELL_RC="${HOME}/.profile"
+fi
+
+# Build PATH export if needed
+if [ -n "$EMACS_BIN_DIR" ]; then
+    PATH_EXPORT="export PATH=\"${EMACS_BIN_DIR}:\$PATH\""
+else
+    PATH_EXPORT="# Emacs is in system PATH"
+fi
+
+SHELL_CONFIG_BLOCK="
+# Emacs configuration (added by emacs.d/setup.sh)
+${PATH_EXPORT}
+export COLORTERM=truecolor
+
+# Emacs client aliases (auto-starts daemon if needed)
+alias e='emacsclient -t -a \"\"'       # open in terminal (blocking)
+alias en='emacsclient -c -n -a \"\"'   # open new GUI frame (non-blocking)
+"
+
+# Check if config already exists
+if [ -f "$SHELL_RC" ] && grep -q "emacs.d/setup.sh" "$SHELL_RC" 2>/dev/null; then
+    echo "   Emacs configuration already exists in $SHELL_RC"
+else
+    echo ""
+    echo "   The following will be added to $SHELL_RC:"
+    echo "   ─────────────────────────────────────────"
+    echo "$SHELL_CONFIG_BLOCK"
+    echo "   ─────────────────────────────────────────"
+    echo ""
+    read -p "   Add this configuration to $SHELL_RC? [y/N] " -n 1 -r
+    echo ""
+
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        touch "$SHELL_RC"
+        echo "$SHELL_CONFIG_BLOCK" >> "$SHELL_RC"
+        echo "   ✓ Configuration added to $SHELL_RC"
+        echo "   Run 'source $SHELL_RC' or restart your terminal to apply"
+    else
+        echo "   Skipped. You can manually add the configuration later."
+    fi
+fi
+
+################################################################################
+# tmux Configuration
+################################################################################
+
+TMUX_CONF="${HOME}/.tmux.conf"
+TMUX_CONFIG_BLOCK='
+# Truecolor support (added by emacs.d/setup.sh)
+set -g default-terminal "xterm-256color"
+set -as terminal-overrides ",xterm-256color:RGB"
+'
+
+echo ""
+if [ -f "$TMUX_CONF" ] && grep -q "terminal-overrides.*RGB" "$TMUX_CONF" 2>/dev/null; then
+    echo "   Truecolor configuration already exists in ~/.tmux.conf"
+elif command -v tmux &> /dev/null; then
+    echo "   tmux detected. For truecolor support, add to ~/.tmux.conf:"
+    echo "   ─────────────────────────────────────────"
+    echo "$TMUX_CONFIG_BLOCK"
+    echo "   ─────────────────────────────────────────"
+    echo ""
+    read -p "   Add this configuration to ~/.tmux.conf? [y/N] " -n 1 -r
+    echo ""
+
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        touch "$TMUX_CONF"
+        echo "$TMUX_CONFIG_BLOCK" >> "$TMUX_CONF"
+        echo "   ✓ Configuration added to ~/.tmux.conf"
+    else
+        echo "   Skipped."
+    fi
+fi
+
+################################################################################
+# Done
+################################################################################
+
+echo ""
+echo "=== Setup complete! ==="
+echo ""
+echo "Config location: $SCRIPT_DIR"
+echo "Symlinked to:    $CONFIG_LINK"
+echo ""
+echo "Usage (after sourcing $SHELL_RC):"
+echo "  e file.txt    # open in terminal (uses daemon)"
+echo "  en file.txt   # open GUI frame, return to shell"
+echo "  emacs -nw     # standalone terminal emacs (no daemon)"
+
+if [ "$OS" = "linux" ]; then
+    echo ""
+    echo "Note: For clipboard support over SSH, OSC 52 (clipetty) should work"
+    echo "automatically with Ghostty as your local terminal."
+fi

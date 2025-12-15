@@ -1,16 +1,41 @@
+# Byte-compiled files
 *.elc
+
+# Package directories (managed by package.el)
+elpa/
+
+# Cache and state files
 .cask/
 projectile-bookmarks.eld
 projectile.cache
 url/
-auto-save-list/*
+auto-save-list/
 ido.last
-/recentf
+recentf
 ac-comphist.dat
 tramp
 semanticdb/
-ensime/*
 .mc-lists.el
-var/pcache/
-eshell/*
-elpa/*
+var/
+eshell/
+transient/
+tree-sitter/
+
+# Backup directory
+emacs-backup/
+
+# Native compilation cache
+eln-cache/
+
+# Project-specific
+ensime/
+
+# Custom file (if separate)
+custom.el
+
+# OS files
+.DS_Store
+
+# Emacs runtime/state files
+history
+projects.eld
