@@ -50,8 +50,99 @@ install_emacs_macos() {
     EMACS_BIN_DIR="${BREW_PREFIX}/opt/emacs-plus@31/bin"
 }
 
+install_emacs_amazon_linux() {
+    echo ">> Building Emacs 31 from source for Amazon Linux..."
+    echo ""
+
+    # Install build dependencies
+    echo "   Installing build dependencies..."
+    sudo yum groupinstall -y "Development Tools" 2>/dev/null || true
+    sudo yum install -y \
+        ncurses-devel \
+        libxml2-devel \
+        jansson-devel \
+        texinfo \
+        autoconf \
+        git
+
+    # gnutls-devel often has dependency conflicts on Amazon Linux 2
+    sudo yum install -y gnutls-devel 2>/dev/null || echo "   Note: gnutls-devel unavailable, building without TLS"
+
+    # Optional: native compilation (may not be available)
+    sudo yum install -y libgccjit-devel 2>/dev/null || true
+
+    # Optional: tree-sitter (may not be available)
+    sudo yum install -y libtree-sitter-devel 2>/dev/null || true
+
+    # Clone and build
+    EMACS_SRC="${HOME}/emacs-31-src"
+    if [ -d "$EMACS_SRC" ]; then
+        echo "   Source directory exists, updating..."
+        cd "$EMACS_SRC" && git pull
+    else
+        echo "   Cloning Emacs 31 (master branch)..."
+        git clone --depth 1 git://git.savannah.gnu.org/emacs.git "$EMACS_SRC"
+    fi
+    cd "$EMACS_SRC"
+
+    echo "   Running autogen.sh..."
+    ./autogen.sh
+
+    echo "   Configuring (terminal-only build)..."
+    CONFIGURE_OPTS="--without-x"
+
+    # Check for gnutls
+    if ! pkg-config --exists gnutls 2>/dev/null; then
+        CONFIGURE_OPTS="$CONFIGURE_OPTS --with-gnutls=no"
+    fi
+
+    # Check for native compilation
+    if pkg-config --exists libgccjit 2>/dev/null; then
+        echo "   Native compilation enabled"
+        CONFIGURE_OPTS="$CONFIGURE_OPTS --with-native-compilation=aot"
+    else
+        echo "   Native compilation not available"
+    fi
+
+    ./configure $CONFIGURE_OPTS
+
+    echo "   Building (this may take 5-15 minutes)..."
+    make -j$(nproc)
+
+    echo "   Installing to /usr/local..."
+    sudo make install
+
+    EMACS_BIN_DIR="/usr/local/bin"
+}
+
 install_emacs_linux() {
     echo ">> Checking for Emacs..."
+
+    # Detect Amazon Linux
+    if [ -f /etc/os-release ] && grep -q 'ID="amzn"' /etc/os-release; then
+        echo "   Detected Amazon Linux"
+
+        if [ -x /usr/local/bin/emacs ]; then
+            EMACS_VERSION=$(/usr/local/bin/emacs --version | head -1)
+            MAJOR_VERSION=$(/usr/local/bin/emacs --version | head -1 | grep -oE '[0-9]+' | head -1)
+            if [ "$MAJOR_VERSION" -ge 31 ]; then
+                echo "   Found: $EMACS_VERSION"
+                EMACS_BIN_DIR="/usr/local/bin"
+                return
+            fi
+        fi
+
+        echo ""
+        read -p "   Build and install Emacs 31 from source? [y/N] " -n 1 -r
+        echo ""
+        if [[ $REPLY =~ ^[Yy]$ ]]; then
+            install_emacs_amazon_linux
+        else
+            echo "   Skipped. You can run this script again to install later."
+            EMACS_BIN_DIR=""
+        fi
+        return
+    fi
 
     if command -v emacs &> /dev/null; then
         EMACS_VERSION=$(emacs --version | head -1)
