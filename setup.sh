@@ -65,8 +65,15 @@ install_emacs_amazon_linux() {
         autoconf \
         git
 
-    # gnutls-devel often has dependency conflicts on Amazon Linux 2
-    sudo yum install -y gnutls-devel 2>/dev/null || echo "   Note: gnutls-devel unavailable, building without TLS"
+    # gnutls-devel is required for HTTPS package downloads
+    # Try multiple approaches for Amazon Linux 2
+    if ! pkg-config --exists gnutls 2>/dev/null; then
+        echo "   Installing gnutls-devel..."
+        sudo yum install -y gnutls-devel 2>/dev/null || \
+        sudo amazon-linux-extras install -y epel && sudo yum install -y gnutls-devel 2>/dev/null || \
+        echo "   Warning: gnutls-devel install failed, trying gnutls3..."
+        sudo yum install -y gnutls3-devel 2>/dev/null || true
+    fi
 
     # Optional: native compilation (may not be available)
     sudo yum install -y libgccjit-devel 2>/dev/null || true
@@ -91,9 +98,13 @@ install_emacs_amazon_linux() {
     echo "   Configuring (terminal-only build)..."
     CONFIGURE_OPTS="--without-x"
 
-    # Check for gnutls
-    if ! pkg-config --exists gnutls 2>/dev/null; then
-        CONFIGURE_OPTS="$CONFIGURE_OPTS --with-gnutls=no"
+    # Check for gnutls - required for HTTPS/TLS
+    if pkg-config --exists gnutls 2>/dev/null; then
+        echo "   GnuTLS enabled"
+    else
+        echo "   ERROR: gnutls not found. Cannot build without TLS support."
+        echo "   Package installation will fail without HTTPS."
+        exit 1
     fi
 
     # Check for native compilation

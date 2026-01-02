@@ -18,8 +18,11 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Add MELPA repository
-(with-eval-after-load 'package
-  (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t))
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
+;; Add site-lisp for manually installed packages
+(add-to-list 'load-path (expand-file-name "site-lisp" user-emacs-directory))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -356,6 +359,8 @@
  )
 
 ;; Restore GC threshold
-(setq gc-cons-threshold (or bedrock--initial-gc-threshold 800000))
+(setq gc-cons-threshold (if (boundp 'bedrock--initial-gc-threshold)
+                            bedrock--initial-gc-threshold
+                          800000))
 
 ;;; init.el ends here

@@ -18,8 +18,8 @@
 
 ;; Frame configuration - minimal for terminal focus
 (setq frame-resize-pixelwise t)
-(tool-bar-mode -1)
-(menu-bar-mode -1)  ; Disable menu bar for cleaner terminal experience
+(when (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(when (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 
 ;; Default frame settings (applies to GUI if used)
 (setq default-frame-alist '((vertical-scroll-bars . nil)
