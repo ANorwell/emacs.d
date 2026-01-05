@@ -76,7 +76,9 @@
   :ensure t)
 
 (use-package json-mode
-  :ensure t)
+  :ensure t
+  :custom
+  (js-indent-level 2))
 
 ;; Emacs ships with a lot of popular programming language modes. If it's not
 ;; built in, you're almost certain to find a mode for the language you're
