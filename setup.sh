@@ -6,6 +6,15 @@ set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CONFIG_LINK="${HOME}/.config/emacs"
+REINSTALL_EMACS=false
+
+# Parse arguments
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --reinstall) REINSTALL_EMACS=true; shift ;;
+        *) echo "Unknown option: $1"; exit 1 ;;
+    esac
+done
 
 # Detect OS
 detect_os() {
@@ -78,8 +87,20 @@ install_emacs_amazon_linux() {
     # Optional: native compilation (may not be available)
     sudo yum install -y libgccjit-devel 2>/dev/null || true
 
-    # Optional: tree-sitter (may not be available)
-    sudo yum install -y libtree-sitter-devel 2>/dev/null || true
+    # Tree-sitter support
+    if ! pkg-config --exists tree-sitter 2>/dev/null; then
+        echo "   Installing tree-sitter from source..."
+        TREESIT_SRC="${HOME}/tree-sitter-src"
+        git clone --depth 1 https://github.com/tree-sitter/tree-sitter.git "$TREESIT_SRC" 2>/dev/null || \
+            (cd "$TREESIT_SRC" && git pull)
+        cd "$TREESIT_SRC"
+        make -j$(nproc)
+        sudo make install
+        # Ensure /usr/local/lib is in linker path
+        echo "/usr/local/lib" | sudo tee /etc/ld.so.conf.d/local.conf
+        sudo ldconfig
+        cd -
+    fi
 
     # Clone and build
     EMACS_SRC="${HOME}/emacs-31-src"
@@ -96,25 +117,25 @@ install_emacs_amazon_linux() {
     ./autogen.sh
 
     echo "   Configuring (terminal-only build)..."
-    CONFIGURE_OPTS="--without-x"
+    CONFIGURE_OPTS="--without-x --with-tree-sitter"
 
     # Check for gnutls - required for HTTPS/TLS
-    if pkg-config --exists gnutls 2>/dev/null; then
-        echo "   GnuTLS enabled"
-    else
+    if ! pkg-config --exists gnutls 2>/dev/null; then
         echo "   ERROR: gnutls not found. Cannot build without TLS support."
-        echo "   Package installation will fail without HTTPS."
         exit 1
     fi
 
-    # Check for native compilation
+    # Check for native compilation (optional)
     if pkg-config --exists libgccjit 2>/dev/null; then
-        echo "   Native compilation enabled"
         CONFIGURE_OPTS="$CONFIGURE_OPTS --with-native-compilation=aot"
-    else
-        echo "   Native compilation not available"
     fi
 
+    # Ensure pkg-config can find tree-sitter in /usr/local
+    export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:${PKG_CONFIG_PATH:-}"
+
+    echo ""
+    echo "   Running: ./configure $CONFIGURE_OPTS"
+    echo ""
     ./configure $CONFIGURE_OPTS
 
     echo "   Building (this may take 5-15 minutes)..."
@@ -133,7 +154,7 @@ install_emacs_linux() {
     if [ -f /etc/os-release ] && grep -q 'ID="amzn"' /etc/os-release; then
         echo "   Detected Amazon Linux"
 
-        if [ -x /usr/local/bin/emacs ]; then
+        if [ -x /usr/local/bin/emacs ] && [ "$REINSTALL_EMACS" = false ]; then
             EMACS_VERSION=$(/usr/local/bin/emacs --version | head -1)
             MAJOR_VERSION=$(/usr/local/bin/emacs --version | head -1 | grep -oE '[0-9]+' | head -1)
             if [ "$MAJOR_VERSION" -ge 31 ]; then
@@ -141,6 +162,12 @@ install_emacs_linux() {
                 EMACS_BIN_DIR="/usr/local/bin"
                 return
             fi
+        fi
+
+        if [ "$REINSTALL_EMACS" = true ]; then
+            echo "   Reinstalling Emacs..."
+            install_emacs_amazon_linux
+            return
         fi
 
         echo ""
