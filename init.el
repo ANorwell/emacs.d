@@ -113,13 +113,22 @@
   :ensure t
   :custom
   (completion-styles '(orderless basic))
-  (completion-category-overrides '((file (styles basic partial-completion)))))
+  (completion-category-overrides '((file (styles basic partial-completion))))
+  (orderless-matching-styles '(orderless-literal orderless-regexp orderless-initialism)))
 
 ;; Marginalia: annotations in minibuffer (file sizes, docstrings, etc.)
 (use-package marginalia
   :ensure t
   :init
   (marginalia-mode))
+
+;; Embark: actions on completion candidates (C-. for menu, C-SPC to select multiple)
+(use-package embark
+  :ensure t
+  :bind (("C-." . embark-act)
+         ("C-;" . embark-dwim)
+         :map minibuffer-local-map
+         ("C-SPC" . embark-select)))
 
 ;; Consult: enhanced search and navigation commands
 (use-package consult
@@ -335,12 +344,22 @@
 
 ;; Insert file path from project with fuzzy search
 (defun my/insert-project-file-path ()
-  "Fuzzy-search for a file in the project and insert its full path."
+  "Fuzzy-search for files in the project and insert relative paths.
+Select with RET, empty input to finish."
   (interactive)
-  (when-let ((file (completing-read "Insert file path: "
-                                    (project-files (project-current t))
-                                    nil t)))
-    (insert file)))
+  (let* ((root (project-root (project-current t)))
+         (candidates (project-files (project-current t)))
+         files file)
+    (while (progn
+             (setq file (completing-read
+                         (format "File [%d] (empty to finish): " (length files))
+                         candidates nil nil))
+             (not (string-empty-p file)))
+      (push file files)
+      (setq candidates (delete file candidates)))
+    (when files
+      (insert (mapconcat (lambda (f) (file-relative-name f root))
+                         (nreverse files) "\n")))))
 
 (keymap-global-set "C-c p i" #'my/insert-project-file-path)
 
