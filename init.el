@@ -299,12 +299,50 @@
 ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; Built-in project.el (replaces projectile)
+;; Custom project detection for Brazil workspaces
+;; Uses <workspace>/src as root to exclude env/ and other metadata
+(defun my/brazil-workspace-root (dir)
+  "Find Brazil workspace src/ directory as project root."
+  (let ((root nil))
+    (while-let ((found (locate-dominating-file dir
+                         (lambda (d)
+                           (file-directory-p (expand-file-name "src" d))))))
+      (setq root found
+            dir (file-name-directory (directory-file-name found))))
+    (when root (cons 'brazil (expand-file-name "src" root)))))
+
+(cl-defmethod project-root ((project (head brazil)))
+  "Return root directory of a Brazil workspace PROJECT."
+  (cdr project))
+
+(cl-defmethod project-files ((project (head brazil)) &optional _dirs)
+  "Return files in PROJECT using fd (respects .gitignore)."
+  (let* ((root (project-root project))
+         (default-directory root))
+    (mapcar (lambda (f) (expand-file-name f root))
+            (split-string
+             (shell-command-to-string "fd --type f --hidden --exclude .git")
+             "\n" t))))
+
+;; Built-in project.el
 (use-package project
-  :bind (("s-g" . project-find-file)      ; find file in project (GUI)
-         ("s-i" . consult-ripgrep)         ; search in project (GUI)
-         ("C-c p f" . project-find-file)   ; find file in project (terminal)
-         ("C-c p s" . consult-ripgrep)))   ; search in project (terminal)
+  :bind (("s-g" . project-find-file)
+         ("s-i" . consult-ripgrep)
+         ("C-c p f" . project-find-file)
+         ("C-c p s" . consult-ripgrep))
+  :config
+  (add-to-list 'project-find-functions #'my/brazil-workspace-root))
+
+;; Insert file path from project with fuzzy search
+(defun my/insert-project-file-path ()
+  "Fuzzy-search for a file in the project and insert its full path."
+  (interactive)
+  (when-let ((file (completing-read "Insert file path: "
+                                    (project-files (project-current t))
+                                    nil t)))
+    (insert file)))
+
+(keymap-global-set "C-c p i" #'my/insert-project-file-path)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
