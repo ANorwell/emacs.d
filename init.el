@@ -48,6 +48,9 @@
 ;; Modern sentence ending
 (setopt sentence-end-double-space nil)
 
+;; Never use hard tabs
+(setopt indent-tabs-mode nil)
+
 ;; Backup files in a single directory
 (defun bedrock--backup-file-name (fpath)
   "Return a backup file path for FPATH in a centralized directory."
