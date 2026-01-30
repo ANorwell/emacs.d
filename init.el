@@ -61,6 +61,11 @@
     backup-file-path))
 (setopt make-backup-file-name-function 'bedrock--backup-file-name)
 
+;; Auto-save files (#file#) in a centralized directory
+(make-directory (concat user-emacs-directory ".auto-save/") t)
+(setopt auto-save-file-name-transforms
+        `((".*" ,(concat user-emacs-directory ".auto-save/") t)))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;;   Terminal/TTY enhancements (Emacs 31)
